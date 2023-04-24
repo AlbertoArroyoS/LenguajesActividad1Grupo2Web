@@ -1,3 +1,5 @@
+
+/* **************ESTILOS ALBERTO ******************************************/
 body {
     width: 960px;
     margin: auto;/*Para centrar el body en la página*/
@@ -304,6 +306,9 @@ a:link, a:visited, a:active {
     section footer {
         width: 97%;
     }
+    #a-header {
+        font-size: 25pt;
+    }
     
 
 }
@@ -340,5 +345,9 @@ a:link, a:visited, a:active {
     footer {
         width: 96%;
     }
+    #a-header {
+        font-size: 20pt;
+    }
     
 }
+/* **************  FIN ESTILOS ALBERTO ******************************************/
