@@ -1,0 +1,287 @@
+body {
+    width: 960px;
+    margin: auto;/*Para centrar el body en la página*/
+    background-color: #035f4a;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    
+    
+}
+/* Cabecera de la pagina */
+body header {
+    width: 100%;
+    height: 100px;
+    background-color: #e71919;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* barra de navegacion */
+nav {
+   
+    height: 90px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
+    background-color: #FFF;
+    margin-bottom: 10px;
+    
+}
+
+/* Publicidad */
+aside {
+    width: 100%;
+    height: 85px;
+    margin-bottom: 10px;
+    background-color: #ade70e;
+    float: right;
+}
+/* Total de la seccion */
+section {
+    width: 958px;
+    height: 600px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #999;
+    float: left;
+    padding-bottom: 10px;
+    
+}
+
+/* Selector para la etiqueta 'header' que sea hijo de la etiqueta 'section' */
+
+/* Cabecera de la seccion */
+section header {
+    width: 98%;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #FFF;
+}
+/* Articulos de la seccion, articulo 1 y articulo 2 */ 
+section article {
+    width: 98%;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #FFF;
+}
+
+/* Selector para la etiqueta 'footer' que sea hijo de la etiqueta 'section' */
+/* Pie de la seccion */
+section footer {
+    width: 98%;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #FFF;
+}
+
+
+/*Pie de la pagina */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #999;
+    clear: both;
+}
+/* Menu */
+#ul-header {
+
+    display: flex;
+    z-index: 15;
+    list-style: none;
+    
+    
+}
+
+#ul-header li ul {
+    display: none;
+    position: absolute;
+}
+
+#ul-header li:hover > ul {
+    display: block;
+}
+
+#a-header {
+    color: #ea0fbb;
+    font-family: roboto-slab, serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16pt;
+    margin-left: -25px;
+    text-align: left;
+    
+}
+/* Recuadro cuando te posicionas en las opciones del menu*/
+li a:hover{
+    background-color:aquamarine;
+    
+
+ }
+
+ /* Formulario de registro */
+#f-registro {
+    text-align: right;
+}
+
+#a-header:hover {
+    color: #D84341;
+}
+
+/* Estilo de la lista del menu */
+#ul-desplegable li {
+    margin-top: 10px;
+    list-style-type: none;
+    text-align: left;
+}
+
+
+/* Fondo del menu desplegable */
+#ul-desplegable {
+    background-color: rgba(230, 230, 5, 0.8);
+    padding-right: 1.5%;
+    padding-bottom: 0.8%;
+    
+}
+/* Boton de nuevo usuario */
+
+#r-nuevo{
+    background-color: #FFF;
+    font-family: roboto-slab, serif;
+
+}
+/* Eliminar el subrayado de los enlaces */
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+/* *************************************************************************************** */
+/* CSS RESPONSIVO */
+@media screen and (max-width: 980px) {
+    body {
+        width: 99%;
+    }
+    section {
+        width: 99%;
+    }
+    nav {
+        width: 90%;
+        
+    }
+    aside {
+        width: 99%;
+        float: none;
+    }
+    footer {
+        width: 99%;
+    }
+}
+@media screen and (max-width: 700px) {
+    /* 
+    Con width auto se tiene en cuenta el padding y el margen a la hora de calcular
+    el ancho que ocupara un elemento.
+
+    Con width 100% no se tendra en cuenta, por lo que primero ocupará todo el ancho 
+    de la página y luego le sumara el "padding" y el "margin", saliendose de los límites
+
+    https://blogs.ua.es/pi/2012/12/07/la-diferencia-entre-widthauto-y-width100/  
+    
+    barar de navegacion
+    https://www.youtube.com/watch?v=f7QujqArvIw
+    */
+    
+    aside {
+        width: 98%;
+        float: left;
+    }
+    section {
+        width: 98%;
+        float: left;
+        
+    }
+    
+    nav {
+        width: auto;
+        float: none;
+        
+        
+    }
+    footer{
+        width: 98%;
+    }
+    section header {
+
+        width: 97%;
+        height: 100px;
+    
+        background-color:#f88383;
+    }
+
+    nav ul{
+
+        width: 30%;
+     
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 25px 10px;
+        line-height: 90%;
+        
+        
+    }
+    nav ul li a{
+        font-size: 30px;
+    }
+    section article {
+        width: 97%;
+    }
+    section footer {
+        width: 97%;
+    }
+    
+
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        height: 110px;
+    }
+    
+    header {
+        height: auto;
+    }
+   
+
+    h1 {
+        font-size: 24px;
+    }
+    aside {
+        width: 95%;
+        display: left;
+    }
+    section {
+        width: 95%;
+    }
+ 
+    section header {
+        width: 95%;
+     
+    }
+
+    section article {
+        width: 95%;
+    }
+    footer {
+        width: 95%;
+    }
+    
+}
