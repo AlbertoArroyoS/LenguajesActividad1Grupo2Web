@@ -187,7 +187,7 @@ li a:hover{
 #ul-desplegable {
     /* El ultimo valor es para hacerlo transparente */
     background-color: rgba(230, 230, 5, 0.9);
-    padding-right: 1.5%;
+    padding-right: 1.8%;
     padding-bottom: 0.8%;
     
 }
@@ -309,6 +309,7 @@ a:link, a:visited, a:active {
     #a-header {
         font-size: 25pt;
     }
+  
     
 
 }
@@ -345,9 +346,7 @@ a:link, a:visited, a:active {
     footer {
         width: 96%;
     }
-    #a-header {
-        font-size: 20pt;
-    }
+
     
 }
 /* **************  FIN ESTILOS ALBERTO ******************************************/
