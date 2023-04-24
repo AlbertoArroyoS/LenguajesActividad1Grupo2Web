@@ -27,7 +27,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     margin: 0 5%;
-    background-color: #FFF;
     margin-bottom: 10px;
     
 }
@@ -147,15 +146,35 @@ footer {
 }
 
 #a-header {
-    color: #ea0fbb;
+    color: #121111;
     font-family: roboto-slab, serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 16pt;
+    font-size: 30pt;
+    margin-left: -25px;
+    text-align: left;
+    background-color: #FFF;
+    background-size:50px;
+    
+}
+
+.div-redondeado{
+    border-radius: 15px;
+   
+    
+
+}
+#a-header2 {
+    color: #080808;
+    font-family: roboto-slab, serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20pt;
     margin-left: -25px;
     text-align: left;
     
 }
+
 /* Recuadro cuando te posicionas en las opciones del menu*/
 li a:hover{
     background-color:aquamarine;
