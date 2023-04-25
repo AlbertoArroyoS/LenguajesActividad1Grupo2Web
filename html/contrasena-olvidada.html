@@ -44,7 +44,7 @@
             <br/>
             <li><a href="#" id="a-header" class="div-redondeado2"> Cuenta </a>
                 <ul id="ul-desplegable">
-                    <li><a href="./html/noticias.html" id="a-header2">Iniciar sesión</a></li>
+                    <li><a href="iniciar-sesion.html" id="a-header2">Iniciar sesión</a></li>
                     <li><a href="./html/quienes-somos.html" id="a-header2">Registrarse</a></li>
                 </ul>
             </li>
@@ -60,25 +60,27 @@
     
  <!-- Secciones -->
     <main>
-        <form id="inicio-sesion">
-            <h4>Iniciar sesion</h4>
 
-            <div>
-                
-                <input id="nombre" type="text" name="nombre" placeholder="Usuario" required/>
-                <br/>
-                <input id="pass" type="password" name="pass" placeholder="Contraseña" required />
-                <br/>	
-                ¿Recordar usuario? <input type="checkbox" name="recordar" value="Y" />
-                <br/>
-                <input type="submit" value="Acceder"/>
-                <br/>
-                <br/>
-                <a href="contrasena-olvidada.html" id="r-nuevo">¿Contraseña olvidada?</a>
-                <br/>
-                <br/>
-                <a href=" url" id="r-nuevo">Nuevo usuario</a>
-                <br/>	
+        <div id="inicio-sesion">
+            <h4>Formulario Para Recuperar Contraseña</h4>
+            <p>Si has olvidado tu nick o contraseña, puedes solicitar que se te envíen tus datos al mail que tienes asociado a tu perfil. 
+                Una vez hecho, podrás resetear la password por una temporal para que puedas volver a acceder.
+            </p>
+            <p>Para iniciar el proceso, introduce en el cuadro inferior la dirección de correo electrónico que utilizas en el foro. 
+                Si el sistema te dice que esa dirección no existe, es porque utilizaste otra diferente cuando te diste de alta o bien la has cambiado más tarde. 
+                Por favor, prueba las veces que necesites hasta que encuentres el correo que has estado utilizando.   
+            </p>
+            <p>Logicamente si ya no tienes acceso a esa cuenta de correo, este sistema de recuperación automático no te va a funcionar, 
+                puesto que no podrás acceder al correo que te vamos a mandar.  
+            </p>
+
+
+        </div>
+        
+        <form id="inicio-sesion">
+  
+            Email: <input type="email" name="email" required/>
+            <input type="submit" value="Enviar"/>
 
             </div>
             

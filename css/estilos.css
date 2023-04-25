@@ -21,6 +21,8 @@ body header {
 #cabeceralogo {
     display: inline-block;
     vertical-align: middle;
+    display: inline;
+    display: flex;
    
 }
 
@@ -138,11 +140,14 @@ footer {
     display: none;
     position: absolute;
 }
+/* Hacer que el menu sea desplegable y lo colocamos por bloques 
+https://evelb.es/css3-menu-desplegable-con-hover/    */
 
-#ul-header li:hover > ul {
+#ul-header li:hover ul {
     display: block;
 }
 
+/* configuracion de la barra de menu*/
 #a-header {
     color: #121111;
     font-family: roboto-slab, serif;
@@ -342,9 +347,15 @@ a:link, a:visited, a:active {
 }
 
  /* Formulario de registro */
- #f-registro {
+#inicio-sesion{
     text-align: center;
     color: #FFF;
     margin-bottom: 50px ;
+    font-size: large;
+
+}
+
+ #f-registro {
+    
 }
 /* **************  FIN ESTILOS ALBERTO ******************************************/
