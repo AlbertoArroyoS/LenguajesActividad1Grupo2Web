@@ -131,8 +131,7 @@ footer {
     display: flex;
     z-index: 15;
     list-style: none;
-    
-    
+    padding: 10px;
 }
 
 #ul-header li ul {
@@ -147,26 +146,25 @@ footer {
 #a-header {
     color: #121111;
     font-family: roboto-slab, serif;
-    font-weight: 300;
+    font-weight: 300px;
     font-style: normal;
-    font-size: 30pt;
-    margin-left: -25px;
-    text-align: left;
-    background-color: #FFF;
-    background-size:50px;
-    
+    font-size: 25pt;
+    background-color: #FFF;   
 }
 
 .div-redondeado{
     border-radius: 15px;
-   
     
+}
 
+.div-redondeado2{
+    border-radius: 15px;
+    margin-left: 20px;  
 }
 #a-header2 {
     color: #080808;
     font-family: roboto-slab, serif;
-    font-weight: 300;
+    font-weight: 300px;
     font-style: normal;
     font-size: 20pt;
     margin-left: -25px;
@@ -178,21 +176,17 @@ footer {
 li a:hover{
     background-color:aquamarine;
     
-
  }
  /* Fondo del menu desplegable */
 #ul-desplegable {
     /* El ultimo valor es para hacerlo transparente */
-    background-color: rgba(230, 230, 5, 0.9);
+    background-color: rgba(7, 142, 183, 0.9);
     padding-right: 1.8%;
     padding-bottom: 0.8%;
+    width: auto;
     
 }
 
- /* Formulario de registro */
-#f-registro {
-    text-align: right;
-}
 
 #a-header:hover {
     color: #D84341;
@@ -345,5 +339,12 @@ a:link, a:visited, a:active {
     }
 
     
+}
+
+ /* Formulario de registro */
+ #f-registro {
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 50px ;
 }
 /* **************  FIN ESTILOS ALBERTO ******************************************/

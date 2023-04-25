@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/estilos.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../css/estilos.css" type="text/css" media="screen">
     
     <title>NOMBRE PESTAÑA. - Inicio</title>
 </head>
@@ -17,7 +17,7 @@
             <img src="/img/logo4.png" alt="Publicidad"/>
         </span>
         <span id="nombre-web">
-            <a href="./index.html">
+            <a href="../index.html">
                 <h2 id="h2-logo">Club de Corredores<span>.</span></h2>
             </a>
         </span>
@@ -32,7 +32,7 @@
         <ul id="ul-header">
             <li><a href="#" id="a-header" class="div-redondeado">  Menú </a>
                 <ul id="ul-desplegable">
-                    <li><a href="./index.html" id="a-header2">Inicio</a></li>
+                    <li><a href="../index.html" id="a-header2">Inicio</a></li>
                     <li><a href="./html/noticias.html" id="a-header2">Noticias</a></li>
                     <li><a href="./html/quienes-somos.html" id="a-header2">Quién Somos</a></li>
                     <li><a href="./html/publicaciones.html" id="a-header2">Carreras</a></li>
@@ -44,24 +44,12 @@
             <br/>
             <li><a href="#" id="a-header" class="div-redondeado2"> Cuenta </a>
                 <ul id="ul-desplegable">
-                    <li><a href="./html/iniciar-sesion.html" id="a-header2">Iniciar sesión</a></li>
+                    <li><a href="./html/noticias.html" id="a-header2">Iniciar sesión</a></li>
                     <li><a href="./html/quienes-somos.html" id="a-header2">Registrarse</a></li>
                 </ul>
             </li>
         </ul>
-        <form >
-            <div id="f-registro">
-                
-                <input id="nombre" type="text" name="nombre" placeholder="Usuario"/>
-                <br/>
-                <input id="pass" type="password" name="pass" placeholder="Contraseña" />
-                <br/>
-                <a href=" url" id="r-nuevo">Nuevo usuario</a>
-                <input type="submit" value="Acceder"/>
-
-            </div>
-            
-        </form>
+        
     </nav>
     <aside>
         <div class="img-pub"></div>
@@ -72,33 +60,25 @@
     
  <!-- Secciones -->
     <main>
-        <section>
-            <header>
-                <div class="banner-content">
-                    <h3>Bienvenido al club de corredores<span>.</span></h3>
-                    <p>DESCRIPCION, Web en la que podras encontrar toda la información del club.</p>
+        <form id="f-registro">
+            <h4>Iniciar sesion</h4>
+
+            <div>
                 
-            </header>
+                <input id="nombre" type="text" name="nombre" placeholder="Usuario"/>
+                <br/>
+                <input id="pass" type="password" name="pass" placeholder="Contraseña" />
+                <br/>
+                <a href=" url" id="r-nuevo">Nuevo usuario</a>
+                <input type="submit" value="Acceder"/>
+                <br/>	
+                ¿Recordar usuario? <input type="checkbox" name="recordar" value="Y" />
+                <br/>	
 
-            <article>
-                ARTICULO 1 SECCIÓN 1
-                <a href=" url a galeria de foros"> Fotos recientes</a>
-                
-            </article>
-
-            <article>
-                ARTICULO 2 SECCIÓN 1
-                <a href=" url"> Proximas carreras</a>
-                <p>Maratón en Ciudad Real, 10 de junio de 2023</p>
-
-            </article>
-
-            <footer>
-                PIE DE PÁGINA SECCIÓN 1
-                
-                </br>
-            </footer>
-        </section>        
+            </div>
+            
+        </form>
+        
     </main>
 
 <!-- Pie de pagina -->  
