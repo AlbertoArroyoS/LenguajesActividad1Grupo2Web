@@ -343,6 +343,7 @@ a:link, a:visited, a:active {
         width: 96%;
     }
 
+
     
 }
 
@@ -353,6 +354,13 @@ a:link, a:visited, a:active {
     margin-bottom: 50px ;
     font-size: large;
 
+}
+#recuperar{
+    margin-right: 15px;
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 50px ;
+    
 }
 
  #f-registro {
