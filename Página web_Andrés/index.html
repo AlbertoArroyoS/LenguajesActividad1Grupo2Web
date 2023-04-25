@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <!-- ETIQUETA STYLE CSS PARA LA TABLA-->
+    <style>
+        table, th, td {
+            border: 1px solid black
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Noticias</h1>
+
+    <table style="width: 400px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Manzana</td>
+                <td>20€</td>
+            </tr>
+            <tr>
+                <td>Limones de pura Murcia</td>
+                <td>15€</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 35€</td>
+        </tfoot>
+    </table>
+
+
+    <!-- ul es lista NO ordenada-->
+    <ul>
+        <li>Elemento1</li>
+        <li>Elemento2</li>
+        <li>Elemento3</li>
+    </ul>
+
+    <!--ol es lista ordenada-->
+    <ol>
+        <li value="20">Elemento1</li>
+        <li>Elemento2</li>
+        <li>Elemento3</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">subElemento1</li>
+                <li style="list-style-type:armenian;">subElemento2</li>
+                <li style="list-style-type: lower-greek;">subElemento3</li>
+            </ol>
+        </li>
+    </ol>
+
+    <form action="/formulario" method="post">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" placeholder="Andrés">
+        <br>
+        <label for="apellido">Apellido: </label>
+        <input type="text" name="nombre" id="apellido" placeholder="Avendaño">
+        <br><br>
+        <label for="comentario">Comentario: </label><br>
+        <textarea name="comentario" id="comentario" cols="50" rows="10" placeholder="Ingrese comentario..."></textarea>
+        <br>
+        <!-- <input type="submit"> -->
+
+        <img src="ebook.jpg" width="200"><br>
+
+        <button type="button">Enviar</button>
+    </form>
+
+</body>
+</html>
