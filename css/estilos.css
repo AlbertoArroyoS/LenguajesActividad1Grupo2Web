@@ -218,6 +218,42 @@ a:link, a:visited, a:active {
     text-decoration:none;
 }
 
+ /* Formularios de registro Alberto */
+ #inicio-sesion{
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 50px ;
+    font-size: large;
+
+}
+#recuperar{
+    margin-right: 15px;
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 50px ;
+    
+}
+
+.main-registro-web{
+    
+   
+    height: auto;
+    background-color:  #FFF;
+    float:left;
+    width: 100%;
+    float:left
+    
+    
+}
+#f-registro {
+    width: auto;
+    height: auto;
+    background-color: #aedb0a;
+}
+#legend-registro{
+    background-color: #999;
+}
+
 /* *************************************************************************************** */
 /* CSS RESPONSIVO */
 @media screen and (max-width: 980px) {
@@ -238,6 +274,13 @@ a:link, a:visited, a:active {
     footer {
         width: 99%;
     }
+    .main-registro-web{
+        width: 99%;
+        height: auto;
+        float:left
+  
+    }
+
 }
 @media screen and (max-width: 700px) {
     /* 
@@ -305,6 +348,17 @@ a:link, a:visited, a:active {
     #a-header {
         font-size: 25pt;
     }
+    .main-registro-web{
+        width: 98%;
+        height: auto;
+        margin-top: none;
+         
+    }
+    #f-registro{
+        width: 94%;
+        height: auto;
+    }
+
   
     
 
@@ -342,28 +396,15 @@ a:link, a:visited, a:active {
     footer {
         width: 96%;
     }
+    .main-registro-web{
+        width: 96%;
+    }
+    #f-registro{
+        width: 91%;
+       
 
-
-    
+    }
+  
 }
 
- /* Formulario de registro */
-#inicio-sesion{
-    text-align: center;
-    color: #FFF;
-    margin-bottom: 50px ;
-    font-size: large;
-
-}
-#recuperar{
-    margin-right: 15px;
-    text-align: center;
-    color: #FFF;
-    margin-bottom: 50px ;
-    
-}
-
- #f-registro {
-    
-}
 /* **************  FIN ESTILOS ALBERTO ******************************************/

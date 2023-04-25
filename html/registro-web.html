@@ -44,8 +44,8 @@
             <br/>
             <li><a href="#" id="a-header" class="div-redondeado2"> Cuenta </a>
                 <ul id="ul-desplegable">
-                    <li><a href="./html/noticias.html" id="a-header2">Iniciar sesión</a></li>
-                    <li><a href="./html/quienes-somos.html" id="a-header2">Registrarse</a></li>
+                    <li><a href="iniciar-sesion.html" id="a-header2">Iniciar sesión</a></li>
+                    <li><a href="registro-web.html" id="a-header2">Registrarse</a></li>
                 </ul>
             </li>
         </ul>
@@ -59,23 +59,73 @@
  <!-- HASTA AQUI ES LA CABECERA Y MENU DESPLEGABLE-->
     
  <!-- Secciones -->
-    <main>
-        <form id="f-registro">
-            <h4>Iniciar sesion</h4>
+    <main class="main-registro-web">
+        <h2>FORMULARIO DE REGISTRO WEB</h2>
+        <form action="procesarPeticion.jsp" method="get" ></form>
+    
+            <fieldset id="f-registro" class="">
 
-            <div>
+                <legend id="legend-registro">Datos de usuario:</legend>
+
+                <div>
                 
-                <input id="nombre" type="text" name="nombre" placeholder="Usuario"/>
-                <br/>
-                <input id="pass" type="password" name="pass" placeholder="Contraseña" />
-                <br/>
-                <a href=" url" id="r-nuevo">Nuevo usuario</a>
-                <input type="submit" value="Acceder"/>
-                <br/>	
-                ¿Recordar usuario? <input type="checkbox" name="recordar" value="Y" />
-                <br/>	
+                    <label for="nombre">Nick*: </label>
+                    <input id="nombre" type="text" name="nombre" placeholder="Nick" required/>
+                    <br/>
+                    <label for="pass">Password*: </label>
+                    <input id="pass" type="password" name="pass" placeholder="Contraseña" />
+                    <br/>
+                    <br/>
+                    Email*: <input type="email" name="email" placeholder="Escriba su email" required/>
+                    <br/>
+                    <br/>
+                    <label for="tipo-running">Disciplina de running preferida: </label>
+                    <br />	
+                    <input type="checkbox" name="tipo-running" value="MT" checked/>Maratón<br />	
+                    <input type="checkbox" name="tipo-running" value="10K" checked/>10k<br />	
+                    <input type="checkbox" name="tipo-running" value="TR" />Trailrunning<br />	
+                    <input type="checkbox" name="tipo-running" value="TT" />Triatlón<br />	
+                    <br/>
+                    <input type="reset" value="Limpiar formulario" />
+                    <input type="submit" value="Enviar datos" />
 
-            </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend id="legend-registro">Datos personales</legend>
+                    <div>
+                        <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" autofocus/>
+                    <br/>
+                    <br/>
+                    <label for="apellidos">Apellidos: </label>
+                    <input type="text" name="apellidos"/>
+                    <br/>
+                    <br/>
+                    <label for="edadNumber">Edad*: </label>
+                     <input type="number" min="18" max="120" name="edadNumber" placeholder="Edad" required/>
+                    <br/>
+                    <br/>
+                    Teléfono: <input type="tel" name="telefono" placeholder="Escriba su número de telefono"/>
+                    <br/>
+                    <br/>
+                    <label for="estado_civil">Estado civil: </label>
+                    <br />	
+                    <input type="radio" name="estado_civil" value="S" />Soltero<br />
+                    <input type="radio" name="estado_civil" value="D" />Divorciado<br />	
+                    <input type="radio" name="estado_civil" value="C" />Casado<br />	
+                    <input type="radio" name="estado_civil" value="V" />Viudo<br />	
+
+
+                    </div>
+
+                    
+
+
+            </fieldset>
+
+
+            
             
         </form>
         
