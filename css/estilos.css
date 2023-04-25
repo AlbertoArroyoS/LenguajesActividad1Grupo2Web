@@ -16,7 +16,12 @@ body header {
     background-color: #e71919;
     margin-bottom: 10px;
     text-align: left;
-    
+     
+}
+#cabeceralogo {
+    display: inline-block;
+    vertical-align: middle;
+   
 }
 
 
@@ -30,7 +35,7 @@ nav {
     justify-content: space-between;
     margin: 0 5%;
     margin-bottom: 10px;
-    
+     
 }
 
 /* Publicidad */
@@ -43,6 +48,7 @@ aside {
     margin-bottom: 10px;
     float: left;
     object-fit: scale-down;
+    background-image:url("../img/logo3.jpg"); 
  
  
     
@@ -60,20 +66,11 @@ aside {
     
    
 }
-.publicidad{
-    position: relative;
-    width: 100vh;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    
-}
+
 .img-pub{
-    height: auto;
-    width: auto;
-    max-height: 960px;
-    max-width: 100px;
-    justify-content: center;
+    background-image:url("../img/publicidad3.png"); 
+    background-size: cover;
+    height: 100px;
 }
 
 /* Total de la seccion */
