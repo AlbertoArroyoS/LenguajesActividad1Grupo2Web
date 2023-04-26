@@ -1,0 +1,212 @@
+html{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: 'Kanit', sans-serif;
+    margin-left: 150px;
+    margin-top: 15px;
+    margin-right: 150px;
+    margin-bottom: 15px;
+    background-color:#F2F2F2 ;
+}
+
+
+/* Cabecera */
+
+body header {
+    background-color: #0378A6;
+}
+
+
+header h1 {
+    padding: 2rem 1rem;
+    font-size: 4rem;
+    color: #F2F2F2;
+    text-align: center;
+}
+
+/* Navegación */
+
+nav{
+
+    background-color: #06090a;
+    width: auto;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+nav h2 {
+    color: #F2F2F2;
+    padding: 0.5em 2em;
+}
+
+
+/* Parte de lectura */
+
+main{
+    width: 75%;
+    float: left;
+}
+
+/* Resumen */
+
+#resumen {
+    background: linear-gradient(#0378A6, 20%, #06090a);
+    
+    color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+/* Secciones */
+
+section { 
+    background: linear-gradient(#0378A6, 80%, #06090a);
+    margin-bottom: 15px;
+    padding: 5em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    background-color: #0378A6;
+
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #F2F2F2;
+}
+
+/* Post */
+
+.post {
+    font-family: 'Poppins';
+    padding: 2em;
+    padding-top: 0.5rem;
+    background-color:#F2F2F2 ;
+    
+}
+
+.post h3 {
+    margin-top: 1.5em;
+    font-size: 1.75em;
+    text-align: center;
+}
+.post p {
+    text-align: justify;
+    font-size: medium;
+    
+
+    
+}
+.post img {
+    float: left;
+    margin-right: 1.5em;
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+}
+
+
+/* Formulario */
+form {
+    overflow: hidden;
+}
+
+form fieldset {
+    margin-bottom: 1em;    
+}
+
+#deportes {
+    padding-top: 1em;
+    padding-left: 3em;
+}
+
+form div {
+    margin-bottom: 0.5em;
+}
+
+form table {
+    border-spacing: 3em 1em;
+}
+
+.diferente {
+    border-spacing:1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+
+#fecha {
+    margin-left: 3em;
+}
+
+button {
+    margin-top: 0.5em;
+    width: 200px;
+    height: 60px;
+    color: #F2F2F2;
+    background-color: #0378A6;
+    font-family: "kanit";
+    font-size: 2em;
+    border-color: #06090a;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+  button:hover {
+    box-shadow: inset 0 0 20px #0548637d, 0 0 20px rgba(69, 165, 202, 0.6);
+    outline-color: rgba(49, 138, 172, 0);
+    outline-offset: 80px;
+  }
+  button:active {
+    color: #BDD959;
+  }
+
+#boton {
+    display: flex;
+    justify-content: center;
+}
+
+/* Publicidad */
+
+aside{
+    background-image: url(publi2.svg);
+    background-size: cover;
+    width: 24%;
+    min-width: 100px;
+    height: 680px;
+    overflow: hidden;
+    float: right;
+}
+
+/* footer */
+
+footer{
+    padding: 0.5em 2em;
+    background-color: #BDD959;
+    clear: both;
+}
+
+#enlaces {
+    padding: 1em 0.5em;
+}
+
+#inicio {
+    float: left;
+}
+#contacto {
+    float: right;
+}
+
+#licencia {
+    text-align: center;
+}
