@@ -83,7 +83,7 @@ aside {
 /* Total de la seccion */
 section {
     width: 958px;
-    height: 600px;
+    height: auto;
     margin-right: 10px;
     margin-bottom: 10px;
     background-color: #999;
@@ -98,31 +98,34 @@ section {
 /* Cabecera de la seccion */
 section header {
     width: 98%;
-    height: 100px;
+    height: auto;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
     background-color: #FFF;
+    text-align: center
 }
 /* Articulos de la seccion, articulo 1 y articulo 2 */ 
 section article {
     width: 98%;
-    height: 200px;
+    height: auto;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
     background-color: #FFF;
+    text-align: center
 }
 
 /* Selector para la etiqueta 'footer' que sea hijo de la etiqueta 'section' */
 /* Pie de la seccion */
 section footer {
     width: 98%;
-    height: 50px;
+    height: auto;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
     background-color: #FFF;
+    text-align: center
 }
 
 
