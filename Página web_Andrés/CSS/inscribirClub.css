@@ -1,22 +1,28 @@
 html{
+    min-width: 360px;
     font-family: 'Kanit', sans-serif;
     font-family: 'Poppins', sans-serif;
+    background-image: url(fondo3.svg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    
 }
 
 body{
     font-family: 'Kanit', sans-serif;
-    margin-left: 150px;
-    margin-top: 15px;
-    margin-right: 150px;
-    margin-bottom: 15px;
-    background-color:#F2F2F2 ;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    min-width: 360px;
+    
 }
 
 
 /* Cabecera */
 
 body header {
-    background-color: #0378A6;
+    background-color: #2b3e43a1;
 }
 
 
@@ -34,7 +40,7 @@ nav{
     background-color: #06090a;
     width: auto;
     height: 60px;
-    margin-bottom: 15px;
+    margin-bottom: 2%;
 }
 
 nav h2 {
@@ -46,33 +52,26 @@ nav h2 {
 /* Parte de lectura */
 
 main{
-    width: 75%;
-    float: left;
-}
-
-/* Resumen */
-
-#resumen {
-    background: linear-gradient(#0378A6, 20%, #06090a);
-    
-    color: #F2F2F2;
+   
+    /* float: left; */
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
+    flex-direction: row;
+    
 
+}
 
 
 /* Secciones */
 
 section { 
-    background: linear-gradient(#0378A6, 80%, #06090a);
-    margin-bottom: 15px;
-    padding: 5em;
+    width: 60%;
+    background-color: #2b3e43a1;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    padding: 7%;
     padding-top: 1em;
-    padding-bottom: 2em;
-    background-color: #0378A6;
+    padding-bottom: 2em; 
 
 }
 
@@ -89,14 +88,17 @@ section h2 {
     padding: 2em;
     padding-top: 0.5rem;
     background-color:#F2F2F2 ;
-    
+    overflow: hidden;
 }
 
 .post h3 {
     margin-top: 1.5em;
     font-size: 1.75em;
     text-align: center;
+    overflow: hidden;
+
 }
+
 .post p {
     text-align: justify;
     font-size: medium;
@@ -108,11 +110,16 @@ section h2 {
     float: left;
     margin-right: 1.5em;
     margin-top: 2.5em;
-    margin-bottom: 1.5em;
+    margin-top: 4em;
+    margin-bottom: 4em;
 }
 
 
 /* Formulario */
+#form_completo {
+    clear: both;
+}
+
 form {
     overflow: hidden;
 }
@@ -136,7 +143,7 @@ form table {
 
 .diferente {
     border-spacing:1em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     margin-left: 2em;
 }
 
@@ -149,7 +156,7 @@ button {
     width: 200px;
     height: 60px;
     color: #F2F2F2;
-    background-color: #0378A6;
+    background-color: #2b3e43;
     font-family: "kanit";
     font-size: 2em;
     border-color: #06090a;
@@ -160,15 +167,16 @@ button {
     outline: none;
     border-radius: 5px;
     border: none;
+    
 }
 
   button:hover {
-    box-shadow: inset 0 0 20px #0548637d, 0 0 20px rgba(69, 165, 202, 0.6);
+    box-shadow: inset 0 0 20px #6b6e6faa, 0 0 20px rgba(23, 45, 53, 0.6);
     outline-color: rgba(49, 138, 172, 0);
     outline-offset: 80px;
   }
   button:active {
-    color: #BDD959;
+    color: #b2b67e;
   }
 
 #boton {
@@ -180,25 +188,28 @@ button {
 
 aside{
     background-image: url(publi2.svg);
-    background-size: cover;
+    background-size: contain;
     width: 24%;
-    min-width: 100px;
-    height: 680px;
+    height: 108em;
     overflow: hidden;
-    float: right;
+   /*  float: right; */
 }
 
 /* footer */
 
 footer{
     padding: 0.5em 2em;
-    background-color: #BDD959;
+    background-color: #b2b67e;
     clear: both;
 }
+
+
+/* Enlaces */
 
 #enlaces {
     padding: 1em 0.5em;
 }
+
 
 #inicio {
     float: left;
@@ -206,6 +217,17 @@ footer{
 #contacto {
     float: right;
 }
+
+a:link {
+    color: #06090a;
+}
+
+a:visited {
+    color: #f2f2f2;
+}
+
+/* Licencia */ 
+
 
 #licencia {
     text-align: center;

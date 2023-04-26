@@ -23,7 +23,6 @@
 
 
     <main>
-        </section>
         <section>
             <h2>¡Preparados, listos... </h2>
             <article class="post"> 
@@ -36,158 +35,160 @@
                     <p>Ya sea que estés empezando en el mundo del running o seas un corredor experimentado, nuestro club tiene algo que ofrecer para todos los niveles. Además, el hecho de unirse a nuestro club es una excelente manera de mantenerse motivado y comprometido con tus metas a largo plazo.</p>
 
                     <p><b>¡No esperes más y únete a nuestro club hoy mismo!</b> Incríbete y comienza a disfrutar de todos los beneficios de ser parte de nuestra comunidad de corredores.</p>
-                    <h3>Inscríbete</h3>
-                    <br>
 
-                    <form action="procesarPeticion.jsp" method="post">
-                        <fieldset>
-                        <legend>Datos personales</legend>
-                        
-                        <div>
-                        <table>
-                            <tr>
-                                <td><label for="nombre">Nombre: </label>
-                                <input id="nombre" type="text" name="nombre"/></td>
-                                    
-                                <td><label for="Apellidos">Apellidos: </label>
-                                <input id="Apellidos" type="text" name="Apellidos"/></td>
-                            </tr>
-                        </table>                
-                        </div>
+                    <div id="form_completo">
+                        <h3>Inscríbete</h3>
+                        <br>
 
-                        <div>
-                        <table class="diferente">
-                            <tr>
-                                <td><label for="sexo">Sexo:</label></td>
-                                <td><input id="sexo" type="radio" name="sexo" value="M"/>Mujer</td>
-                                <td><input id="sexo" type="radio" name="sexo" value="H"/>Hombre </td>
-                                <td><input id="sexo" type="radio" name="sexo" value=" "/>No indica </td>
-                            </tr>
-                        </table>
-                        </div>
-
-                        <div id="fecha">
-                        <label for="fecha_nacimiento">Fecha de nacimiento:  </label>
-                        <input id="fehca_nacimiento" type="date" name="fecha_nacimiento"/>
-                        </div>
-
-                        <div>
-                        <table>
-                            <tr>
-                                <td><label for="municipio">Municipio:   </label>
-                                <select id="municipio" name="municipio">
-                                <option value="Álava">Álava</option>
-                                <option value="Albacete">Albacete</option>
-                                <option value="Alicante">Alicante</option>
-                                <option value="Almería">Almería</option>
-                                <option value="Asturias">Asturias</option>
-                                <option value="Ávila">Ávila</option>
-                                <option value="Badajoz">Badajoz</option>
-                                <option value="Barcelona">Barcelona</option>
-                                <option value="Burgos">Burgos</option>
-                                <option value="Cáceres">Cáceres</option>
-                                <option value="Cádiz">Cádiz</option>
-                                <option value="Cantabria">Cantabria</option>
-                                <option value="Castellón">Castellón</option>
-                                <option value="Ciudad Real">Ciudad Real</option>
-                                <option value="Córdoba">Córdoba</option>
-                                <option value="Cuenca">Cuenca</option>
-                                <option value="Gerona">Gerona</option>
-                                <option value="Granada">Granada</option>
-                                <option value="Guadalajara">Guadalajara</option>
-                                <option value="Guipúzcoa">Guipúzcoa</option>
-                                <option value="Huelva">Huelva</option>
-                                <option value="Huesca">Huesca</option>
-                                <option value="Islas Baleares">Islas Baleares</option>
-                                <option value="Jaén">Jaén</option>
-                                <option value="La Coruña">La Coruña</option>
-                                <option value="La Rioja">La Rioja</option>
-                                <option value="Las Palmas">Las Palmas</option>
-                                <option value="León">León</option>
-                                <option value="Lérida">Lérida</option>
-                                <option value="Lugo">Lugo</option>
-                                <option value="Madrid">Madrid</option>
-                                <option value="Málaga">Málaga</option>
-                                <option value="Murcia">Murcia</option>
-                                <option value="Navarra">Navarra</option>
-                                <option value="Orense">Orense</option>
-                                <option value="Palencia">Palencia</option>
-                                <option value="Pontevedra">Pontevedra</option>
-                                <option value="Salamanca">Salamanca</option>
-                                <option value="Santa Cruz de Tenerife">Santa Cruz de Tenerife</option>
-                                <option value="Segovia">Segovia</option>
-                                <option value="Sevilla">Sevilla</option>
-                                <option value="Soria">Soria</option>
-                                <option value="Tarragona">Tarragona</option>
-                                <option value="Teruel">Teruel</option>
-                                <option value="Toledo">Toledo</option>
-                                <option value="Valencia">Valencia</option>
-                                <option value="Valladolid">Valladolid</option>
-                                <option value="Vizcaya">Vizcaya</option>
-                                <option value="Zamora">Zamora</option>
-                                <option value="Zaragoza">Zaragoza</option>
-                            </select></td>
-
-                            <td><label for="dni">DNI:  </label>
-                            <input id=dni type="number" name="DNI" placeholder="12345678X"/></td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="telefono">Teléfono: </label>
-                            <input type="tel" name="telefono" placeholder="+34 999 999 999"/></td>
-
-                            <td><label for="email">Email:  </label>
-                            <input id=email type="email" name="email" placeholder="ejemplo@dominio.es"/></td>
-                        </tr>
-                        </table>
-                        </div>
-                        
-                    </fieldset>
-                    <fieldset id="deportes">
-                        <legend>Datos deportivos</legend>
-                        Modalidades preferidas: <br>
-
-                        <div>
-                        <table>
-                            <tr>
-                                <td>Ruta<input type="checkbox" name="ruta" id="ruta"></td>
-                                <td>Cross<input type="checkbox" name="cross" id="cross"></td>
-                                <td>Trail<input type="checkbox" name="trail" id="trail"></td>
-                            </tr>
-                            <tr>
-                                <td>Media<input type="checkbox" name="media" id="media"></td>
-                                <td>Maratón<input type="checkbox" name="maraton" id="maraton"></td>
-                                <td>Triatlón<input type="checkbox" name="triatlón" id="triatlón"> </td> 
-                            </tr>
-                        </table>
-                        </div>
-
-                        <div>
-                        <label for="dia_entreno">Marque qué dos días prefiere entrenar: </label><br>
-                            <input type="radio" name="dia_entreno" value="LMX" />Lunes y Miércoles<br />	
-                            <input type="radio" name="dia_entreno" value="MJ" />Martes y Jueves<br />	
-                            <input type="radio" name="dia_entreno" value="MXV" />Miércoles y viernes<br />
-                            <input type="radio" name="dia_entreno" value="FS" />Fines de semana<br />
-                        </select>
-                        <div>
+                        <form action="procesarPeticion.jsp" method="post">
+                            <fieldset>
+                            <legend>Datos personales</legend>
                             
-                    </fieldset>
-                    
-                    <div id="boton">
-                        <button type="submit"><b><em>...DENTRO!</em></b></button>
+                            <div>
+                            <table>
+                                <tr>
+                                    <td><label for="nombre">Nombre: </label>
+                                    <input id="nombre" type="text" name="nombre"/></td>
+                                        
+                                    <td><label for="Apellidos">Apellidos: </label>
+                                    <input id="Apellidos" type="text" name="Apellidos"/></td>
+                                </tr>
+                            </table>                
+                            </div>
+
+                            <div>
+                            <table class="diferente">
+                                <tr>
+                                    <td><label for="sexo">Sexo:</label></td>
+                                    <td><input id="sexo" type="radio" name="sexo" value="M"/>Mujer</td>
+                                    <td><input id="sexo" type="radio" name="sexo" value="H"/>Hombre </td>
+                                    <td><input id="sexo" type="radio" name="sexo" value=" "/>No indica </td>
+                                </tr>
+                            </table>
+                            </div>
+
+                            <div id="fecha">
+                            <label for="fecha_nacimiento">Fecha de nacimiento:  </label>
+                            <input id="fehca_nacimiento" type="date" name="fecha_nacimiento"/>
+                            </div>
+
+                            <div>
+                            <table>
+                                <tr>
+                                    <td><label for="municipio">Municipio:   </label>
+                                    <select id="municipio" name="municipio">
+                                    <option value="Álava">Álava</option>
+                                    <option value="Albacete">Albacete</option>
+                                    <option value="Alicante">Alicante</option>
+                                    <option value="Almería">Almería</option>
+                                    <option value="Asturias">Asturias</option>
+                                    <option value="Ávila">Ávila</option>
+                                    <option value="Badajoz">Badajoz</option>
+                                    <option value="Barcelona">Barcelona</option>
+                                    <option value="Burgos">Burgos</option>
+                                    <option value="Cáceres">Cáceres</option>
+                                    <option value="Cádiz">Cádiz</option>
+                                    <option value="Cantabria">Cantabria</option>
+                                    <option value="Castellón">Castellón</option>
+                                    <option value="Ciudad Real">Ciudad Real</option>
+                                    <option value="Córdoba">Córdoba</option>
+                                    <option value="Cuenca">Cuenca</option>
+                                    <option value="Gerona">Gerona</option>
+                                    <option value="Granada">Granada</option>
+                                    <option value="Guadalajara">Guadalajara</option>
+                                    <option value="Guipúzcoa">Guipúzcoa</option>
+                                    <option value="Huelva">Huelva</option>
+                                    <option value="Huesca">Huesca</option>
+                                    <option value="Islas Baleares">Islas Baleares</option>
+                                    <option value="Jaén">Jaén</option>
+                                    <option value="La Coruña">La Coruña</option>
+                                    <option value="La Rioja">La Rioja</option>
+                                    <option value="Las Palmas">Las Palmas</option>
+                                    <option value="León">León</option>
+                                    <option value="Lérida">Lérida</option>
+                                    <option value="Lugo">Lugo</option>
+                                    <option value="Madrid">Madrid</option>
+                                    <option value="Málaga">Málaga</option>
+                                    <option value="Murcia">Murcia</option>
+                                    <option value="Navarra">Navarra</option>
+                                    <option value="Orense">Orense</option>
+                                    <option value="Palencia">Palencia</option>
+                                    <option value="Pontevedra">Pontevedra</option>
+                                    <option value="Salamanca">Salamanca</option>
+                                    <option value="Santa Cruz de Tenerife">Santa Cruz de Tenerife</option>
+                                    <option value="Segovia">Segovia</option>
+                                    <option value="Sevilla">Sevilla</option>
+                                    <option value="Soria">Soria</option>
+                                    <option value="Tarragona">Tarragona</option>
+                                    <option value="Teruel">Teruel</option>
+                                    <option value="Toledo">Toledo</option>
+                                    <option value="Valencia">Valencia</option>
+                                    <option value="Valladolid">Valladolid</option>
+                                    <option value="Vizcaya">Vizcaya</option>
+                                    <option value="Zamora">Zamora</option>
+                                    <option value="Zaragoza">Zaragoza</option>
+                                </select></td>
+
+                                <td><label for="dni">DNI:  </label>
+                                <input id=dni type="number" name="DNI" placeholder="12345678X"/></td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="telefono">Teléfono: </label>
+                                <input type="tel" name="telefono" placeholder="+34 999 999 999"/></td>
+
+                                <td><label for="email">Email:  </label>
+                                <input id=email type="email" name="email" placeholder="ejemplo@dominio.es"/></td>
+                            </tr>
+                            </table>
+                            </div>
+                            
+                        </fieldset>
+                        <fieldset id="deportes">
+                            <legend>Datos deportivos</legend>
+                            Modalidades preferidas: <br>
+
+                            <div>
+                            <table>
+                                <tr>
+                                    <td>Ruta<input type="checkbox" name="ruta" id="ruta"></td>
+                                    <td>Cross<input type="checkbox" name="cross" id="cross"></td>
+                                    <td>Trail<input type="checkbox" name="trail" id="trail"></td>
+                                </tr>
+                                <tr>
+                                    <td>Media<input type="checkbox" name="media" id="media"></td>
+                                    <td>Maratón<input type="checkbox" name="maraton" id="maraton"></td>
+                                    <td>Triatlón<input type="checkbox" name="triatlón" id="triatlón"> </td> 
+                                </tr>
+                            </table>
+                            </div>
+
+                            <div>
+                            <label for="dia_entreno">Marque qué dos días prefiere entrenar: </label><br>
+                                <input type="radio" name="dia_entreno" value="LMX" />Lunes y Miércoles<br />	
+                                <input type="radio" name="dia_entreno" value="MJ" />Martes y Jueves<br />	
+                                <input type="radio" name="dia_entreno" value="MXV" />Miércoles y viernes<br />
+                                <input type="radio" name="dia_entreno" value="FS" />Fines de semana<br />
+                            </select>
+                            <div>
+                                
+                        </fieldset>
+                        
+                        <div id="boton">
+                            <button type="submit"><b><em>...DENTRO!</em></b></button>
+                        </div>
+                        
+                        </form>
                     </div>
-                    
-                    </form>
                 </span>   
             </article>
         </section>
-
-    
-    </main>
-
+        
     <aside>
   
     </aside>
+    </main>
+
 </body>
 
 <footer>
