@@ -25,13 +25,13 @@ body header {
      
 }
 #nombre-web{
+    float: right;
     
 }
 #cabeceralogo {
     display: inline-block;
-    vertical-align: middle;
-    display: inline;
-    display: flex;
+  
+    
    
 }
 
@@ -259,7 +259,7 @@ a:link, a:visited, a:active {
 #f-registro {
     width: auto;
     height: auto;
-    background-color: #aedb0a;
+    background-color: #b9e3f9;
 }
 #legend-registro{
     background-color: #999;
@@ -333,8 +333,6 @@ a:link, a:visited, a:active {
 
         width: 97%;
         height: 100px;
-    
-        background-color:#f88383;
     }
 
     nav ul{
@@ -389,7 +387,8 @@ a:link, a:visited, a:active {
     }
     
     nav {
-        height: 96%;
+        height: 50px;
+        width: 96%;
     }
     
     header {
