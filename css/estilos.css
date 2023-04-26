@@ -11,18 +11,21 @@ body {
     margin-top: 10px;
     padding: 10px;
     background-color:#F2F2F2 ;
-    background-image: url("../img/fondo1.jpg");
+  /*  background-image: url("../img/fondo1.jpg"); */
     
 }
 /* Cabecera de la pagina */
 body header {
-    width: 100%;
+    width: 960px;
     height: 100px;
-    background-color: #e71919;
     background-color: #0378A6;
     margin-bottom: 10px;
     text-align: left;
+    text-align: center;
      
+}
+#nombre-web{
+    
 }
 #cabeceralogo {
     display: inline-block;
@@ -36,13 +39,15 @@ body header {
 /* barra de navegacion */
 nav {
    
-    height: 99px;
+    height: 60px;
+    width: 960px;
+    background-color: black;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    margin: 0 5%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    
      
 }
 
@@ -82,7 +87,7 @@ aside {
 
 /* Total de la seccion */
 section {
-    width: 958px;
+    width: 960px;
     height: auto;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -131,7 +136,7 @@ section footer {
 
 /*Pie de la pagina */
 footer {
-    width: 100%;
+    width: 960px;
     height: 100px;
     background-color: #999;
     background-color: #0378A6;
@@ -160,16 +165,12 @@ https://evelb.es/css3-menu-desplegable-con-hover/    */
 /* configuracion de la barra de menu*/
 #a-header {
     color: #121111;
-    font-family: roboto-slab, serif;
-    font-weight: 300px;
-    font-style: normal;
-    font-size: 25pt;
+    font-size: 20pt;
     background-color: #FFF;   
 }
 
 .div-redondeado{
-    border-radius: 15px;
-    
+    border-radius: 15px;  
 }
 
 .div-redondeado2{
@@ -204,7 +205,7 @@ li a:hover{
 
 
 #a-header:hover {
-    color: #D84341;
+    color: #0378A6;
 }
 
 /* Estilo de la lista del menu */
@@ -270,16 +271,18 @@ a:link, a:visited, a:active {
     body {
         width: 99%;
     }
+    body header {
+        width: 99%; 
+    }
     section {
         width: 99%;
     }
     nav {
-        width: 90%;
+        width: 99%;
         
     }
     aside {
         width: 99%;
-        float: none;
     }
     footer {
         width: 99%;
@@ -305,10 +308,12 @@ a:link, a:visited, a:active {
     barar de navegacion
     https://www.youtube.com/watch?v=f7QujqArvIw
     */
-    
+    body header {
+        width: 98%; 
+    }
     aside {
         width: 98%;
-        float: left;
+        
     }
     section {
         width: 98%;
@@ -317,9 +322,8 @@ a:link, a:visited, a:active {
     }
     
     nav {
-        width: auto;
-        float: none;
-        
+        width: 98%;
+        float: none;    
         
     }
     footer{
@@ -356,7 +360,7 @@ a:link, a:visited, a:active {
         width: 97%;
     }
     #a-header {
-        font-size: 25pt;
+        font-size: 18pt;
     }
     .main-registro-web{
         width: 98%;
@@ -375,6 +379,15 @@ a:link, a:visited, a:active {
 }
 
 @media screen and (max-width: 480px) {
+    
+    body header {
+        width: 96%; 
+    }
+    aside {
+        width: 96%;
+        
+    }
+    
     nav {
         height: 96%;
     }
@@ -419,7 +432,7 @@ a:link, a:visited, a:active {
 
     }
     .img-pub{
-        background-image:url("../img/publicidad5.png");
+        background-image:url("../img/publicidad6.png");
 
     }
   
