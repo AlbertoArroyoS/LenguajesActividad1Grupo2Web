@@ -232,7 +232,7 @@ a:link, a:visited, a:active {
  /* Formularios de registro Alberto */
  #inicio-sesion{
     text-align: center;
-    color: #FFF;
+    color: black;
     margin-bottom: 50px ;
     font-size: large;
 
@@ -240,7 +240,7 @@ a:link, a:visited, a:active {
 #recuperar{
     margin-right: 15px;
     text-align: center;
-    color: #FFF;
+    color: black;
     margin-bottom: 50px ;
     
 }
