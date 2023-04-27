@@ -62,11 +62,10 @@
     <main class="main-registro-web">
         <h2>FORMULARIO DE REGISTRO WEB</h2>
 
-        <form action="procesarPeticion.jsp" method="get" ></form>
-    
-            <fieldset id="f-registro" class="">
-                <legend id="legend-registro">Datos de usuario:</legend>
-
+        <form action="procesarPeticion.jsp" method="get">
+            <fieldset>
+                <legend>Datos de usuario</legend>
+                <div>
                     <label for="nombre">Nick*: </label>
                     <input id="nombre" type="text" name="nombre" placeholder="Nick" required/>
                     <br/>
@@ -84,12 +83,12 @@
                     <input type="checkbox" name="tipo-running" value="TR" />Trailrunning<br />	
                     <input type="checkbox" name="tipo-running" value="TT" />Triatlón<br />
                     <br/>
-                    perteneces a la asociacion: <input type="checkbox" name="asociacion" value="Y" />
+                    Perteneces a la asociacion: <input type="checkbox" name="asociacion" value="Y" />
                     <br/>
                     Subscribirte al newsletter: <input type="checkbox" name="newsletter" value="Y" /> 	
                     <br/>
-                    <div>
-                        <label for="nombre">Nombre: </label>
+                    <br/>
+                    <label for="nombre">Nombre: </label>
                     <input type="text" name="nombre" autofocus/>
                     <br/>
                     <br/>
@@ -112,7 +111,10 @@
                     <input type="radio" name="estado_civil" value="V" />Viudo<br />
                     <br />
                     <input type="reset" value="Limpiar formulario" />
-                    <input type="submit" value="Enviar datos" />       
+                    <input type="submit" value="Enviar datos" /> 
+
+                </div>
+                          
                 
             </fieldset> 
         </form>

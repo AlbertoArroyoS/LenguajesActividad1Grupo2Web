@@ -41,7 +41,7 @@ nav {
    
     height: 60px;
     width: 960px;
-    background-color: black;
+    z-index: 4;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -53,6 +53,7 @@ nav {
 aside {
     position: relative;
     justify-content: center;
+    z-index: 1;
     width: 960px;
     height: 100px;
     margin-bottom: 10px;
@@ -80,6 +81,7 @@ aside {
     background-image:url("../img/publicidad4.png"); 
     background-size: cover;
     height: 100px;
+    z-index: 1;
 }
 
 /* Estilos Total de la seccion */
@@ -142,81 +144,98 @@ footer {
     background-color: #0378A6;
     clear: both;
 }
-/* Estilos del Menu desplegable*/
-#ul-header {
 
-    display: flex;
-    z-index: 1;
-    list-style: none;
-    padding: 10px;
+ /* **************************************************** */   
+/* Barra de navegacion para que tenga los elementos redondeados 
+https://desarrolloweb.com/articulos/barra-navegacion-horizontal-listas-css.html
+*/
+
+/*
+los estilos para cada uno de los elementos de la lista
+*/
+nav ul li{
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px 0 0;
+
+ }
+ /*
+ estilos para los enlaces ****************************
+ */
+
+
+ /*
+ estilo cuando el raton pasa encima
+ */
+
+
+/*  #navegador ul{
+    display: block;
+    
+    text-align: left;
+    
+}*/
+
+/* MENU DE NAVEGACION */
+nav ul{
+
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    top: 155px;
+    left: -109%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 4;
+    
+    
+    
 }
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+nav ul li a{
+    font-size: 30px;
+    border-radius: 0px;
+    color: #666;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: #860c0c;
+    color: #1cc536;
 
-#ul-header li ul {
+ }
+ .checkbtn{
+    font-size: 30px;
+    color: #FFF;
+    float:right;
+    line-height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
     display: none;
-    position: absolute;
+ }
+ #check{
+    display:none;
+ }
+ nav {
+    width: auto;
+    float: none;
 }
-/* Hacer que el menu sea desplegable y lo colocamos por bloques 
-https://evelb.es/css3-menu-desplegable-con-hover/    */
 
-#ul-header li:hover ul {
+.checkbtn{
     display: block;
 }
-
-/* Estilos Barra de navegacion , Menu y Cuenta*/
-#a-header {
-    color: white;
-    font-size: 20pt;
-    
-}
-
-/* Estilos del menu y de la cuenta */
-.div-menu{
-    margin-left: 15px; 
-}
-/* Estilo separacion  */
-.div-cuenta{
-    margin-left: 40px;  
-}
-/* Configuracion de la navegacion opcion Cuenta */
-#a-header2 {
-    color: #080808;
-    font-family: roboto-slab, serif;
-    font-weight: 300px;
-    font-style: normal;
-    font-size: 20pt;
-    margin-left: -25px;
-    text-align: left;
-    
-}
-
-/* Color Recuadro cuando te posicionas en las opciones del menu*/
-li a:hover{
-    background-color:aquamarine;
-    
+ #check:checked ~ul{
+    left:0;
  }
-/* Fondo del menu desplegable de la barra de navegacion */
-#ul-desplegable {
-    /* El ultimo valor es para hacerlo transparente */
-    background-color: rgba(7, 142, 183, 0.9);
-    padding-right: 1.8%;
-    padding-bottom: 0.8%;
-    width: auto;
-    
-}
 
-/* Color letras de la navegacion cuando te posicionas sobre ellas */
-#a-header:hover {
-    color: #0378A6;
-}
-
-/* Estilo de la lista del menu */
-#ul-desplegable li {
-    margin-top: 10px;
-    list-style-type: none;
-    text-align: left;
-}
-
-
+/* ******************************************************************* */
 /* Boton de nuevo usuario */
 #r-nuevo{
     background-color: #FFF;
