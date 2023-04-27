@@ -60,11 +60,10 @@
     
  <!-- Secciones -->
     <main>
-        <form id="inicio-sesion">
-            <h4>Iniciar sesion</h4>
-
-            <div>
-                
+        <form action="procesarPeticion.jsp" method="post">
+            
+            <div id="inicio-sesion">
+                <h4>Iniciar sesion</h4>
                 <input id="nombre" type="text" name="nombre" placeholder="Usuario" required/>
                 <br/>
                 <input id="pass" type="password" name="pass" placeholder="Contraseña" required />
@@ -78,11 +77,12 @@
                 <br/>
                 <br/>
                 <a href="registro-web.html" id="r-nuevo">Nuevo usuario</a>
-                <br/>	
+                <br/>
 
             </div>
-            
+
         </form>
+
         
     </main>
 

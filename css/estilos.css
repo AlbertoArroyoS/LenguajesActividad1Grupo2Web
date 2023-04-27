@@ -218,7 +218,7 @@ li a:hover{
     text-align: center;
     color: black;
     margin-bottom: 50px ;
-    font-size: large;
+    font-size: 20px;
 
 }
 /* Estilos Contraseña olvidada*/
@@ -236,7 +236,8 @@ li a:hover{
     background-color:  #FFF;
     float:left;
     width: 100%;
-    float:left
+    float:left;
+    margin-bottom: 10px;
     
     
 }
@@ -244,6 +245,12 @@ li a:hover{
     width: 97%;
     height: auto;
     background-color: #b9e3f9;
+    margin-bottom: 8px;
+}
+#f-registro2 {
+    width: 97%;
+    height: auto;
+    background-color: #eaf4ca;
     margin-bottom: 10px;
 }
 #legend-registro{
@@ -456,7 +463,7 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     }
 
     nav ul{
-        width: 50%;
+        width: 80%;
      
     }
     nav ul li{
@@ -564,6 +571,7 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
         width: 80%; 
         
     }
+ 
 
 
   

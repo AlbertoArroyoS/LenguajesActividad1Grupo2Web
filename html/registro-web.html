@@ -62,9 +62,9 @@
     <main class="main-registro-web">
         <h2>FORMULARIO DE REGISTRO WEB</h2>
 
-        <form action="procesarPeticion.jsp" method="get">
-            <fieldset>
-                <legend>Datos de usuario</legend>
+        <form action="procesarPeticion.jsp" method="post">
+            <fieldset id="f-registro">
+                <legend id="legend-registro" >Datos de usuario</legend>
                 <div>
                     <label for="nombre">Nick*: </label>
                     <input id="nombre" type="text" name="nombre" placeholder="Nick" required/>
@@ -88,6 +88,13 @@
                     Subscribirte al newsletter: <input type="checkbox" name="newsletter" value="Y" /> 	
                     <br/>
                     <br/>
+                     
+
+                </div> 
+            </fieldset> 
+            <fieldset id="f-registro2">
+                <legend id="legend-registro"> Datos personales</legend>
+                <div>
                     <label for="nombre">Nombre: </label>
                     <input type="text" name="nombre" autofocus/>
                     <br/>
@@ -111,12 +118,18 @@
                     <input type="radio" name="estado_civil" value="V" />Viudo<br />
                     <br />
                     <input type="reset" value="Limpiar formulario" />
-                    <input type="submit" value="Enviar datos" /> 
+                    <input type="submit" value="Enviar datos" />
+
+
+
+
 
                 </div>
-                          
-                
-            </fieldset> 
+
+
+
+
+            </fieldset>
         </form>
         
     </main>
