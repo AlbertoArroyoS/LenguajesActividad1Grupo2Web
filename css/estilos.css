@@ -146,37 +146,9 @@ footer {
 }
 
  /* **************************************************** */   
-/* Barra de navegacion para que tenga los elementos redondeados 
-https://desarrolloweb.com/articulos/barra-navegacion-horizontal-listas-css.html
-*/
-
-/*
-los estilos para cada uno de los elementos de la lista
-*/
-nav ul li{
-    display: inline-block;
-    text-align: center;
-    margin: 0 10px 0 0;
-
- }
- /*
- estilos para los enlaces ****************************
+/* MENU DE NAVEGACION
+https://www.youtube.com/watch?v=f7QujqArvIw
  */
-
-
- /*
- estilo cuando el raton pasa encima
- */
-
-
-/*  #navegador ul{
-    display: block;
-    
-    text-align: left;
-    
-}*/
-
-/* MENU DE NAVEGACION */
 nav ul{
 
     display: block;
@@ -189,9 +161,7 @@ nav ul{
     text-align: center;
     transition: all .5s;
     z-index: 4;
-    
-    
-    
+  
 }
 nav ul li{
     display: block;
