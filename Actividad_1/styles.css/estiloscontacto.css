@@ -1,0 +1,67 @@
+
+
+
+
+.cuerpo{
+
+    background-color:azure;
+    margin-top:20px;
+    margin-right: 80px;
+    margin-bottom:20px;
+    margin-left:80px;
+    font-family: 'Nunito Sans', sans-serif;
+   
+}
+.cabecera-contacto{
+    background-color:#0378A6;  
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 15px;  
+    height:80px;
+    width:100%;
+    font-size:1.5em ;
+    text-align: center;
+    color:white;
+}
+
+
+
+.formas{
+    min-height: 250px;
+    display: flex;
+    justify-content: center;    
+    padding:100px 90px;    
+    box-shadow: 0 0 20px rgba(119, 136, 153, 15);
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+    font-size: 35px;
+    border:1px solid;
+ 
+    }
+
+.form{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px;
+}
+label{
+    color: black;
+    font-size: 17px;
+    font-weight: 600;    
+    margin-bottom: 35px;
+
+}
+input,textarea{
+    padding: 17px 25px;
+    border-radius:25px ;
+    margin-bottom: 20px;
+    border: 1.7px solid;
+    outline:none;
+}
+.boton{
+    font-size:30px;
+    background-color:#c4e5f2;
+    cursor:pointer;
+}
