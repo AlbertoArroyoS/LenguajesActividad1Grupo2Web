@@ -113,7 +113,7 @@ body header {
 
 header h1 {
     padding: 2rem 1rem;
-    font-size: 5vh;
+    font-size: 8vh;
     color: #F2F2F2;
     text-align: center;
 }
@@ -177,6 +177,7 @@ section h2 {
 
 #texto {
     margin-top: 5vh;
+    margin-right: 2vh;
 }
 
 
