@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carreras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Carreras</h1>
+    </header>
+    <div class="card">
+        <div class="face front">
+            <img src="obstaculos.jpeg" alt="">
+        </div>
+        <div class="face back">
+            <h3>Carrera de obstáculos</h3>
+            <p>Supera desafíos y demuestra tu resistencia en la carrera de obstáculos. </p>
+            <div class="link">
+                <a href="#Inscripción">Inscríbete</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="face front">
+            <img src="parejas.jpeg" alt="">
+        </div>
+        <div class="face back">
+            <h3>Carrera por parejas</h3>
+            <p>Supera juntos los desafíos en la carrera por parejas. Coordina tu ritmo y comunicación para llegar a la meta como un equipo. Una experiencia única y divertida para compartir con alguien especial.</p>
+            <div class="link">
+                <a href="#Inscripción">Inscríbete</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="face front">
+            <img src="maraton.jpeg" alt="">
+        </div>
+        <div class="face back">
+            <h3>Maratón</h3>
+            <p>La maratón es una de las pruebas más duras del atletismo, que requiere de una gran preparación física y mental. Correr una maratón significa superar tus límites y enfrentar un desafío que te obliga a mantener el ritmo durante largas distancias.</p>
+            <div class="link">
+                <a href="#Inscripción">Inscríbete</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h2>¿A QUÉ ESPERAS PARA INSCRIBIRTE?</h2>
+    <form id="Inscripción">
+        <label for="nombre"> Nombre*: </label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+      
+        <label for="apellidos"> Apellidos*: </label>
+        <input type="text" id="apellidos" name="apellidos" required><br><br>
+      
+        <label for="fecha_nacimiento"> Fecha de nacimiento*: </label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+      
+        <label for="opciones"> Selecciona una carrera*: </label>
+        <select id="opciones" name="opciones">
+          <option value="1"> Obstáculo </option>
+          <option value="2"> Carrera por Parejas </option>
+          <option value="3"> Maratón </option>
+        </select><br><br>
+        <label for="sexo"> Sexo: </label><br>
+        <label for="hombre"> Hombre </label>
+        <input type="checkbox" id="hombre" name="hombre"><br>
+      
+        <label for="mujer"> Mujer </label>
+        <input type="checkbox" id="mujer" name="mujer"><br><br>
+        <button type="reset"> Limpiar </button>
+        <input type="submit" value="Enviar">
+      </form>
+    
+</body>
+</html>
