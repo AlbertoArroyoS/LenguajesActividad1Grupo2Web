@@ -11,71 +11,80 @@
     <title>Únete</title>
 </head>
 
-
 <body>
-    <header>
-        <h1 class="titulo">¡Únete al club!</h1>
-    </header>
-    
     <nav>
-        <h2>Navegación</h2>
+        <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" href="css/menu.png">
+                <img src="css/menu.png"/>    
+            </label>
+            <ul> 
+                <li><a class="active" href="#">Inicio</a></li>
+                <li><a href=" url">Sobre nosotros</a></li>
+                <li><a href=" url">Únete</a></li>
+                <li><a href=" url">Proximos eventos</a></li>
+                <li><a href=" url">Sobre nosotros</a></li>
+                <li><a href=" url">Contacto</a></li>  
+            </ul>
+        </div>     
+
     </nav>
 
 
-    <main>
-        <section>
-            <h2>¡Preparados, listos... </h2>
-            <article class="post"> 
-                <img  src="img/grupo.svg" alt="no se ha podido cargar la imagen" width= "50%">
-                <span id="texto">
-                    <p>Si te apasiona el <b><em>running</em></b> y quieres formar parte de una comunidad comprometida con la salud, la superación y el bienestar físico y mental, <b>¡nuestro club es para ti!</b></p>
+    <div class="cuerpo">
+        <header>
+            <h1 class="titulo">¡Únete al club!</h1>
+        </header>
+    
+         <main>
 
-                    <p>Con nosotros encontrarás <b>entrenamientos personalizados, compañerismo y apoyo mutuo</b>, así como la oportunidad de participar en carreras y eventos deportivos con otros corredores.</p>
+            <section>
+                <h2><em>¡Preparados, listos...</em></h2>
+                <article class="post"> 
+                    <img  src="img/grupo.svg" alt="no se ha podido cargar la imagen" width= "50%">
+                    <div id="texto">
+                        <p>Si te apasiona el <b><em>running</em></b> y quieres formar parte de una comunidad comprometida con la salud, la superación y el bienestar físico y mental, <b>¡nuestro club es para ti!</b></p>
 
-                    <p>Ya sea que estés empezando en el mundo del running o seas un corredor experimentado, nuestro club tiene algo que ofrecer para todos los niveles. Además, el hecho de unirse a nuestro club es una excelente manera de mantenerse motivado y comprometido con tus metas a largo plazo.</p>
+                        <p>Con nosotros encontrarás <b>entrenamientos personalizados, compañerismo y apoyo mutuo</b>, así como la oportunidad de participar en carreras y eventos deportivos con otros corredores.</p>
 
-                    <p><b>¡No esperes más y únete a nuestro club hoy mismo!</b> Incríbete y comienza a disfrutar de todos los beneficios de ser parte de nuestra comunidad de corredores.</p>
+                        <p>Ya sea que estés empezando en el mundo del running o seas un corredor experimentado, nuestro club tiene algo que ofrecer para todos los niveles. Además, el hecho de unirse a nuestro club es una excelente manera de mantenerse motivado y comprometido con tus metas a largo plazo.</p>
 
+                        <p><b>¡No esperes más y únete a nuestro club hoy mismo!</b> Incríbete y comienza a disfrutar de todos los beneficios de ser parte de nuestra comunidad de corredores.</p>
+                    </div>
                     <div id="form_completo">
                         <h3>Inscríbete</h3>
                         <br>
 
                         <form action="procesarPeticion.jsp" method="post">
-                            <fieldset>
-                            <legend>Datos personales</legend>
-                            
-                            <div>
-                            <table>
-                                <tr>
-                                    <td><label for="nombre">Nombre: </label>
-                                    <input id="nombre" type="text" name="nombre"/></td>
-                                        
-                                    <td><label for="Apellidos">Apellidos: </label>
-                                    <input id="Apellidos" type="text" name="Apellidos"/></td>
-                                </tr>
-                            </table>                
-                            </div>
 
-                            <div>
-                            <table class="diferente">
-                                <tr>
-                                    <td><label for="sexo">Sexo:</label></td>
-                                    <td><input id="sexo" type="radio" name="sexo" value="M"/>Mujer</td>
-                                    <td><input id="sexo" type="radio" name="sexo" value="H"/>Hombre </td>
-                                    <td><input id="sexo" type="radio" name="sexo" value=" "/>No indica </td>
-                                </tr>
-                            </table>
-                            </div>
+                            <fieldset id="datos_personales">
+                                <legend>Datos personales</legend>
+                                
+                                <div>
+                                
+                                    <label for="nombre">Nombre: </label>
+                                    <input id="nombre" type="text" name="nombre" placeholder="Andrés"/>
+                                </div>
 
-                            <div id="fecha">
-                            <label for="fecha_nacimiento">Fecha de nacimiento:  </label>
-                            <input id="fehca_nacimiento" type="date" name="fecha_nacimiento"/>
-                            </div>
+                                <div>     
+                                    <label for="Apellidos">Apellidos: </label>
+                                    <input id="Apellidos" type="text" name="Apellidos" placeholder="Avendaño Monteagudo"/>
+                                            
+                                </div>
 
-                            <div>
-                            <table>
-                                <tr>
-                                    <td><label for="municipio">Municipio:   </label>
+                                <div>
+                                    <label for="sexo">Sexo:</label>
+                                    <input id="sexo" type="radio" name="sexo" value="M"/>Mujer
+                                    <input id="sexo" type="radio" name="sexo" value="H"/>Hombre 
+                                    <input id="sexo" type="radio" name="sexo" value=" "/>No indica 
+                                </div>
+
+                                <div id="fecha">
+                                <label for="fecha_nacimiento">Fecha de nacimiento:  </label>
+                                <input id="fehca_nacimiento" type="date" name="fecha_nacimiento"/>
+                                </div>
+
+                                <div>
+                                    <label for="municipio">Municipio:</label>
                                     <select id="municipio" name="municipio">
                                     <option value="Álava">Álava</option>
                                     <option value="Albacete">Albacete</option>
@@ -127,68 +136,66 @@
                                     <option value="Vizcaya">Vizcaya</option>
                                     <option value="Zamora">Zamora</option>
                                     <option value="Zaragoza">Zaragoza</option>
-                                </select></td>
+                                    </select>
+                                </div>
 
-                                <td><label for="dni">DNI:  </label>
-                                <input id=dni type="number" name="DNI" placeholder="12345678X"/></td>
-                            </tr>
+                                <div>
+                                <label for="dni">DNI:  </label>
+                                <input id=dni type="number" name="DNI" placeholder="12345678X"/>
+                                </div>
 
-                            <tr>
-                                <td><label for="telefono">Teléfono: </label>
-                                <input type="tel" name="telefono" placeholder="+34 999 999 999"/></td>
+                                <div>
+                                <label for="telefono">Teléfono: </label>
+                                <input type="tel" name="telefono" placeholder="+34 999 999 999"/>
+                                </div>
 
-                                <td><label for="email">Email:  </label>
-                                <input id=email type="email" name="email" placeholder="ejemplo@dominio.es"/></td>
-                            </tr>
-                            </table>
-                            </div>
+                                <div>
+                                <label for="email">Email: </label>
+                                <input id=email type="email" name="email" placeholder="ejemplo@dominio.es"/>
+                                </div>
+                            </fieldset>
                             
-                        </fieldset>
-                        <fieldset id="deportes">
-                            <legend>Datos deportivos</legend>
-                            Modalidades preferidas: <br>
+                                                
+                            <fieldset id="deportes">
+                                <legend>Datos deportivos</legend>
+                                Modalidades preferidas: <br>
 
-                            <div>
-                            <table>
-                                <tr>
-                                    <td>Ruta<input type="checkbox" name="ruta" id="ruta"></td>
-                                    <td>Cross<input type="checkbox" name="cross" id="cross"></td>
-                                    <td>Trail<input type="checkbox" name="trail" id="trail"></td>
-                                </tr>
-                                <tr>
-                                    <td>Media<input type="checkbox" name="media" id="media"></td>
-                                    <td>Maratón<input type="checkbox" name="maraton" id="maraton"></td>
-                                    <td>Triatlón<input type="checkbox" name="triatlón" id="triatlón"> </td> 
-                                </tr>
-                            </table>
+                                <div>
+                                    Ruta<input type="checkbox" name="ruta" id="ruta">
+                                    Cross<input type="checkbox" name="cross" id="cross">
+                                    Trail<input type="checkbox" name="trail" id="trail">
+                                    Media<input type="checkbox" name="media" id="media">
+                                    Maratón<input type="checkbox" name="maraton" id="maraton"></td>
+                                    Triatlón<input type="checkbox" name="triatlón" id="triatlón"> 
+                                </div>
+
+                                <div>
+                                <label for="dia_entreno">Marque qué dos días prefiere entrenar: </label><br>
+                                    <input type="radio" name="dia_entreno" value="LMX" />Lunes y Miércoles<br />	
+                                    <input type="radio" name="dia_entreno" value="MJ" />Martes y Jueves<br />	
+                                    <input type="radio" name="dia_entreno" value="MXV" />Miércoles y viernes<br />
+                                    <input type="radio" name="dia_entreno" value="FS" />Fines de semana<br />
+                                </select>
+                                <div>
+                                    
+                            </fieldset>
+                            
+                            <div id="boton">
+                                <button type="submit"><b><em>...DENTRO!</em></b></button>
                             </div>
-
-                            <div>
-                            <label for="dia_entreno">Marque qué dos días prefiere entrenar: </label><br>
-                                <input type="radio" name="dia_entreno" value="LMX" />Lunes y Miércoles<br />	
-                                <input type="radio" name="dia_entreno" value="MJ" />Martes y Jueves<br />	
-                                <input type="radio" name="dia_entreno" value="MXV" />Miércoles y viernes<br />
-                                <input type="radio" name="dia_entreno" value="FS" />Fines de semana<br />
-                            </select>
-                            <div>
-                                
-                        </fieldset>
-                        
-                        <div id="boton">
-                            <button type="submit"><b><em>...DENTRO!</em></b></button>
-                        </div>
                         
                         </form>
-                    </div>
-                </span>   
-            </article>
-        </section>
-        
-    <aside>
-  
-    </aside>
-    </main>
+                    </div> 
+                </article>
+            </section>
 
+        <div>
+            <aside></aside>
+        </div>
+        
+            
+        </main>
+    </div>
 </body>
 
 <footer>

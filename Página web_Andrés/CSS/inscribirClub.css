@@ -5,17 +5,101 @@ html{
     background-image: url(fondo3.svg);
     background-repeat: repeat-y;
     background-size: cover;
-    
+
 }
 
-body{
-    font-family: 'Kanit', sans-serif;
-    margin-left: 10%;
-    margin-top: 10%;
-    margin-right: 10%;
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/* Navegación */
+
+nav{
+    background-color: #06090acb;
+    width: 100%;
+    height: 60px;
+    position: fixed ;
+    top: 0;
+    z-index: 1;
+
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ALBERTO---------------------------------------------------------------------------
+ */
+
+/* MENU DE NAVEGACION */
+
+.checkbtn img {
+    margin-left: 2em;
+    width: 100%;
+    cursor: pointer;
+}
+
+nav ul{
+
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 15%;
     margin-bottom: 10%;
-    min-width: 360px;
+    left: -109%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 4;
+ 
+}
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+nav ul li a{
+    padding: 0.25em 1.5em;
+    font-size: 1.5em;
+    border-radius: 5px;
+    color: #666;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #242323;
+    color: #fefffe;
+ }
+
+ #check{
+    display:none;
+ }
+
+.checkbtn{
+    width: 1em;
+    display: block;
     
+}
+ #check:checked ~ul{
+    left:0;
+ }
+
+
+/* --------------------------------------------------------------------------------------------------- */
+
+
+.cuerpo {
+    margin-left: 4vw;
+    margin-top: 10vh;
+    margin-right: 4vw;
+    margin-bottom: 2vh;
 }
 
 
@@ -23,52 +107,36 @@ body{
 
 body header {
     background-color: #2b3e43a1;
+    margin-bottom: 15px;
 }
 
 
 header h1 {
     padding: 2rem 1rem;
-    font-size: 4rem;
+    font-size: 5vh;
     color: #F2F2F2;
     text-align: center;
-}
-
-/* Navegación */
-
-nav{
-
-    background-color: #06090a;
-    width: auto;
-    height: 60px;
-    margin-bottom: 2%;
-}
-
-nav h2 {
-    color: #F2F2F2;
-    padding: 0.5em 2em;
 }
 
 
 /* Parte de lectura */
 
 main{
-   
     /* float: left; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     
-
 }
 
 
 /* Secciones */
 
 section { 
-    width: 60%;
+    width: 113vh;
     background-color: #2b3e43a1;
-    margin-bottom: 2%;
-    margin-right: 2%;
+    margin-bottom: 2vh;
+    margin-right: 3.4vw;
     padding: 7%;
     padding-top: 1em;
     padding-bottom: 2em; 
@@ -76,8 +144,9 @@ section {
 }
 
 section h2 {
+    padding: 0.5em;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 4vh;
     color: #F2F2F2;
 }
 
@@ -85,15 +154,16 @@ section h2 {
 
 .post {
     font-family: 'Poppins';
-    padding: 2em;
-    padding-top: 0.5rem;
+    padding: 3vh;
+    padding-top: 3vh;
     background-color:#F2F2F2 ;
     overflow: hidden;
 }
 
 .post h3 {
-    margin-top: 1.5em;
-    font-size: 1.75em;
+    margin-top: 20vh;
+    margin-bottom: 1vh;
+    font-size: 4vh;
     text-align: center;
     overflow: hidden;
 
@@ -101,55 +171,77 @@ section h2 {
 
 .post p {
     text-align: justify;
-    font-size: medium;
-    
+    font-size: 2vh;
+    margin-top: 3vh;
+}
 
-    
+#texto {
+    margin-top: 5vh;
 }
+
+
 .post img {
+    
     float: left;
-    margin-right: 1.5em;
-    margin-top: 2.5em;
-    margin-top: 4em;
-    margin-bottom: 4em;
+    margin-right: 3vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
+
+
+
+/* Publicidad */
+
+aside{
+    background-image: url(publi2.svg);
+    background-size: contain;
+    width: 45vh;
+    min-width: 35vh;
+    height: 675px;
+    
+   /*  float: right; */
+}
+
 
 
 /* Formulario */
+
 #form_completo {
     clear: both;
 }
 
 form {
     overflow: hidden;
+    padding: 0.5vh;
 }
 
+
 form fieldset {
-    margin-bottom: 1em;    
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;  
+    padding: 2vh;  
 }
 
 #deportes {
     padding-top: 1em;
-    padding-left: 3em;
+    padding-left: 2vh;
+    margin-bottom: 2vh; 
+}
+
+#deportes div {
+    padding-top: 1em;
+    padding-left: 3vh;
+    margin-bottom: 2vh; 
 }
 
 form div {
-    margin-bottom: 0.5em;
+    padding-top: 1em;
+    padding-left: 3vh;
+    margin-left: 2vh;
+    margin-bottom: 2vh; 
 }
 
-form table {
-    border-spacing: 3em 1em;
-}
-
-.diferente {
-    border-spacing:1em;
-    margin-bottom: 0.5em;
-    margin-left: 2em;
-}
-
-#fecha {
-    margin-left: 3em;
-}
 
 button {
     margin-top: 0.5em;
@@ -184,16 +276,7 @@ button {
     justify-content: center;
 }
 
-/* Publicidad */
 
-aside{
-    background-image: url(publi2.svg);
-    background-size: contain;
-    width: 24%;
-    height: 108em;
-    overflow: hidden;
-   /*  float: right; */
-}
 
 /* footer */
 

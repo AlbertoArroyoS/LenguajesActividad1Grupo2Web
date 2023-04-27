@@ -3,12 +3,105 @@ html{
     font-family: 'Poppins', sans-serif;
 }
 
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
 body{
+    background-color:#F2F2F2 ;
+}
+
+
+/* Navegación */
+
+nav{
+    background-color: #06090ad8;
+    width: 100%;
+    height: 60px;
+    position: fixed ;
+    top: 0;
+    z-index: 1;
+
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* ALBERTO---------------------------------------------------------------------------
+ */
+
+/* MENU DE NAVEGACION */
+
+.checkbtn img {
+    margin-left: 2em;
+    width: 100%;
+    cursor: pointer;
+}
+
+nav ul{
+
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 15%;
+    margin-bottom: 10%;
+    left: -109%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 4;
+ 
+}
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+nav ul li a{
+    padding: 0.25em 1.5em;
+    font-size: 1.5em;
+    border-radius: 5px;
+    color: #666;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #242323;
+    color: #fefffe;
+ }
+
+ #check{
+    display:none;
+ }
+
+.checkbtn{
+    width: 1em;
+    display: block;
+    
+}
+ #check:checked ~ul{
+    left:0;
+ }
+
+
+/* --------------------------------------------------------------------------------------------------- */
+
+
+/* Cuerpo */
+
+.cuerpo {
     margin-left: 150px;
-    margin-top: 15px;
+    margin-top: 75px;
     margin-right: 150px;
     margin-bottom: 15px;
-    background-color:#F2F2F2 ;
 }
 
 
@@ -16,6 +109,7 @@ body{
 
 body header {
     background-color: #0378A6;
+    margin-bottom: 15px;
 }
 
 
@@ -26,20 +120,6 @@ header h1 {
     text-align: center;
 }
 
-/* Navegación */
-
-nav{
-
-    background-color: #06090a;
-    width: auto;
-    height: 60px;
-    margin-bottom: 15px;
-}
-
-nav h2 {
-    color: #F2F2F2;
-    padding: 0.5em 2em;
-}
 
 
 /* Parte de lectura */
