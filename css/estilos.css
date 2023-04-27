@@ -123,7 +123,7 @@ section article {
 /* Estilos del Pie de la seccion */
 section footer {
     width: 98%;
-    height: auto;
+    height: 150px;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -277,6 +277,7 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
 .galeria-inicio li{
     margin: 5px;
 }
+/* Estilo para el tamaño de las fotos que se ven en pequeño en la pagina principal*/
 .galeria-inicio img{
     width: 180px;
     height: 200px;
@@ -312,16 +313,16 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     width: 100%;
     height: 60%;
     display: flex;
-    justify-content: center;
-    
-    
-    
+    justify-content: center;  
 }
+
 .imagen-modal a{
     color:#FFF;
     font-size: 40px;
     text-decoration: none;
-    margin: 0 10px;
+    margin-top: 100px;
+    margin-left: 5px;
+    margin-right: 25px;
 }
 /* Elegimos solo la segunda etiqueta <a> que es la que contiene la imagen*/
 .imagen-modal a:nth-child(2){
@@ -351,9 +352,20 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
 
 }
 
+/* Estipos pie de la seccion */
 
+.pie-seccion{
+    margin-top: 10px;
+    float: left
+}
 
+.pie-seccion img {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+}
 
+    
 
 /* *************************************************************************************** */
 /* CSS RESPONSIVO */
@@ -387,8 +399,8 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
         float:left
   
     }
-
 }
+
 @media screen and (max-width: 700px) {
     /* 
     Con width auto se tiene en cuenta el padding y el margen a la hora de calcular
@@ -511,6 +523,7 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     }
     section footer{
         width: 95%;
+        height: auto;
 
     }
     footer {
