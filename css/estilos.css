@@ -399,6 +399,9 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     section {
         width: 99%;
     }
+    .galeria-inicio{
+        justify-content: center;
+    }
     nav {
         width: 99%;
         
@@ -441,6 +444,9 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
         width: 98%;
         float: left;
         
+    }
+    .galeria-inicio{
+        justify-content: center;
     }
     
     nav {
