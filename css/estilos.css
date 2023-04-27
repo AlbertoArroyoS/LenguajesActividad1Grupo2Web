@@ -123,7 +123,7 @@ section article {
 /* Estilos del Pie de la seccion */
 section footer {
     width: 98%;
-    height: 150px;
+    height: auto;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -360,9 +360,25 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
 }
 
 .pie-seccion img {
-    width: 100px;
-    height: 100px;
-    margin: 15px;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+
+#letra-pie-seccion{
+    font-size: 30px;
+}
+
+/* Estilos seccion 2 carreras*/
+.proxima-carrera{
+    float: none;
+
+}
+
+.proxima-carrera img {
+    margin: 5px;
+    float:none;
+    text-align: left;
 }
 
     
@@ -462,7 +478,9 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     }
     section footer {
         width: 97%;
+        height: auto;
     }
+
     #a-header {
         font-size: 18pt;
     }
@@ -524,8 +542,11 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     section footer{
         width: 95%;
         height: auto;
-
     }
+    #letra-pie-seccion{
+        font-size: 25px;
+    }
+  
     footer {
         width: 96%;
     }
