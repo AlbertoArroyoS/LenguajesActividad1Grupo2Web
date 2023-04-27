@@ -456,10 +456,8 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     }
 
     nav ul{
-
-        width: 30%;
+        width: 50%;
      
-        
     }
     nav ul li{
         display: block;
@@ -506,11 +504,6 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     aside {
         width: 96%;
         
-    }
-    
-    nav {
-        height: 50px;
-        width: 96%;
     }
     
     header {
