@@ -3,6 +3,10 @@
 html{
     font-family: 'Poppins', sans-serif;
 }
+/* Eliminar el subrayado de los enlaces */
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
 
 body {
     width: 960px;
@@ -14,29 +18,25 @@ body {
   /*  background-image: url("../img/fondo1.jpg"); */
     
 }
-/* Cabecera de la pagina */
+/* Estilos de la Cabecera de la pagina */
 body header {
     width: 960px;
     height: 100px;
     background-color: #0378A6;
     margin-bottom: 10px;
     text-align: left;
-    text-align: center;
-     
+    text-align: center;    
 }
+
 #nombre-web{
-    float: right;
-    
+    float: right;   
 }
+
 #cabeceralogo {
     display: inline-block;
-  
-    
-   
 }
 
-
-/* barra de navegacion */
+/* Estilos de la Barra de navegacion */
 nav {
    
     height: 60px;
@@ -47,13 +47,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;
-    
-     
 }
 
-/* Publicidad */
+/* Estilos del Aside, la foto alargada debajo del menu*/
 aside {
-   
     position: relative;
     justify-content: center;
     width: 960px;
@@ -85,7 +82,7 @@ aside {
     height: 100px;
 }
 
-/* Total de la seccion */
+/* Estilos Total de la seccion */
 section {
     width: 960px;
     height: auto;
@@ -100,7 +97,7 @@ section {
 
 /* Selector para la etiqueta 'header' que sea hijo de la etiqueta 'section' */
 
-/* Cabecera de la seccion */
+/* Estilos de la Cabecera de la seccion */
 section header {
     width: 98%;
     height: auto;
@@ -108,9 +105,10 @@ section header {
     margin-left: 10px;
     margin-right: 10px;
     background-color: #FFF;
-    text-align: center
+    text-align: center;
+    
 }
-/* Articulos de la seccion, articulo 1 y articulo 2 */ 
+/* Estilos de los Articulos de la seccion, articulo 1 y articulo 2 */ 
 section article {
     width: 98%;
     height: auto;
@@ -122,7 +120,7 @@ section article {
 }
 
 /* Selector para la etiqueta 'footer' que sea hijo de la etiqueta 'section' */
-/* Pie de la seccion */
+/* Estilos del Pie de la seccion */
 section footer {
     width: 98%;
     height: auto;
@@ -130,11 +128,13 @@ section footer {
     margin-left: 10px;
     margin-right: 10px;
     background-color: #FFF;
-    text-align: center
+    text-align: center;
+   
+    
 }
 
 
-/*Pie de la pagina */
+/*Estilos del Pie de la pagina */
 footer {
     width: 960px;
     height: 100px;
@@ -142,11 +142,11 @@ footer {
     background-color: #0378A6;
     clear: both;
 }
-/* Menu desplegable*/
+/* Estilos del Menu desplegable*/
 #ul-header {
 
     display: flex;
-    z-index: 15;
+    z-index: 1;
     list-style: none;
     padding: 10px;
 }
@@ -162,21 +162,22 @@ https://evelb.es/css3-menu-desplegable-con-hover/    */
     display: block;
 }
 
-/* configuracion de la barra de menu*/
+/* Estilos Barra de navegacion , Menu y Cuenta*/
 #a-header {
-    color: #121111;
+    color: white;
     font-size: 20pt;
-    background-color: #FFF;   
+    
 }
 
-.div-redondeado{
-    border-radius: 15px;  
+/* Estilos del menu y de la cuenta */
+.div-menu{
+    margin-left: 15px; 
 }
-
-.div-redondeado2{
-    border-radius: 15px;
-    margin-left: 20px;  
+/* Estilo separacion  */
+.div-cuenta{
+    margin-left: 40px;  
 }
+/* Configuracion de la navegacion opcion Cuenta */
 #a-header2 {
     color: #080808;
     font-family: roboto-slab, serif;
@@ -188,12 +189,12 @@ https://evelb.es/css3-menu-desplegable-con-hover/    */
     
 }
 
-/* Recuadro cuando te posicionas en las opciones del menu*/
+/* Color Recuadro cuando te posicionas en las opciones del menu*/
 li a:hover{
     background-color:aquamarine;
     
  }
- /* Fondo del menu desplegable */
+/* Fondo del menu desplegable de la barra de navegacion */
 #ul-desplegable {
     /* El ultimo valor es para hacerlo transparente */
     background-color: rgba(7, 142, 183, 0.9);
@@ -203,7 +204,7 @@ li a:hover{
     
 }
 
-
+/* Color letras de la navegacion cuando te posicionas sobre ellas */
 #a-header:hover {
     color: #0378A6;
 }
@@ -216,20 +217,14 @@ li a:hover{
 }
 
 
-
 /* Boton de nuevo usuario */
-
 #r-nuevo{
     background-color: #FFF;
     font-family: roboto-slab, serif;
 
 }
-/* Eliminar el subrayado de los enlaces */
-a:link, a:visited, a:active {
-    text-decoration:none;
-}
 
- /* Formularios de registro Alberto */
+ /* Estilos Formularios de registro Alberto */
  #inicio-sesion{
     text-align: center;
     color: black;
@@ -237,6 +232,7 @@ a:link, a:visited, a:active {
     font-size: large;
 
 }
+/* Estilos Contraseña olvidada*/
 #recuperar{
     margin-right: 15px;
     text-align: center;
@@ -244,10 +240,9 @@ a:link, a:visited, a:active {
     margin-bottom: 50px ;
     
 }
-
+/* Formulario de registro en la web */
 .main-registro-web{
-    
-   
+
     height: auto;
     background-color:  #FFF;
     float:left;
@@ -264,6 +259,101 @@ a:link, a:visited, a:active {
 #legend-registro{
     background-color: #999;
 }
+/* Estilos de la galeria de fotos de la pagina principal y hacerla modal
+https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
+*/
+.galeria-inicio{
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.galeria-inicio li{
+    margin: 5px;
+}
+.galeria-inicio img{
+    width: 180px;
+    height: 200px;
+}
+/* Estilos del modal para galeria de fotos del inicio*/
+.galeria-modal{
+    display: none;
+}
+
+
+/* Uso target para que cuando haga click en la foto abra la galeria modal*/
+.galeria-modal:target{
+    display: block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* para que esta capa quede por encima del menu de navegacion interactivo*/
+    z-index: 2;
+    
+}
+
+.galeria-modal h3{
+    color:#FFF;
+    font-size: 20px;
+    text-align: center;
+    margin: 15px 0; 
+}
+
+.imagen-modal{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    
+    
+    
+}
+.imagen-modal a{
+    color:#FFF;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+/* Elegimos solo la segunda etiqueta <a> que es la que contiene la imagen*/
+.imagen-modal a:nth-child(2){
+    margin: 0;
+    height: 100%;
+}
+.imagen-modal img{
+    width: 50%;
+    max-width: 80%;
+    border: 7px solid #FFF;
+    box-sizing: border-box;
+}
+.cerrar-galeria{
+    display:block;
+    background: #FFF;
+    width: 25px;
+    height: 25px; 
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color:#080808;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+    margin-bottom: 20px;
+
+}
+
+
+
+
 
 /* *************************************************************************************** */
 /* CSS RESPONSIVO */
@@ -273,6 +363,10 @@ a:link, a:visited, a:active {
     }
     body header {
         width: 99%; 
+    }
+    section header {
+        width: 98%; 
+        height: auto;
     }
     section {
         width: 99%;
@@ -409,7 +503,7 @@ a:link, a:visited, a:active {
  
     section header {
         width: 95%;
-     
+        height: auto;
     }
 
     section article {
@@ -434,6 +528,19 @@ a:link, a:visited, a:active {
         background-image:url("../img/publicidad6.png");
 
     }
+    .galeria-inicio{
+        justify-content: center;
+    }
+    .galeria-modal{
+        width: 95%;
+        
+    }
+    .imagen-modal img{
+        width: 80%; 
+        
+    }
+
+
   
 }
 

@@ -35,7 +35,7 @@
     <nav>
         
         <ul id="ul-header">
-            <li><a href="#" id="a-header" class="div-redondeado">  Menú </a>
+            <li><a href="#" id="a-header" class="div-menu">  Menú </a>
                 <ul id="ul-desplegable">
                     <li><a href="./index.html" id="a-header2">Inicio</a></li>
                     <li><a href="./html/noticias.html" id="a-header2">Noticias</a></li>
@@ -47,7 +47,7 @@
                 </ul>
             </li>
             <br/>
-            <li><a href="#" id="a-header" class="div-redondeado2"> Cuenta </a>
+            <li><a href="#" id="a-header" class="div-cuenta"> Cuenta </a>
                 <ul id="ul-desplegable">
                     <li><a href="./html/iniciar-sesion.html" id="a-header2">Iniciar sesión</a></li>
                     <li><a href="./html/registro-web.html" id="a-header2">Registrarse</a></li>
@@ -75,25 +75,54 @@
 
             <article>
                 ARTICULO 1 SECCIÓN 1
-                <a href=" url a galeria de foros"> Fotos recientes</a>
-                    <!-- Podemos utilizar iconos o imágenes para hacer click sobre ellas -->
-                <br/>
-                <a href="galeria/galeria01.jpg" target="_blank">
-                    <img src="galeria/icon/galeria01.jpg"/>
-                </a>
-                <a href="galeria/galeria02.jpg" target="_blank">
-                    <img src="galeria/icon/galeria02.jpg"/>
-                </a>
-                <a href="galeria/galeria03.jpg" target="_blank">
-                    <img src="galeria/icon/galeria03.jpg"/>
-                </a>
-                <a href="galeria/galeria04.jpg" target="_blank">
-                    <img src="galeria/icon/galeria04.jpg"/>
-                </a>
-                <a href="galeria/galeria05.jpg" target="_blank">
-                    <img src="galeria/icon/galeria05.jpg"/>
-                </a>
-                
+
+                <ul class="galeria-inicio">
+                    <li><a href="#img1"><img src="galeria/galeria01.jpg"/></a></li>
+                    <li><a href="#img2"><img src="galeria/galeria02.jpg"/></a></li>
+                    <li><a href="#img3"><img src="galeria/galeria03.jpg"/></a></li>
+                    <li><a href="#img4"><img src="galeria/galeria04.jpg"/></li>
+                </ul>
+                <!-- Crear un div por cada imagen para que se habra la galeria modal -->
+                <div class="galeria-modal" id="img1">
+                    <h3> Foto 1</h3>
+                    <a class="cerrar-galeria" href="">X</a>
+                    <div class="imagen-modal">                    
+                        <a href="#img5">&#60;</a>
+                        <a href="#img2"><img src="galeria/galeria01.jpg"/></a>
+                        <a href="#img2">></a>                 
+                    </div>
+                </div>
+
+                <div class="galeria-modal" id="img2">
+                    <h3> Foto 2</h3>
+                    <a class="cerrar-galeria" href="">X</a>
+                    <div class="imagen-modal">                    
+                        <a href="#img1">&#60;</a>
+                        <a href="#img2"><img src="galeria/galeria02.jpg"/></a>
+                        <a href="#img3">></a>                 
+                    </div>
+                </div>
+
+                <div class="galeria-modal" id="img3">
+                    <h3> Foto 3</h3>
+                    <a class="cerrar-galeria" href="">X</a>
+                    <div class="imagen-modal">                    
+                        <a href="#img2">&#60;</a>
+                        <a href="#img3"><img src="galeria/galeria03.jpg"/></a>
+                        <a href="#img4">></a>                 
+                    </div>
+                </div>
+
+                <div class="galeria-modal" id="img4">
+                    <h3> Foto 4</h3>
+                    <a class="cerrar-galeria" href="">X</a>
+                    <div class="imagen-modal">                    
+                        <a href="#img3">&#60;</a>
+                        <a href="#img4"><img src="galeria/galeria04.jpg"/></a>
+                        <a href="#img1">></a>                 
+                    </div>
+                </div>
+ 
             </article>
 
             <article>
