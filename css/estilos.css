@@ -252,9 +252,10 @@ li a:hover{
     
 }
 #f-registro {
-    width: auto;
+    width: 97%;
     height: auto;
     background-color: #b9e3f9;
+    margin-bottom: 10px;
 }
 #legend-registro{
     background-color: #999;
@@ -399,7 +400,7 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     section {
         width: 99%;
     }
-    .galeria-inicio{
+     .galeria-inicio{
         justify-content: center;
     }
     nav {
@@ -416,7 +417,9 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
         width: 99%;
         height: auto;
         float:left
-  
+    }
+    #f-registro {
+        width: 96%;
     }
 }
 
@@ -497,7 +500,7 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
          
     }
     #f-registro{
-        width: 94%;
+        width: 95%;
         height: auto;
     }
 
