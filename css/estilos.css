@@ -376,11 +376,24 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
 }
 /* Estilos Contraseña olvidada*/
 #recuperar{
-    margin-right: 15px;
-    text-align: center;
+    width: 90%;
+    height: auto;
+    align-items: center;
     color: black;
     margin-bottom: 50px ;
+    font-size: 20px;
+    background-color:#2b3e43a1;
+    margin-top: 1px;
+    text-align: center;
+    float:left;
+    background-color: #f0f2f3cb;
+
     
+}
+#recuperar h4{
+    
+    font-size: 30px;
+    background-color: #f0f2f3cb;
 }
 /* Formulario de registro en la web */
 .main-registro-web{
@@ -451,6 +464,9 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
 
     }
     #inicio-sesion{
+        width: 95%;
+    }
+    #recuperar{
         width: 95%;
     }
    
@@ -614,6 +630,9 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     }
     #inicio-sesion{
         width: 94%;
+    }
+    #recuperar{
+        width: 95%;
     }
     
 
