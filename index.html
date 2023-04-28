@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,400;1,200;1,400;1,600&family=Poppins:ital,wght@0,400;0,500;1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css" type="text/css" media="screen">
-    
-    <title>NOMBRE PESTAÑA. - Inicio</title>
+    <title>Inicio</title>
 </head>
 
 <body>
@@ -29,13 +30,10 @@
 
     <nav>
         <input type="checkbox" id="check">
-            <label for="check" class="checkbtn" href="img/icono_barra.png">
-                <img src="icon/icono_barra.png"/>    
+            <label for="check" class="checkbtn" href="css/menu.png">
+                <img src="css/menu.png"/>    
             </label>
             <ul>  
-                
-
-             <!--   <li><a href="01_HOME.html"><img src="icon/icono_casa.png"/></a></li> -->
                 <li><a class="active" href="#">Inicio</a></li>
                 <li><a href=" url">Galeria de imagenes</a></li>
                 <li><a href=" url">Publicaciones</a></li>
@@ -48,107 +46,115 @@
     </nav>
  
 
+
+ <!-- HASTA AQUI ES LA CABECERA Y MENU DESPLEGABLE-->
+    
+ <!-- Secciones -->
+    <div class="cuerpo">
+        
     <aside>
         <div class="img-pub"></div>
  
     </aside>
 
- <!-- HASTA AQUI ES LA CABECERA Y MENU DESPLEGABLE-->
+
+
+        <main>
+            <section>
+                <header>
+                    <div class="banner-content">
+                        <h3>Bienvenido al club de corredores<span>.</span></h3>
+                        <p>DESCRIPCION, Web en la que podras encontrar toda la información del club.</p>
+                    
+                </header>
+
+                <article>
+                    ARTICULO 1 SECCIÓN 1
+
+                    <ul class="galeria-inicio">
+                        <li><a href="#img1"><img src="galeria/galeria01.jpg"/></a></li>
+                        <li><a href="#img2"><img src="galeria/galeria02.jpg"/></a></li>
+                        <li><a href="#img3"><img src="galeria/galeria03.jpg"/></a></li>
+                        <li><a href="#img4"><img src="galeria/galeria04.jpg"/></li>
+                    </ul>
+                    <!-- Crear un div por cada imagen para que se habra la galeria modal -->
+                    <div class="galeria-modal" id="img1">
+                        <h3> Foto 1</h3>
+                        <a class="cerrar-galeria" href="">X</a>
+                        <div class="imagen-modal">                    
+                            <a href="#img4">&#60;</a>
+                            <a href="#img2"><img src="galeria/galeria01.jpg"/></a>
+                            <a href="#img2">></a>                 
+                        </div>
+                    </div>
+
+                    <div class="galeria-modal" id="img2">
+                        <h3> Foto 2</h3>
+                        <a class="cerrar-galeria" href="">X</a>
+                        <div class="imagen-modal">                    
+                            <a href="#img1">&#60;</a>
+                            <a href="#img3"><img src="galeria/galeria02.jpg"/></a>
+                            <a href="#img3">></a>                 
+                        </div>
+                    </div>
+
+                    <div class="galeria-modal" id="img3">
+                        <h3> Foto 3</h3>
+                        <a class="cerrar-galeria" href="">X</a>
+                        <div class="imagen-modal">                    
+                            <a href="#img2">&#60;</a>
+                            <a href="#img4"><img src="galeria/galeria03.jpg"/></a>
+                            <a href="#img4">></a>                 
+                        </div>
+                    </div>
+
+                    <div class="galeria-modal" id="img4">
+                        <h3> Foto 4</h3>
+                        <a class="cerrar-galeria" href="">X</a>
+                        <div class="imagen-modal">                    
+                            <a href="#img3">&#60;</a>
+                            <a href="#img1"><img src="galeria/galeria04.jpg"/></a>
+                            <a href="#img1">></a>                 
+                        </div>
+                    </div>
     
- <!-- Secciones -->
-    <main>
-        <section>
-            <header>
-                <div class="banner-content">
-                    <h3>Bienvenido al club de corredores<span>.</span></h3>
-                    <p>DESCRIPCION, Web en la que podras encontrar toda la información del club.</p>
-                
-            </header>
+                </article>
 
-            <article>
-                ARTICULO 1 SECCIÓN 1
+                <article>
+                    ARTICULO 2 SECCIÓN 1
+                    <a href=" url" > Proximas carreras</a>
+                    <div class="proxima-carrera">
+                        <a href="img/cartel-maraton-ciudad-real-quijote-2022.jpg" target="_blank">
+                            <img src="img/icon/cartel-maraton-ciudad-real-quijote-2022 ICONO.jpg"/>
+                        </a>
 
-                <ul class="galeria-inicio">
-                    <li><a href="#img1"><img src="galeria/galeria01.jpg"/></a></li>
-                    <li><a href="#img2"><img src="galeria/galeria02.jpg"/></a></li>
-                    <li><a href="#img3"><img src="galeria/galeria03.jpg"/></a></li>
-                    <li><a href="#img4"><img src="galeria/galeria04.jpg"/></li>
-                </ul>
-                <!-- Crear un div por cada imagen para que se habra la galeria modal -->
-                <div class="galeria-modal" id="img1">
-                    <h3> Foto 1</h3>
-                    <a class="cerrar-galeria" href="">X</a>
-                    <div class="imagen-modal">                    
-                        <a href="#img4">&#60;</a>
-                        <a href="#img2"><img src="galeria/galeria01.jpg"/></a>
-                        <a href="#img2">></a>                 
                     </div>
-                </div>
+                    <p>
+                        <a href="https://quijotemaraton.com/"target="_blank">Maratón en Ciudad Real, 23 de octubre de 2023</a>
+                    
+                    </p>
+                    <br/>
 
-                <div class="galeria-modal" id="img2">
-                    <h3> Foto 2</h3>
-                    <a class="cerrar-galeria" href="">X</a>
-                    <div class="imagen-modal">                    
-                        <a href="#img1">&#60;</a>
-                        <a href="#img3"><img src="galeria/galeria02.jpg"/></a>
-                        <a href="#img3">></a>                 
+                </article>
+
+                <footer>
+                    PIE DE PÁGINA SECCIÓN 1
+                    <div class="pie-seccion">
+                        <a href="./html/"><img src="img/icon/club_logo2 ICONO.png"/></a>
                     </div>
-                </div>
+                    
+                    <p id="letra-pie-seccion">
+                        Pulsa el icono para inscribirte en nuestra asociación y obtener descuento en las actividades que realizamos,
+                        apuntarte a los grupos de entrenamiento, quedadas grupales y descuentos en las carreras.
+                    </p>
+                    
+                    </br>
+                </footer>
+            </section>        
+        </main>
 
-                <div class="galeria-modal" id="img3">
-                    <h3> Foto 3</h3>
-                    <a class="cerrar-galeria" href="">X</a>
-                    <div class="imagen-modal">                    
-                        <a href="#img2">&#60;</a>
-                        <a href="#img4"><img src="galeria/galeria03.jpg"/></a>
-                        <a href="#img4">></a>                 
-                    </div>
-                </div>
-
-                <div class="galeria-modal" id="img4">
-                    <h3> Foto 4</h3>
-                    <a class="cerrar-galeria" href="">X</a>
-                    <div class="imagen-modal">                    
-                        <a href="#img3">&#60;</a>
-                        <a href="#img1"><img src="galeria/galeria04.jpg"/></a>
-                        <a href="#img1">></a>                 
-                    </div>
-                </div>
- 
-            </article>
-
-            <article>
-                ARTICULO 2 SECCIÓN 1
-                <a href=" url" > Proximas carreras</a>
-                <div class="proxima-carrera">
-                    <a href="img/cartel-maraton-ciudad-real-quijote-2022.jpg" target="_blank">
-                        <img src="img/icon/cartel-maraton-ciudad-real-quijote-2022 ICONO.jpg"/>
-                    </a>
-
-                </div>
-                <p>
-                    <a href="https://quijotemaraton.com/"target="_blank">Maratón en Ciudad Real, 23 de octubre de 2023</a>
-                
-                </p>
-                <br/>
-
-            </article>
-
-            <footer>
-                PIE DE PÁGINA SECCIÓN 1
-                <div class="pie-seccion">
-                    <a href="./html/"><img src="img/icon/club_logo2 ICONO.png"/></a>
-                </div>
-                
-                <p id="letra-pie-seccion">
-                    Pulsa el icono para inscribirte en nuestra asociación y obtener descuento en las actividades que realizamos,
-                    apuntarte a los grupos de entrenamiento, quedadas grupales y descuentos en las carreras.
-                </p>
-                
-                </br>
-            </footer>
-        </section>        
-    </main>
+    </div>
+        
 
 <!-- Pie de pagina -->  
 

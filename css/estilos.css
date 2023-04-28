@@ -2,31 +2,51 @@
 /* **************ESTILOS ALBERTO ******************************************/
 html{
     font-family: 'Poppins', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(fondo3.svg);
+    background-repeat: repeat-y;
+    background-size: cover;
 }
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
 /* Eliminar el subrayado de los enlaces */
 a:link, a:visited, a:active {
     text-decoration:none;
 }
 
+.cuerpo {
+    margin-left: 4vw;
+    margin-top: 10vh;
+    margin-right: 4vw;
+    margin-bottom: 2vh;
+    width: 100%;
+    
+}
+
 body {
-    width: 960px;
-    margin: auto;/*Para centrar el body en la página*/
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding: 10px;
-    background-color:#F2F2F2 ;
+    width: 100%;
+    
   /*  background-image: url("../img/fondo1.jpg"); */
     
 }
 /* Estilos de la Cabecera de la pagina */
 body header {
-    width: 960px;
+    margin-top: 100px;
+    width: 100%;
     height: 100px;
-    background-color: #0378A6;
+    background-color: #2b3e43a1;
     margin-bottom: 10px;
-    text-align: left;
-    text-align: center;    
+     
 }
+body header a{
+    font-size: 35px;
+    color:#080808;
+}
+
 
 #nombre-web{
     float: right;   
@@ -52,33 +72,81 @@ nav {
     align-items: center;
     justify-content: space-between;
 }
+ 
+/* MENU DE NAVEGACION
+https://www.youtube.com/watch?v=f7QujqArvIw
+ */
+/* MENU DE NAVEGACION */
+
+.checkbtn img {
+    margin-left: 2em;
+    width: 100%;
+    cursor: pointer;
+}
+
+nav ul{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 15%;
+    margin-bottom: 10%;
+    left: -109%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 4; 
+}
+
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;   
+}
+
+nav ul li a{
+    padding: 0.25em 1.5em;
+    font-size: 1.5em;
+    border-radius: 5px;
+    color: #666;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    text-decoration: none;  
+}
+
+li a:hover{
+    background-color: #242323;
+    color: #fefffe;
+ }
+
+ #check{
+    display:none;
+ }
+
+.checkbtn{
+    width: 1em;
+    display: block;
+    
+}
+ #check:checked ~ul{
+    left:0;
+ }
+
+
+/* ******************************************************************* */
 
 /* Estilos del Aside, la foto alargada debajo del menu*/
 aside {
-    position: relative;
-    justify-content: center;
+    width: 100%;
+    width: 100%;
     z-index: 1;
-    width: 960px;
+    width: 90%;
     height: 100px;
-    margin-bottom: 10px;
+    margin-top: -50px;
+    margin-bottom: 20px;
     float: left;
     object-fit: scale-down;
- 
- 
-    
-            /* 
-            Si queremos que expanda todo lo posible la imagen
-            */
-            /*
-            background-repeat: no-repeat;
-            background-position: top right;
-            background-size: cover; 
-            height: 100%;
-            flex-wrap: wrap; con esto expande las imagenes
-            https://www.youtube.com/watch?v=9YK4xViWyJs
-            */
-    
-   
+      
 }
 
 .img-pub{
@@ -90,12 +158,12 @@ aside {
 
 /* Estilos Total de la seccion */
 section {
-    width: 960px;
+    width: 90%;
     height: auto;
     margin-right: 10px;
     margin-bottom: 10px;
     background-color: #999;
-    background-color: #0378A6;
+    background-color: #2b3e43a1;
     float: left;
     padding-bottom: 10px;
     
@@ -149,71 +217,7 @@ footer {
     clear: both;
 }
 
- /* **************************************************** */   
-/* MENU DE NAVEGACION
-https://www.youtube.com/watch?v=f7QujqArvIw
- */
-/* MENU DE NAVEGACION */
 
-.checkbtn img {
-    margin-left: 2em;
-    width: 100%;
-    cursor: pointer;
-}
-
-nav ul{
-
-    display: block;
-    position: fixed;
-    width: 100%;
-    height: 80%;
-    background: rgba(0, 0, 0, 0.8);
-    top: 15%;
-    margin-bottom: 10%;
-    left: -109%;
-    text-align: center;
-    transition: all .5s;
-    z-index: 4;
- 
-}
-nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-    
-}
-
-nav ul li a{
-    padding: 0.25em 1.5em;
-    font-size: 1.5em;
-    border-radius: 5px;
-    color: #666;
-    background-color: #eeeeee;
-    border: 1px solid #ccc;
-    text-decoration: none;
-    
-}
-
-li a:hover{
-    background-color: #242323;
-    color: #fefffe;
- }
-
- #check{
-    display:none;
- }
-
-.checkbtn{
-    width: 1em;
-    display: block;
-    
-}
- #check:checked ~ul{
-    left:0;
- }
-
-
-/* ******************************************************************* */
 /* Boton de nuevo usuario */
 #r-nuevo{
     background-color: #FFF;
@@ -221,49 +225,7 @@ li a:hover{
 
 }
 
- /* Estilos Formularios de registro Alberto */
- #inicio-sesion{
-    text-align: center;
-    color: black;
-    margin-bottom: 50px ;
-    font-size: 20px;
-
-}
-/* Estilos Contraseña olvidada*/
-#recuperar{
-    margin-right: 15px;
-    text-align: center;
-    color: black;
-    margin-bottom: 50px ;
-    
-}
-/* Formulario de registro en la web */
-.main-registro-web{
-
-    height: auto;
-    background-color:  #FFF;
-    float:left;
-    width: 100%;
-    float:left;
-    margin-bottom: 10px;
-    
-    
-}
-#f-registro {
-    width: 97%;
-    height: auto;
-    background-color: #b9e3f9;
-    margin-bottom: 8px;
-}
-#f-registro2 {
-    width: 97%;
-    height: auto;
-    background-color: #eaf4ca;
-    margin-bottom: 10px;
-}
-#legend-registro{
-    background-color: #999;
-}
+ 
 /* Estilos de la galeria de fotos de la pagina principal y hacerla modal
 https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
 */
@@ -386,29 +348,83 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     text-align: left;
 }
 
+/* Estilos Formularios de registro Alberto */
+#inicio-sesion{
+    
+    width: 90%;
+    height: auto;
+    align-items: center;
+    color: black;
+    margin-bottom: 50px ;
+    font-size: 20px;
+    background-color:#2b3e43a1;
+    margin-top: 1px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+#inicio-sesion h4{
+    font-size: 30px;
+    background-color: #f0f2f3cb;
+
+}
+#nuevo-usr a{
+    background-color: rgba(15, 15, 15, 0.7);
+    font-size: 30px;
+    color: white;
+}
+/* Estilos Contraseña olvidada*/
+#recuperar{
+    margin-right: 15px;
+    text-align: center;
+    color: black;
+    margin-bottom: 50px ;
+    
+}
+/* Formulario de registro en la web */
+.main-registro-web{
+
+    height: auto;
+    background-color:  #FFF;
+    float:left;
+    width: 100%;
+    float:left;
+    margin-bottom: 10px;
+    
+    
+}
+#f-registro {
+    width: 97%;
+    height: auto;
+    background-color: #b9e3f9;
+    margin-bottom: 8px;
+}
+#f-registro2 {
+    width: 97%;
+    height: auto;
+    background-color: #eaf4ca;
+    margin-bottom: 10px;
+}
+#legend-registro{
+    background-color: #999;
+}
+
     
 
 /* *************************************************************************************** */
 /* CSS RESPONSIVO */
 @media screen and (max-width: 980px) {
-    body {
-        width: 99%;
-    }
-    body header {
-        width: 99%; 
-    }
-    section header {
-        width: 98%; 
-        height: auto;
-    }
+    
+    
+    
     section {
-        width: 99%;
+        width: 95%;
     }
      .galeria-inicio{
         justify-content: center;
     }
     nav {
-        width: 99%;
+        width: 100%;
         
     }
     aside {
@@ -425,6 +441,10 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     #f-registro {
         width: 96%;
     }
+    header {     
+        width: 100%;
+    }
+   
 }
 
 @media screen and (max-width: 700px) {
@@ -441,14 +461,14 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     https://www.youtube.com/watch?v=f7QujqArvIw
     */
     body header {
-        width: 98%; 
+         
     }
     aside {
         width: 98%;
         
     }
     section {
-        width: 98%;
+        width: 95%;
         float: left;
         
     }
@@ -456,11 +476,7 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
         justify-content: center;
     }
     
-    nav {
-        width: 98%;
-        float: none;    
-        
-    }
+    
     footer{
         width: 98%;
     }
@@ -469,21 +485,11 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
         width: 97%;
         height: 100px;
     }
-
-    nav ul{
-        width: 80%;
-     
+    body header a{
+        font-size: 20px;
     }
-    nav ul li{
-        display: block;
-        margin: 25px 10px;
-        line-height: 90%;
-        
-        
-    }
-    nav ul li a{
-        font-size: 30px;
-    }
+  
+  
     section article {
         width: 97%;
     }
@@ -505,6 +511,10 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
         width: 95%;
         height: auto;
     }
+    .img-pub{
+        background-image:url("../img/publicidad6.png");
+
+    }
 
   
     
@@ -514,17 +524,26 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
 @media screen and (max-width: 480px) {
     
     body header {
-        width: 96%; 
-    }
-    aside {
-        width: 96%;
+       
+        width: 100%;
         
     }
+    body header a{
+        font-size: 17px;
+    }
+    aside {
+       
+         
+    }
+    nav{
+        top:0;
+        height: 70px;
+    }
+
     
     header {
         height: auto;
     }
-   
 
     h1 {
         font-size: 24px;
@@ -534,7 +553,7 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
         display: left;
     }
     section {
-        width: 96%;
+        width: 94%;
     }
  
     section header {
@@ -561,7 +580,6 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     }
     #f-registro{
         width: 91%;
-       
 
     }
     .img-pub{
@@ -579,10 +597,8 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
         width: 80%; 
         
     }
- 
+    
 
-
-  
 }
 
 /* **************  FIN ESTILOS ALBERTO ******************************************/

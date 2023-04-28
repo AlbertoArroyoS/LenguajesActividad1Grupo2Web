@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,400;1,200;1,400;1,600&family=Poppins:ital,wght@0,400;0,500;1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css" type="text/css" media="screen">
     
     <title>Inicio de sesión</title>
@@ -28,63 +30,64 @@
     <!--Menú de Navegación-->
 
     <nav>
-        
-        <ul id="ul-header">
-            <li><a href="#" id="a-header" class="div-menu">  Menú </a>
-                <ul id="ul-desplegable">
-                    <li><a href="../index.html" id="a-header2">Inicio</a></li>
-                    <li><a href="./html/noticias.html" id="a-header2">Noticias</a></li>
-                    <li><a href="./html/quienes-somos.html" id="a-header2">Quién Somos</a></li>
-                    <li><a href="./html/publicaciones.html" id="a-header2">Carreras</a></li>
-                    <li><a href="./html/area-de-actuacion.html" id="a-header2">Galería de fotos</a></li>
-                    <li><a href="./html/localizacion.html" id="a-header2">Localización</a></li>
-                    <li><a href="./html/contact.html" id="a-header2">Contacto</a></li>
-                </ul>
-            </li>
-            <br/>
-            <li><a href="#" id="a-header" class="div-cuenta"> Cuenta </a>
-                <ul id="ul-desplegable">
-                    <li><a href="iniciar-sesion.html" id="a-header2">Iniciar sesión</a></li>
-                    <li><a href="registro-web.html" id="a-header2">Registrarse</a></li>
-                </ul>
-            </li>
-        </ul>
-        
+        <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" href="css/menu.png">
+                <img src="../css/menu.png"    
+            </label>
+            <ul>  
+                <li><a class="active" href="#">Inicio</a></li>
+                <li><a href=" url">Galeria de imagenes</a></li>
+                <li><a href=" url">Publicaciones</a></li>
+                <li><a href=" url">Proximos eventos</a></li>
+                <li><a href=" url">Sobre nosotros</a></li>
+                <li><a href=" url">Contacto</a></li>  
+            </ul>
+        </div>     
+
     </nav>
+
+ <!-- HASTA AQUI ES LA CABECERA Y MENU DESPLEGABLE-->
+    
+ <!-- Secciones -->
+ <div class="cuerpo">
+        
     <aside>
         <div class="img-pub"></div>
  
     </aside>
 
- <!-- HASTA AQUI ES LA CABECERA Y MENU DESPLEGABLE-->
-    
- <!-- Secciones -->
-    <main>
-        <form action="procesarPeticion.jsp" method="post">
-            
+
+
+        <main>
             <div id="inicio-sesion">
-                <h4>Iniciar sesion</h4>
-                <input id="nombre" type="text" name="nombre" placeholder="Usuario" required/>
-                <br/>
-                <input id="pass" type="password" name="pass" placeholder="Contraseña" required />
-                <br/>	
-                ¿Recordar usuario? <input type="checkbox" name="recordar" value="Y" />
-                <br/>
-                <input type="submit" value="Acceder"/>
-                <br/>
-                <br/>
-                <a href="contrasena-olvidada.html" id="r-nuevo">¿Contraseña olvidada?</a>
-                <br/>
-                <br/>
-                <a href="registro-web.html" id="r-nuevo">Nuevo usuario</a>
-                <br/>
-
+            <form action="procesarPeticion.jsp" method="post">
+                
+                
+                    <h4>Iniciar sesión</h4>
+                    <input id="nombre" type="text" name="nombre" placeholder="Usuario" required/>
+                    <br/>
+                    <input id="pass" type="password" name="pass" placeholder="Contraseña" required />
+                    <br/>	
+                    ¿Recordar usuario? <input type="checkbox" name="recordar" value="Y" />
+                    <br/>
+                    <input type="submit" value="Acceder"/>
+                    <br/>
+                    <br/>
+                    <a href="contrasena-olvidada.html" id="r-nuevo">¿Contraseña olvidada?</a>
+                    <br/>
+                    <br/>
+                    <div id="nuevo-usr">
+                        <a href="registro-web.html" id="r-nuevo">Nuevo usuario</a>   
+                    </div>
+                    
+            
+                </form>
             </div>
+            
+        </main>
 
-        </form>
+    </div>
 
-        
-    </main>
 
 <!-- Pie de pagina -->  
 
