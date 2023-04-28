@@ -27,8 +27,6 @@
 
     </header>
     <!--Menú de Navegación-->
-
-    <!--Menú de Navegación-->
     <nav>
         <input type="checkbox" id="check">
             <label for="check" class="checkbtn" href="css/menu.png">
@@ -45,23 +43,26 @@
         </div>     
 
     </nav>
+
+ <!-- HASTA AQUI ES LA CABECERA Y MENU DESPLEGABLE-->
+    
+ <!-- Secciones -->
+ <div class="cuerpo">
     <aside>
         <div class="img-pub"></div>
  
     </aside>
 
- <!-- HASTA AQUI ES LA CABECERA Y MENU DESPLEGABLE-->
-    
- <!-- Secciones -->
-    <main class="main-registro-web">
-        <h2>FORMULARIO DE REGISTRO WEB</h2>
+    <main>
+        <div id="main-registro-web">
+            <h2>FORMULARIO DE REGISTRO WEB</h2>
 
-        <form action="procesarPeticion.jsp" method="post">
+            <form action="procesarPeticion.jsp" method="post">
             <fieldset id="f-registro">
                 <legend id="legend-registro" >Datos de usuario</legend>
                 <div>
                     <label for="nombre">Nick*: </label>
-                    <input id="nombre" type="text" name="nombre" placeholder="Nick" required/>
+                    <input id="nombre" type="text" name="nombre" placeholder="Alberto" required/>
                     <br/>
                     <label for="pass">Password*: </label>
                     <input id="pass" type="password" name="pass" placeholder="Contraseña" />
@@ -113,18 +114,23 @@
                     <br />
                     <input type="reset" value="Limpiar formulario" />
                     <input type="submit" value="Enviar datos" />
-
-
-
-
-
                 </div>
-
-
-
-
             </fieldset>
         </form>
+            
+        </div>
+            
+    </main>
+ </div>
+
+
+
+
+
+
+
+    <main class="main-registro-web">
+        
         
     </main>
 

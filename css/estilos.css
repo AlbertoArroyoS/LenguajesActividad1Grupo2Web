@@ -396,27 +396,31 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     background-color: #f0f2f3cb;
 }
 /* Formulario de registro en la web */
-.main-registro-web{
+#main-registro-web{
 
+    width: 90%;
     height: auto;
-    background-color:  #FFF;
-    float:left;
-    width: 100%;
-    float:left;
-    margin-bottom: 10px;
-    
-    
+    align-items: center;
+    color: black;
+    margin-bottom: 50px ;
+    font-size: 20px;
+    margin-top: 1px;
+    text-align: center;
+    float:left;  
+}
+#main-registro-web h2{
+    font-size: 25px;
+    background-color: #f0f2f3cb;
 }
 #f-registro {
-    width: 97%;
+    
     height: auto;
-    background-color: #b9e3f9;
+    background-color: rgba(204, 207, 205, 0.9);
     margin-bottom: 8px;
 }
 #f-registro2 {
-    width: 97%;
     height: auto;
-    background-color: #eaf4ca;
+    background-color: rgba(127, 125, 125, 0.9);
     margin-bottom: 10px;
 }
 #legend-registro{
@@ -461,7 +465,6 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     /* cambiar el tamaño de la publicidad */
     .img-pub{
         width: 96%;
-
     }
     #inicio-sesion{
         width: 95%;
@@ -469,6 +472,17 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     #recuperar{
         width: 95%;
     }
+    #main-registro-web{
+        width: 95%;
+    }
+    #f-registro {
+        width: 100%;
+    }
+    #f-registro2 {
+        width: 100%;
+    }
+
+
    
 }
 
@@ -526,21 +540,21 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     #a-header {
         font-size: 18pt;
     }
-    .main-registro-web{
-        width: 98%;
-        height: auto;
-        margin-top: none;
-         
-    }
-    #f-registro{
-        width: 95%;
-        height: auto;
-    }
+ 
     /* cambiar el tamaño de la publicidad */
     .img-pub{
         background-image:url("../img/publicidad6.png");
         width: 97%;
 
+    }
+    #main-registro-web{
+        width: 95%;
+    }
+    #f-registro {
+        width: 99%;
+    }
+    #f-registro2 {
+        width: 99%;
     }
 
   
@@ -564,10 +578,9 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     }
     nav{
         top:0;
-        height: 70px;
+        height: 80px;
     }
 
-    
     header {
         height: auto;
     }
@@ -602,13 +615,6 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     footer {
         width: 96%;
     }
-    .main-registro-web{
-        width: 96%;
-    }
-    #f-registro{
-        width: 91%;
-
-    }
 
     /* cambiar tamaño de la publicidad*/
     .img-pub{
@@ -633,6 +639,15 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     }
     #recuperar{
         width: 95%;
+    }
+    #main-registro-web{
+        width: 95%;
+    }
+    #f-registro {
+        width: 99%;
+    }
+    #f-registro2 {
+        width: 99%;
     }
     
 
