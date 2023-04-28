@@ -180,7 +180,7 @@ header h1 {
         }
        .box2 {
             
-                background-color:#F2F2F2;
+            background-color:#F2F2F2;
             width: 560px;
             height: 290px; 
             margin-top:30px ;            
@@ -363,7 +363,7 @@ header h1 {
 
 
     .pie-pagina{
-        background-color: #2b3e43a1;
+        background-color: #BDD959;
 
     }
     .logo{
@@ -410,3 +410,4 @@ header h1 {
         justify-content: space-between ;
         padding: 10px;
     }
+
