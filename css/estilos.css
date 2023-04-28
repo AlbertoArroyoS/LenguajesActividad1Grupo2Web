@@ -154,6 +154,7 @@ aside {
     background-size: cover;
     height: 100px;
     z-index: 1;
+    opacity: 0.9;
 }
 
 /* Estilos Total de la seccion */
@@ -444,6 +445,14 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     header {     
         width: 100%;
     }
+    /* cambiar el tamaño de la publicidad */
+    .img-pub{
+        width: 96%;
+
+    }
+    #inicio-sesion{
+        width: 95%;
+    }
    
 }
 
@@ -511,8 +520,10 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
         width: 95%;
         height: auto;
     }
+    /* cambiar el tamaño de la publicidad */
     .img-pub{
         background-image:url("../img/publicidad6.png");
+        width: 97%;
 
     }
 
@@ -582,8 +593,12 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
         width: 91%;
 
     }
+
+    /* cambiar tamaño de la publicidad*/
     .img-pub{
         background-image:url("../img/publicidad6.png");
+        opacity: 0.9;
+        width: 98%;
 
     }
     .galeria-inicio{
@@ -596,6 +611,9 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     .imagen-modal img{
         width: 80%; 
         
+    }
+    #inicio-sesion{
+        width: 94%;
     }
     
 
