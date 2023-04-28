@@ -7,44 +7,81 @@
         <link rel="stylesheet" href="/styles.css/estiloscontacto.css">
     <title>Contacto</title>
 </head>
-<body class="cuerpo">
-    <div class="cabecera-contacto">
-    <h1>Contacto</h1>
-</div>
-<div class="alinear-texto">
-    <p>Si todavía tienes dudas en formar parte del movimiento rosa o quieres plantearnos alguna sugerencia puedes ponerte en contacto con nosotros a través del siguiente formulario</p>
+
+<body >
+
+
+<!--Menú de Navegación-->
+
+<nav>
+    <input type="checkbox" id="check">
+        <label for="check" class="checkbtn" href="/assets/imagenes/icono_barra.png">
+            <img src="/assets/imagenes/icono_barra.png"/>    
+        </label>
+        <ul>  
+            
+
+         
+            <li><a class="active" href="#">Inicio</a></li>
+            <li><a href=" url">Galeria de imagenes</a></li>
+            <li><a href=" url">Publicaciones</a></li>
+            <li><a href=" url">Proximos eventos</a></li>
+            <li><a href=" url">Sobre nosotros</a></li>
+            <li><a href=" url">Contacto</a></li>  
+        </ul>
+    </div>     
+
+</nav>
+
+    <!--Pagina de contacto y formulario  -->
+
+    
+    <div  class="cabecera-contacto">
+        <header>
+        <h1>Contacto</h1>
+        </header>      
+    </div>
+
+<main>
+
+<div class="caja-texto">
+    <p>Si todavía tienes dudas en formar parte de nuestro equipo o quieres plantearnos alguna sugerencia puedes ponerte en contacto con nosotros a través del siguiente formulario.</p>
 
 </div>
  
     <!-- <a href="/index.html/inicio.html">Volver a inicio</a> -->
     <!-- Formulario contacto -->
-<div class="formas">
+
+<div class="forma-caja">
+
     <form>
-        <fieldset class="form">
-            <legend>Datos contacto</legend>
-        
+            
+        <div class="datos-contacto">
+            <legend><h3 class="centrar">Datos contacto</h3></legend>
+        </div>
+
             <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" placeholder="Nombre"/>
+            <input type="text" name="name" id="name" placeholder="Carmen"/>
         
         
             <label for="surname">Apellidos</label>
-            <input type="text" name="surname" id="surname" placeholder="Apellidos"/> 
+            <input type="text" name="surname" id="surname" placeholder="Alvarez-Montenegro Piñeiro"/> 
           
              
             <label for="email">Email</label>
-            <input type="text" name="email" id="email" placeholder="Email"/>
+            <input type="text" name="email" id="email" placeholder="Email"required/>
         
         
             <label for="texto">Mensaje</label>
              <textarea name="texto" id="texto" cols="60" rows="8" placeholder="Mensaje" maxlength="100" required></textarea> 
            
-        
-        
+               
             <input class="boton" type="submit" value="Enviar"/>
             
         
     </form>
+</main>
 </div>   
-    
+  
 </body>
 </html>

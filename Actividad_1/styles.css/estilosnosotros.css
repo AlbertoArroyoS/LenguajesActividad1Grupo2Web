@@ -1,73 +1,153 @@
 
+  *{ 
+    outline: 1px solid red;
+}  
  *{
     box-sizing: border-box;
 }
-
-/*  
-*{ 
-    outline: 1px solid red;
+html{
+    min-width: 360px;
+       
 }
-*/
-.cuerpo{
 
-    background-color:azure;
-    margin-top:20px;
-    margin-right: 80px;
-    margin-bottom:20px;
-    margin-left:80px;
-    font-family: 'Nunito Sans', sans-serif;
-        
+/* MENU DE NAVEGACION
+
+ */
+ nav{
+    background-color: #06090acb;
+    width: 100%;
+    height: 60px;
+    position: fixed ;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.checkbtn img {
+    margin-left: 2em;
+    width: 100%;
+    cursor: pointer;
+}
+
+nav ul{
+
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 15%;
+    margin-bottom: 10%;
+    left: -109%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 4;
+ 
+}
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+nav ul li a{
+    padding: 0.25em 1.5em;
+    font-size: 1.5em;
+    border-radius: 5px;
+    color: #666;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #242323;
+    color: #fefffe;
+ }
+
+ #check{
+    display:none;
+ }
+
+.checkbtn{
+    width: 1em;
+    display: block;
     
-    
+}
+ #check:checked ~ul{
+    left:0;
+ }
+ 
 
 /* Quienes somos */
 
-.box0{ 
-
-    background-color:#0378A6;  
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom: 15px;  
-    height:80px;
-    width:100%;
-    font-size:2.5em ;
-    text-align: center;
-    color:white;
-    
+.cuerpo {
+    margin-top: 10vh; 
+    margin-right: 4vh; 
+    margin-bottom: 2vh;
+    margin-left:4 vw;
 }
-    
+
+/* Cabecera */
+
+body header {
+    background-color: #2b3e43a1;
+    margin-bottom: 15px;
+}
+
+
+header h1 {
+    padding: 2rem 1rem;
+    font-size: 8vh;
+    color: #F2F2F2;
+    text-align: center;
+}
+
 /* Imagen equipo*/
     
     .imgequipo {
-
-        position:relative;              
+                      
         display:block;                   
         margin-left: auto;
         margin-right:auto; 
-        width: 90%;
-        max-width: 1200PX;
+        width: 100%;
+        max-width: 1800PX;
         object-fit: cover;
-                
-       
+                       
         }
                  
-  */      
-/* "nuestro club" */ 
+       
+/* "Nuestro club" */
+
+        .contenedor1{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
+            
+        }        
 
        .text1{
             text-align: center;
+            
+            
        }
              
  
         .box1 {
             
             background-color:#F2F2F2;
-            width: 500px;
-            height: 260px;             
+            width: 560px;
+            height: 290px; 
+            margin-top:30px ;            
             margin-right:5%;
-            margin-bottom: 20px; 
-            margin-left:10%;     
+            margin-left:20%;
+            margin-bottom: 20px;
+            text-align: left; 
+            font-size: 1.2em;  
             padding:10px;
             float:left;
                        
@@ -78,32 +158,39 @@
 
             float:center;
             display: block;            
-            margin-top: 40px;
-            width: 500px;
-            height: 260px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            width: 560px;
+            height: 290px;
             object-fit: cover;
                         
         }
 
-/* Nuestros valores  */
-          
-
+/* Nuestros valores  */  
+         
+        .contenedor2{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
+        }        
         .text2{
-            text-align: center;
-            
-       }
-             
- 
+        text-align: center;
+        
+        }
        .box2 {
             
-        background-color:#F2F2F2;
-        width: 500px;
-        height: 260px;        
-        margin-right:12%;
-        margin-bottom: 20px; 
-        margin-left:5%;             
-        padding:10px;
-        float:right;
+                background-color:#F2F2F2;
+            width: 560px;
+            height: 290px; 
+            margin-top:30px ;            
+            margin-right:5%;
+            margin-left:5%;
+            margin-bottom: 20px;
+            text-align: left; 
+            font-size: 1.2em;  
+            padding:10px;
+            float:right;
         
         
       
@@ -111,26 +198,29 @@
 
     .img-valores{      
 
-        float:center;
-        display: block;            
-        object-fit: cover;
-        margin-left: 10%;
-        width: 500px;
-        height: 260px;
+            margin-left:20%;       
+            margin-top: 30px;
+            margin-bottom: 20px;
+            width: 560px;
+            height: 290px;
+            object-fit: cover;
+                        
         }
 
     
     
-/* miembros */
+/* Equipo que trabaja en el club */
 
-.contenedor2{
+    .contenedor3{
 
-    display:inline-flex;
-    margin-bottom: 20px;        
-    width: 100%;
-    text-align: center;
-    
-}
+        margin-bottom: 20px;        
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
 
     .box3 {
                     
@@ -143,7 +233,7 @@
         float:left;
     
 
-}
+}    
     .h3-centrado{
         text-align: center;
     }
@@ -266,30 +356,25 @@
         object-fit: cover;
             
     }
+      
+    
 
-    .contenedor2{
-
-        display:inline-flex;
-        margin-bottom: 20px;        
-        width: 100%;
-        text-align: center;
-        
-    }
-/* pie de pagina */
+    /* Pie de pagina */
 
 
     .pie-pagina{
-        background-color:#e8efe4;
+        background-color: #2b3e43a1;
 
     }
     .logo{
         display:flex;
         align-items: center;
-        gap:20px;
+        gap:15px;
         
     }
+
     span{
-        font-size: 23px ;
+        font-size: 15px ;
     }
 
     .fb{
@@ -322,6 +407,6 @@
 
     .derechos{
         display:flex;
-        justify-content: space-between;
+        justify-content: space-between ;
         padding: 10px;
     }
