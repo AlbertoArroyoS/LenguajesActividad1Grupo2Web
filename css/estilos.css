@@ -29,9 +29,7 @@ a:link, a:visited, a:active {
 
 body {
     width: 100%;
-    
-  /*  background-image: url("../img/fondo1.jpg"); */
-    
+     
 }
 /* Estilos de la Cabecera de la pagina */
 body header {
@@ -44,8 +42,7 @@ body header {
 }
 body header a{
     font-size: 35px;
-    color:#080808;
-    
+    color:#080808;   
 }
 
 #nombre-web{
@@ -53,7 +50,13 @@ body header a{
     margin-top: 15px;
     margin-right: 7px;  
 }
-#nombre-web::first-letter{
+/* Estilos del nombre de la web al posicionarte sobre el*/
+#nombre-web h2:hover{
+    font-size: 140%;
+}
+/* Estilo primera letra del nombre de la web */
+
+#nombre-web:first-letter{
     color: rgb(51, 51, 51)
 }
 
@@ -214,7 +217,31 @@ section footer {
     margin-right: 10px;
     background-color: #FFF;
     text-align: center;
-   
+    margin-bottom: auto; 
+}
+/* Estipos pie de la seccion */
+
+.pie-seccion{
+    margin-top: 10px;
+    float: left;
+    margin-bottom: auto;
+    
+}
+
+.pie-seccion img {
+
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+}
+/* Resaltar el icono al pasar sobre el y poner borde redondeado*/
+.pie-seccion img:hover{
+    border: 4px solid red;
+    border-radius: 5%;
+}
+
+#letra-pie-seccion{
+    font-size: 28px;
     
 }
 
@@ -319,6 +346,7 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     width: 25px;
     height: 25px; 
     margin: auto;
+    margin-top:20px;
     text-align: center;
     text-decoration: none;
     font-size: 25px;
@@ -327,29 +355,18 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     border-radius: 50%;
     line-height: 25px;
     margin-bottom: 20px;
+    
 
 }
 
-/* Estipos pie de la seccion */
 
-.pie-seccion{
-    margin-top: 10px;
-    float: left
-}
+/* Estilos seccion 2 carreras
+https://sensacionweb.com/como-crear-un-boton-con-html-y-css/
 
-.pie-seccion img {
-    width: 150px;
-    height: 150px;
-    margin: 5px;
-}
-
-#letra-pie-seccion{
-    font-size: 30px;
-}
-
-/* Estilos seccion 2 carreras*/
+*/
 .proxima-carrera{
     float: none;
+    margin-bottom: 15px;
 
 }
 
@@ -358,6 +375,40 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     float:none;
     text-align: left;
 }
+.proxima-carrera-web p{
+    font-weight: 400;
+}
+
+.proxima-carrera-web a{
+   
+    color:#000000;
+}
+.proxima-carrera-web a:hover{
+    color:red;
+}
+.todas-carreras {
+    text-decoration:none;
+    font-weight:600;
+    font-size:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:40px;
+    padding-right:40px;
+    background-color:#2b3e43a1; 
+}
+.todas-carreras a{
+    color:#000000;
+}
+.todas-carreras:hover{
+    background-color:rgba(129, 169, 116, 0.9)
+}
+
+.todas-carreras:hover a{
+    color:red;
+}
+
+
+
 
 /* Estilos Formularios de registro Alberto */
 #inicio-sesion{
@@ -587,11 +638,12 @@ span{
 
         width: 97%;
         height: 100px;
+        height: auto;
     }
     body header a{
         font-size: 20px;
     }
-  
+   
   
     section article {
         width: 97%;
@@ -697,6 +749,9 @@ span{
     .imagen-modal img{
         width: 80%; 
         
+    }
+    .cerrar-galeria{
+        margin-top: 50px;
     }
     #inicio-sesion{
         width: 94%;
