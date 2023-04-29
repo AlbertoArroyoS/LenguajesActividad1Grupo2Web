@@ -474,15 +474,18 @@ https://sensacionweb.com/como-crear-un-boton-con-html-y-css/
     height: auto;
     align-items: center;
     color: black;
-    margin-bottom: 50px ;
+    margin-bottom: 10px ;
     font-size: 20px;
-    margin-top: 1px;
+    margin-top: 5px;
     text-align: center;
     float:left;  
 }
 #main-registro-web h2{
     font-size: 25px;
     background-color: #f0f2f3cb;
+}
+#main-registro-web form{
+    margin-top: 15px;
 }
 #f-registro {
     
@@ -497,6 +500,15 @@ https://sensacionweb.com/como-crear-un-boton-con-html-y-css/
 }
 #legend-registro{
     background-color: #999;
+}
+#registro-input input{
+    font-size: 20px;
+}
+#registro-input1:hover input{
+    color:red;
+}
+#registro-input2:hover input{
+    color:red;
 }
 
  /* Pie de pagina */
