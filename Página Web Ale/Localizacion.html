@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,400;1,200;1,400;1,600&family=Poppins:ital,wght@0,400;0,500;1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/56557950c8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Localización</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header>
-        <h1>¿Dónde encontrarnos?</h1>
+<body class="bodylocalizacion">
+    <header class="headerlocalizacion">
+        <h1 class="h1localizacion">¿Dónde encontrarnos?</h1>
     </header>
+   
+    <!-- Menú desplegable Alberto -->
 
-  
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <img src="imagenes/menu.png" alt="icono_menu"/>    
+        </label>
+        <ul>  
+            <li><a class="active" href="#">Inicio</a></li>
+            <li><a href=" url">Galeria de imagenes</a></li>
+            <li><a href=" url">Publicaciones</a></li>
+            <li><a href=" url">Proximos eventos</a></li>
+            <li><a href=" url">Sobre nosotros</a></li>
+            <li><a href=" url">Contacto</a></li>  
+        </ul>
+    </nav>
+
+        <!-- Card con link y mapa iframe -->
+
         <div class="card">   
             <div class="front">
                 <div class="direccion">
-                    <img src="location-pin.png" class="pin" alt="design map pin" />
+                    <img src="imagenes/location-pin.png" class="pin" alt="design_map_pin"/>
                     <div class="texto">
                         <p>Calle de Valdesquí, 16</p>
                         <p>28023 Madrid</p>
@@ -26,11 +49,35 @@
                 </div>
             </div>
             <div class="back">
-                <a href="https://goo.gl/maps/dvszpfH49ALaKf2Z7" target="_blank" class="link">Cómo llegar</a>
+                <a href="https://goo.gl/maps/dvszpfH49ALaKf2Z7" target="_blank" class="linkdireccion">Cómo llegar</a>
             </div>
         </div>
-        <div class="mapaa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.3147134991814!2d-3.7736075000000002!3d40.468302099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418719e7542d0f%3A0xe8c9685f71791ebf!2sStella%20Maris%20College!5e0!3m2!1ses!2sie!4v1682522344327!5m2!1ses!2sie" class="mapa""></iframe>
-    </div>
+
+        <div class="mapa">    
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.314714790351!2d-3.7761824242534243!3d40.468302071431346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418719e7542d0f%3A0xe8c9685f71791ebf!2sStella%20Maris%20College!5e0!3m2!1ses!2sie!4v1682626201743!5m2!1ses!2sie"></iframe>
+        </div>
+
+
+        <!-- Pie de página Carmen -->
+
+    <footer class="pie-pagina">
+        <div class="container1">
+            <div class="logo"> <img src="imagenes/sprint.png">
+                <p class="name">
+                        <b>Club Corredores</b>
+                </p>
+            </div>
+            <div class="redes"> 
+                <span class="fb"><i class="fa-brands fa-facebook"></i></span> 
+                <span class="inst"><i class="fa-brands fa-instagram"></i></span> 
+                <span class="tw"><i class="fa-brands fa-tiktok"></i></span> 
+            </div>
+        </div>
+        <hr>
+        <div class="derechos">
+            <p><b>Copyright@2023 Licencia y Copyright. Todos los derechos reservados</b></p>
+            <p><b>Politica de privacidad. Términos y condiciones</b></p>
+        </div>
+    </footer>
 </body>
 </html>
