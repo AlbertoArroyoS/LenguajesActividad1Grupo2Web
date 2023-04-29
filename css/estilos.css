@@ -45,11 +45,16 @@ body header {
 body header a{
     font-size: 35px;
     color:#080808;
+    
 }
 
-
 #nombre-web{
-    float: right;   
+    float: right; 
+    margin-top: 15px;
+    margin-right: 7px;  
+}
+#nombre-web::first-letter{
+    color: rgb(51, 51, 51)
 }
 
 #cabeceralogo {
@@ -169,6 +174,9 @@ section {
     padding-bottom: 10px;
     
 }
+section h3{
+    font-size: 30px;
+}
 
 /* Selector para la etiqueta 'header' que sea hijo de la etiqueta 'section' */
 
@@ -180,8 +188,10 @@ section header {
     margin-left: 10px;
     margin-right: 10px;
     background-color: #FFF;
-    text-align: center;
-    
+    text-align: center;   
+}
+section header p{
+    font-size: 20px;
 }
 /* Estilos de los Articulos de la seccion, articulo 1 y articulo 2 */ 
 section article {
