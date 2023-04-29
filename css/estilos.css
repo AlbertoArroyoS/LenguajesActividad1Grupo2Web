@@ -241,8 +241,7 @@ section footer {
 }
 
 #letra-pie-seccion{
-    font-size: 28px;
-    
+    font-size: 28px;   
 }
 
 
@@ -375,12 +374,10 @@ https://sensacionweb.com/como-crear-un-boton-con-html-y-css/
     float:none;
     text-align: left;
 }
-.proxima-carrera-web p{
-    font-weight: 400;
-}
 
 .proxima-carrera-web a{
-   
+    font-size: 20px ;
+    font-weight: 400;
     color:#000000;
 }
 .proxima-carrera-web a:hover{
@@ -596,8 +593,7 @@ span{
     #f-registro2 {
         width: 100%;
     }
-
-
+   
    
 }
 
@@ -671,6 +667,9 @@ span{
     }
     #f-registro2 {
         width: 99%;
+    }
+    #letra-pie-seccion{
+        font-size: 20px;
     }
 
   
@@ -770,6 +769,9 @@ span{
     }
     .pie-pagina{
         height: 190px;
+    }
+    #letra-pie-seccion{
+        font-size: 20px;
     }
     
 
