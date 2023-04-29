@@ -50,6 +50,7 @@ body header a{
     margin-top: 15px;
     margin-right: 7px;  
 }
+
 /* Estilos del nombre de la web al posicionarte sobre el*/
 #nombre-web h2:hover{
     font-size: 140%;
@@ -408,13 +409,15 @@ https://sensacionweb.com/como-crear-un-boton-con-html-y-css/
 
 
 /* Estilos Formularios de registro Alberto */
+
+/* Estilo de inicio de sesion*/
 #inicio-sesion{
     
     width: 90%;
     height: auto;
     align-items: center;
     color: black;
-    margin-bottom: 50px ;
+    margin-bottom: 5px ;
     font-size: 20px;
     background-color:#2b3e43a1;
     margin-top: 1px;
@@ -425,13 +428,23 @@ https://sensacionweb.com/como-crear-un-boton-con-html-y-css/
 #inicio-sesion h4{
     font-size: 30px;
     background-color: #f0f2f3cb;
+    margin-bottom: 10%;
 
+}
+#inicio-sesion input{
+    font-size: 25px;
+    
+}
+#nuevo-usr{
+    margin-bottom: 15px;
 }
 #nuevo-usr a{
     background-color: rgba(15, 15, 15, 0.7);
     font-size: 30px;
     color: white;
+    
 }
+
 /* Estilos Contraseña olvidada*/
 #recuperar{
     width: 90%;
@@ -671,6 +684,10 @@ span{
     #letra-pie-seccion{
         font-size: 20px;
     }
+    #inicio-sesion input{
+        font-size: 20px;
+        
+    }
 
   
     
@@ -772,6 +789,10 @@ span{
     }
     #letra-pie-seccion{
         font-size: 20px;
+    }
+    #inicio-sesion input{
+        font-size: 19px;
+        
     }
     
 
