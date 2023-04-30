@@ -241,15 +241,6 @@ section footer {
     font-size: 28px;   
 }
 
-/*Estilos del Pie de la pagina */
-footer {
-    width: 960px;
-    height: 100px;
-    background-color: #999;
-    background-color: #0378A6;
-    clear: both;
-}
-
 /* Boton de nuevo usuario */
 #r-nuevo{
     background-color: #FFF;
@@ -398,117 +389,13 @@ https://sensacionweb.com/como-crear-un-boton-con-html-y-css/
 .todas-carreras:hover a{
     color:red;
 }
+/*Estilos del Pie de la pagina */
 
-/* Estilos Formularios de registro Alberto */
+footer {
+    clear: both;
 
-/* Estilo de inicio de sesion*/
-#inicio-sesion{
-    
-    width: 90%;
-    height: auto;
-    align-items: center;
-    color: black;
-    margin-bottom: 5px ;
-    font-size: 20px;
-    background-color:#2b3e43a1;
-    margin-top: 1px;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
 }
-
-#inicio-sesion h4{
-    font-size: 30px;
-    background-color: #f0f2f3cb;
-    margin-bottom: 10%;
-}
-
-#inicio-sesion input{
-    font-size: 25px;   
-}
-
-#nuevo-usr{
-    margin-bottom: 15px;
-}
-
-#nuevo-usr a{
-    background-color: rgba(15, 15, 15, 0.7);
-    font-size: 30px;
-    color: white;    
-}
-
-/* Estilos Contraseña olvidada*/
-#recuperar{
-    width: 90%;
-    height: auto;
-    align-items: center;
-    color: black;
-    margin-bottom: 50px ;
-    font-size: 20px;
-    background-color:#2b3e43a1;
-    margin-top: 1px;
-    text-align: center;
-    float:left;
-    background-color: #f0f2f3cb;
-    padding-bottom: 20px;
-}
-#recuperar h4{   
-    font-size: 30px;
-    background-color: #f0f2f3cb;
-}
-
-/* Formulario de registro en la web */
-#main-registro-web{
-    width: 90%;
-    height: auto;
-    align-items: center;
-    color: black;
-    margin-bottom: 10px ;
-    font-size: 20px;
-    margin-top: 5px;
-    text-align: center;
-    float:left;  
-}
-
-#main-registro-web h2{
-    font-size: 25px;
-    background-color: #f0f2f3cb;
-}
-
-#main-registro-web form{
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-#f-registro {   
-    height: auto;
-    background-color: rgba(204, 207, 205, 0.9);
-    margin-bottom: 8px;
-}
-
-#f-registro2 {
-    height: auto;
-    background-color: rgba(127, 125, 125, 0.9);
-    margin-bottom: 10px;
-}
-
-#legend-registro{
-    background-color: #999;
-}
-
-#registro-input input{
-    font-size: 20px;
-}
-
-#registro-input1:hover input{
-    color:red;
-}
-
-#registro-input2:hover input{
-    color:red;
-}
-
- /* Pie de pagina */
+ /* Pie de pagina carmen*/
  .pie-pagina{
     background-color: #b2b67e;
     width: 100%;
@@ -561,6 +448,116 @@ span{
     display:flex;
     justify-content: space-between ;
     padding: 10px;
+}
+
+/* Estilos Formularios de registro Alberto */
+
+/* Estilo de inicio de sesion*/
+#inicio-sesion{
+    
+    width: 90%;
+    height: 500px;
+    align-items: center;
+    color: black;
+    margin-bottom: 5px ;
+    font-size: 20px;
+    background-color:#2b3e43a1;
+    margin-top: 1px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+#inicio-sesion h4{
+    font-size: 30px;
+    background-color: #f0f2f3cb;
+    margin-bottom: 10%;
+}
+
+#inicio-sesion input{
+    font-size: 25px;   
+}
+
+#nuevo-usr{
+    margin-bottom: 15px;
+}
+
+#nuevo-usr a{
+    background-color: rgba(15, 15, 15, 0.7);
+    font-size: 30px;
+    color: white;    
+}
+
+/* Estilos Contraseña olvidada*/
+#recuperar{
+    width: 90%;
+    height: auto;
+    align-items: center;
+    color: black;
+    margin-bottom: 50px ;
+    font-size: 20px;
+    background-color:#2b3e43a1;
+    margin-top: 1px;
+    text-align: center;
+    float:left;
+    background-color: #f0f2f3cb;
+    padding-bottom: 20px;
+}
+#recuperar h4{   
+    font-size: 30px;
+    background-color: #f0f2f3cb;
+}
+
+/* Formulario de registro en la web */
+
+#main-registro-web{
+    width: 90%;
+    height: auto;
+    align-items: center;
+    color: black;
+    margin-bottom: 10px ;
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+    float:left;  
+}
+
+#main-registro-web h2{
+    font-size: 25px;
+    background-color: #f0f2f3cb;
+}
+
+#main-registro-web form{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#f-registro {   
+    height: auto;
+    background-color: rgba(204, 207, 205, 0.9);
+    margin-bottom: 8px;
+}
+
+#f-registro2 {
+    height: auto;
+    background-color: rgba(127, 125, 125, 0.9);
+    margin-bottom: 10px;
+}
+
+#legend-registro{
+    background-color: #999;
+}
+
+#registro-input input{
+    font-size: 20px;
+}
+
+#registro-input1:hover input{
+    color:red;
+}
+
+#registro-input2:hover input{
+    color:red;
 }
     
 /* *************************************************************************************** */
