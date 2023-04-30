@@ -1,4 +1,4 @@
- 
+ /* ELEMENTOS A APLICAR EN TODA LA PAGINA */
 *{
     box-sizing: border-box;
 }
@@ -16,6 +16,10 @@ html{
     background-repeat: repeat-y;
     background-size: cover;
 }
+
+/* MENU DE NAVEGACION*/
+
+ 
 nav{
     background-color: #06090acb;
     width: 100%;
@@ -30,9 +34,7 @@ nav{
 }
 
 
-/* MENU DE NAVEGACION
 
- */
  .checkbtn img {
     margin-left: 2em;
     width: 100%;
@@ -91,21 +93,24 @@ li a:hover{
 
  body{
     margin:0%;
-    width: 100%;
+    /* min-height: 100vh; */
     padding:0%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
 
  }   
 
 
 
-/* Contacto */
+/* CABECERA DE CONTACTO */
   
-header{
+.header-contacto{
     display: flex;      
     justify-content: center;
     background-color: #2b3e43a1;
-    margin-top: 10vh;
+    margin-top: 60px;
     margin-bottom: 2vh;
     width: 100%;
     padding: 1rem 0.5rem;
@@ -114,19 +119,21 @@ header{
     
 }
 
+/* CONTENIDO DEL TEXTO */
 
 .caja-texto{
 
     background-color:#F2F2F2;
     font-size: 1.5em;                  
     margin-right:15%;
-    margin-bottom: 2%; 
+    margin-top: 2%; 
     margin-left:15%;     
     padding:10px;
        
 
 }
 
+/* FORMULARIO CONTACTO ESTRUCTURA Y CONTENIDO */
 
 .forma-caja{   
     
@@ -137,7 +144,7 @@ header{
     border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom:1%;
+    margin-top:2%;
     width:30%;    
     border:2px solid;
     overflow: hidden;
@@ -151,19 +158,21 @@ form{
     border: 1px;
     overflow: hidden;
     width: 98%;
+    font-size: 1.5em;
 }
 
-.centrar{
-    font-size: 30px;
-    text-align: center;
-}
+
 .datos-contacto{
-    margin-bottom: 5%;
+    margin-bottom: 10%;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    
 }
 
 label{
     color: black;
-    font-size: 100%;
+    font-size: 2em;
     margin-bottom: 3%;
     font-weight: 600;    
    
@@ -176,16 +185,27 @@ input, textarea{
     margin-bottom: 6%;    
     font-size:100% ;
     
+    
 }
 
+
 .boton{
-    
+    font-size: medium;
     background-color: #8ab3bea1;
     cursor:pointer;
     color: rgb(21, 18, 18);
 }
 
-/* Pie de pagina */
+
+/* PIE DE PAGINA */
+
+
+ footer{
+
+    margin-top: auto;
+   
+} 
+
 
 
 .pie-pagina{
@@ -238,31 +258,72 @@ span{
 }
 
 
-/* RESPONSIVE - CONTACTO*/
+/* RESPONSIVE */
+/* ------------------------------------------------------------- */
 
+@media (max-width:1300) {
 
-  @media (max-width:680px){
+    .forma-caja{
+        width: 90%;
+    }
+    .container1{
+        width: 70%;
 
+    }
+       
+  
+}
+
+/* ------------------------------------------------------------- */
+    @media (max-width:700px){
+    
+    .forma-caja{
+        width: 70%;
+    }
+    }
     header{
         
     font-size: 2em;
-    margin-top:10%;
+    
        }
 
    .caja-texto{
     font-size: 1.3em;
 
    } 
-   .cabecera-contacto{
+   .centrar{
     width: 100%;
     max-height: 30%;
-    font-size: 1em;
+    
     justify-content: center;        
     margin-top:10%;
 
-}  
-    
-}  @media (max-width:360px){    
+}       
+/* ------------------------------------------------------------- */
+
+     @media (max-width:520px){
+
+        .header-contacto{
+            width: 100%;
+            font-size:3.2em; 
+            justify-content: center;
+        }
+        .form{
+
+            font-size:1em ;
+           
+        } 
+
+        h3{
+            font-size: 0.7em;
+            
+        }
+        
+        
+    } 
+ /* ------------------------------------------------------------- */   
+
+  @media (min-width:340px){    
 
     nav ul li{
         margin: 4px 0;
@@ -277,9 +338,29 @@ span{
     flex-wrap: wrap;
     justify-content: center;
 }
-.forma-caja{
-    width: 80%;
-}
+    .forma-caja{
+        width: 70%;
+    }
+
+    .centrar{
+
+        font-size: 1.1em;
+    }
+    label{
+        font-size: 0.9em;
+    }
+    input{
+        font-size: 0.7em;
+    }
+
+    p{
+        font-size: 0.9em;
+    }
+
+    h1{
+        font-size:1.5em;
+    }
+
 
 } 
-
+ 
