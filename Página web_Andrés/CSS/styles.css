@@ -2,7 +2,7 @@ html{
     min-width: 360px;
     font-family: 'Kanit', sans-serif;
     font-family: 'Poppins', sans-serif;
-    background-image: url(fondo3.svg);
+    background-image: url(fondo.svg);
     background-repeat: repeat-y;
     background-size: cover;
 
@@ -277,7 +277,7 @@ p {
 }
 
 .img_grupo {
-    background-image: url(grupo.svg);
+    background-image: url(corredores.svg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 40%;
