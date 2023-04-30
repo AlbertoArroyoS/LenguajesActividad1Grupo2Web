@@ -156,7 +156,7 @@ aside {
 }
 
 .img-pub{
-    background-image:url("../img/publicidad4.png"); 
+    background-image:url("./Alberto/img/publicidad4.png");  
     background-size: cover;
     height: 100px;
     z-index: 1;
@@ -670,7 +670,7 @@ span{
  
     /* cambiar el tamaño de la publicidad */
     .img-pub{
-        background-image:url("../img/publicidad6.png");
+        background-image:url("./Alberto/img/publicidad6.png"); 
         width: 97%;
     }
 
@@ -752,7 +752,7 @@ span{
 
     /* cambiar tamaño de la publicidad*/
     .img-pub{
-        background-image:url("../img/publicidad6.png");
+        background-image:url("./Alberto/img/publicidad6.png"); 
         opacity: 0.9;
         width: 98%;
     }
