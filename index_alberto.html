@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,400;1,200;1,400;1,600&family=Poppins:ital,wght@0,400;0,500;1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/56557950c8.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="../Alberto/css/estilos.css" type="text/css" media="screen">
+    <title>Inicio</title>
+</head>
+<!--Cabecera-->
+<body>
+    <header>
+        <div>
+            <span id="cabecera-logo">
+                <img src="./Alberto/img/logo4.png" alt="Publicidad"/>
+            </span>
+            <span id="nombre-web">
+                <a href="./index_alberto.html">
+                    <h2>Club de Corredores<span>.</span></h2>
+                </a>
+            </span>
+        </div>
+        
+    </header>
+
+<!--Menú de Navegación con opciones -->
+    <nav>
+        <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" href="./Alberto/icon/menu.png">
+                <img src="./Alberto/css/menu.png"/>    
+            </label>
+            <ul> 
+                <li><a href="./index_alberto.html">Inicio</a></li>
+                <li><a href="./Andres/noticias.html">Noticias</a></li>
+                <li><a href="./Alejandro/Carreras.html">Carreras</a></li>
+                <li><a href="./CarmenWeb/index_html/sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a href="./Alejandro/Localizacion.html">Localización</a></li>
+                <li><a href="./CarmenWeb/index_html/contacto.html">Contacto</a></li> 
+                <li><a href="./Andres/inscribirClub.html">Inscribete al club</a></li> 
+                <li><a href="./Alberto/html/iniciar-sesion.html">Iniciar sesión</a></li>  
+            </ul>
+        </div>     
+
+    </nav>
+ 
+ <!-- HASTA AQUI ES LA CABECERA Y MENU DESPLEGABLE-->
+    
+ <!-- Secciones -->
+    <div class="cuerpo">
+        
+    <aside>
+        <div class="img-pub"></div>
+ 
+    </aside>
+
+        <main>
+            <section>
+                <header>
+                    <div class="banner-content">
+                        <h3>Bienvenido al club de corredores<span>.</span></h3>
+                        <p>Web en la que podras encontrar toda la información del club.</p>
+                        <p>Lorem fistrum diodeno ese hombree la caidita. A peich quietooor de la pradera te va a hasé pupitaa ese hombree a gramenawer. 
+                            Mamaar caballo blanco caballo negroorl condemor te voy a borrar el cerito hasta luego Lucas pecador fistro de la pradera no puedor sexuarl quietooor. 
+                            Fistro la caidita pupita quietooor. Te va a hasé pupitaa a wan se calle ustée a wan sexuarl llevame al sircoo por la gloria de mi madre mamaar.
+                        </p>
+                    
+                </header>
+
+                <article>
+                    <h3>Últimas fotos</h3>
+                    <ul class="galeria-inicio">
+                        <li><a href="#img1"><img src="./Alberto/galeria/galeria01.jpg"/></a></li>
+                        <li><a href="#img2"><img src="./Alberto/galeria/galeria02.jpg"/></a></li>
+                        <li><a href="#img3"><img src="./Alberto/galeria/galeria03.jpg"/></a></li>
+                        <li><a href="#img4"><img src="./Alberto/galeria/galeria04.jpg"/></li>
+                    </ul>
+                    <!-- Crear un div por cada imagen para que se habra la galeria modal -->
+                    <div class="galeria-modal" id="img1">
+                        <h3> Foto 1</h3>
+                        <a class="cerrar-galeria" href="">X</a>
+                        <div class="imagen-modal">                    
+                            <a href="#img4">&#60;</a>
+                            <a href="#img2"><img src="./Alberto/galeria/galeria01.jpg"/></a>
+                            <a href="#img2">></a>                 
+                        </div>
+                    </div>
+
+                    <div class="galeria-modal" id="img2">
+                        <h3> Foto 2</h3>
+                        <a class="cerrar-galeria" href="">X</a>
+                        <div class="imagen-modal">                    
+                            <a href="#img1">&#60;</a>
+                            <a href="#img3"><img src="./Alberto/galeria/galeria02.jpg"/></a>
+                            <a href="#img3">></a>                 
+                        </div>
+                    </div>
+
+                    <div class="galeria-modal" id="img3">
+                        <h3> Foto 3</h3>
+                        <a class="cerrar-galeria" href="">X</a>
+                        <div class="imagen-modal">                    
+                            <a href="#img2">&#60;</a>
+                            <a href="#img4"><img src="./Alberto/galeria/galeria03.jpg"/></a>
+                            <a href="#img4">></a>                 
+                        </div>
+                    </div>
+
+                    <div class="galeria-modal" id="img4">
+                        <h3> Foto 4</h3>
+                        <a class="cerrar-galeria" href="">X</a>
+                        <div class="imagen-modal">                    
+                            <a href="#img3">&#60;</a>
+                            <a href="#img1"><img src="./Alberto/galeria/galeria04.jpg"/></a>
+                            <a href="#img1">></a>                 
+                        </div>
+                    </div>
+    
+                </article>
+
+                <article>
+                    <h3>Próxima carrera</h3>
+                    <div class="proxima-carrera">
+                        <a href="./Alberto/img/cartel-maraton-ciudad-real-quijote-2022.jpg" target="_blank">
+                            <img src="./Alberto/img/icon/cartel-maraton-ciudad-real-quijote-2022 ICONO.jpg"/>
+                        </a>
+
+                    </div>
+                    <p class="proxima-carrera-web">
+                        <a href="https://quijotemaraton.com/"target="_blank"><b>Maratón en Ciudad Real, 23 de octubre de 2023</b></a>
+                    </p>
+                    <br/>
+                    <div class="todas-carreras">
+                        <a href="./Alejandro/Carreras.html" > Todas las carreras</a>
+                    </div>
+
+                </article>
+
+                <footer>
+                    <h3>Inscribete al club</h3>
+                    <div class="pie-seccion">
+                        <a href="./Andres/inscribirClub.html"><img src="./Alberto/img/icon/club_logo2 ICONO.png"/></a>
+                    </div>
+                    
+                    <p id="letra-pie-seccion">
+                        Pulsa el icono para inscribirte en nuestra asociación y obtener descuento en las actividades que realizamos,
+                        apuntarte a los grupos de entrenamiento, quedadas grupales y descuentos en las carreras.
+                    </p>
+                    
+                    </br>
+                </footer>
+            </section>        
+        </main>
+
+    </div>       
+    <!-- PIE DE PAGINA carmen-->
+    <footer class="pie-pagina">
+
+        <div class="container1">
+
+            <div class="logo">
+                <img src="./CarmenWeb/assets/imagenes/sprint.png">
+                <p class="name"></b>Club Corredores</b></p>
+            </div>
+
+            <div class="redes">
+                <span class="fb"><i class="fa-brands fa-facebook"></i></span>
+                <span class="inst"><i class="fa-brands fa-instagram"></i></span>
+                <span class="tw"><i class="fa-brands fa-tiktok"></i></i></span>
+            </div>        
+                    
+        </div>
+        <hr>
+        <div class="derechos">
+            <p><b>Copyright@2023Licencia y Copyright. Todos los derechos reservados</b></p>
+            <p><b>Politica de privacidad. Terminos y condiciones</b></p>
+        </div>
+
+    </footer>    
+</body>
+
+</html>
