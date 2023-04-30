@@ -340,13 +340,13 @@ nav ul{
 
 nav ul li{
     display: block;
-    margin: 40px 0;
+    margin: 50px 0;
     line-height: 25px;
 }
 
 nav ul li a{
     padding: 0.25em 1.5em;
-    font-size: 25px;
+    font-size: 30px;
     border-radius: 5px;
     color: #666;
     background-color: #eeeeee;
@@ -524,6 +524,10 @@ span{
         height: 50px;
         width: 50px;
     }
+    nav ul li{
+        margin: 40px 0;
+        line-height: 30px;
+    }
  }
 
     /* Teléfono en posición vertical */
@@ -574,11 +578,11 @@ span{
         font-size: 30px;
     }
     nav ul li{
-        margin: px 0;
+        margin: 5px 0;
         line-height: 30px;
     }
     nav ul li a{
-        font-size: 25px;
+        font-size: 15px;
     }
  }
 
@@ -623,7 +627,7 @@ span{
         font-size: 30px;
     }
     nav ul li{
-        margin: 4px 0;
+        margin: 5px 0;
         line-height: 30px;
     }
     nav ul li a{
