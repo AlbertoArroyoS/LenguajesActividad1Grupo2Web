@@ -1,0 +1,285 @@
+ 
+*{
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    
+    background-image: url(/LenguajesActividad1Grupo2Web-main/CarmenWeb/assets/imagenes/fondo3.svg);
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+nav{
+    background-color: #06090acb;
+    width: 100%;
+    height: 60px;
+    position: fixed ;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* MENU DE NAVEGACION
+
+ */
+ .checkbtn img {
+    margin-left: 2em;
+    width: 100%;
+    cursor: pointer;
+    
+}
+
+nav ul{
+
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 15%;
+    margin-bottom: 10%;
+    left: -109%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 4;
+ 
+}
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+nav ul li a{
+    padding: 0.25em 1.5em;
+    font-size: 1.5em;
+    border-radius: 5px;
+    color: #666;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #242323;
+    color: #fefffe;
+ }
+
+ #check{
+    display:none;
+ }
+
+.checkbtn{
+    width: 1em;
+    display: block;
+    
+}
+ #check:checked ~ul{
+    left:0;
+ }
+
+ body{
+    margin:0%;
+    width: 100%;
+    padding:0%;
+
+
+ }   
+
+
+
+/* Contacto */
+  
+header{
+    display: flex;      
+    justify-content: center;
+    background-color: #2b3e43a1;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    font-size: 3em;
+    color: #F2F2F2;
+    
+}
+
+
+.caja-texto{
+
+    background-color:#F2F2F2;
+    font-size: 1.5em;                  
+    margin-right:15%;
+    margin-bottom: 2%; 
+    margin-left:15%;     
+    padding:10px;
+       
+
+}
+
+
+.forma-caja{   
+    
+    display: flex;
+    justify-content: center;    
+    padding:2% 2%;    
+    box-shadow: 0 0 20px rgba(119, 136, 153, 25);
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:1%;
+    width:30%;    
+    border:2px solid;
+    overflow: hidden;
+ 
+    }
+
+form{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px;
+    overflow: hidden;
+    width: 98%;
+}
+
+.centrar{
+    font-size: 30px;
+    text-align: center;
+}
+.datos-contacto{
+    margin-bottom: 5%;
+}
+
+label{
+    color: black;
+    font-size: 100%;
+    margin-bottom: 3%;
+    font-weight: 600;    
+   
+
+}
+input, textarea{
+    
+    padding: 2% 2%;
+    border-radius:25px ;
+    margin-bottom: 6%;    
+    font-size:100% ;
+    
+}
+
+.boton{
+    
+    background-color: #8ab3bea1;
+    cursor:pointer;
+    color: rgb(21, 18, 18);
+}
+
+/* Pie de pagina */
+
+
+.pie-pagina{
+    background-color: #B2b67E;
+
+}
+.logo{
+    display:flex;
+    align-items: center;
+    gap:15px;
+    
+}
+
+span{
+    font-size: 15px ;
+}
+
+.fb{
+    background-color: blue;
+    padding:8px;
+    border-radius:40px;
+    color:white;
+}
+.inst{
+    background-color: rgb(255, 0, 179);
+    padding:8px;
+    border-radius: 40px;
+    color:white;
+}
+.tw{
+    background-color: rgb(0,140,255);
+    padding:8px;
+    border-radius: 40px;
+    color:white;
+}
+.container1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.name{
+    font-size: 20px;
+}
+
+.derechos{
+    display:flex;
+    justify-content: space-between ;
+    padding: 10px;
+}
+
+
+/* RESPONSIVE - CONTACTO*/
+
+
+  @media (max-width:680px){
+
+    header{
+        
+    font-size: 2em;
+    margin-top:10%;
+       }
+
+   .caja-texto{
+    font-size: 1.3em;
+
+   } 
+   .cabecera-contacto{
+    width: 100%;
+    max-height: 30%;
+    font-size: 1em;
+    justify-content: center;        
+    margin-top:10%;
+
+}  
+    
+}  @media (max-width:360px){    
+
+    nav ul li{
+        margin: 4px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+
+    section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.forma-caja{
+    width: 80%;
+}
+
+} 
+
