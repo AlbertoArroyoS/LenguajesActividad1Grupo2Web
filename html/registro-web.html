@@ -24,11 +24,10 @@
                 <h2 id="h2-logo">Club de Corredores<span>.</span></h2>
             </a>
         </span>
-        
-        
-
     </header>
+
     <!--Menú de Navegación-->
+
     <nav>
         <input type="checkbox" id="check">
             <label for="check" class="checkbtn" href="css/menu.png">
@@ -43,12 +42,10 @@
                 <li><a href=" url">Contacto</a></li>  
             </ul>
         </div>     
-
     </nav>
-
- <!-- HASTA AQUI ES LA CABECERA Y MENU DESPLEGABLE-->
-    
+   
  <!-- Secciones -->
+
  <div class="cuerpo">
     <aside>
         <div class="img-pub"></div>
@@ -60,71 +57,67 @@
             <h2>FORMULARIO DE REGISTRO WEB</h2>
 
             <form action="procesarPeticion.jsp" method="post">
-            <fieldset id="f-registro">
-                <legend id="legend-registro" >Datos de usuario</legend>
-                <div>
-                    <label for="nombre">Nick*: </label>
-                    <input id="nombre" type="text" name="nombre" placeholder="Alberto" required/>
-                    <br/>
-                    <label for="pass">Password*: </label>
-                    <input id="pass" type="password" name="pass" placeholder="Contraseña" />
-                    <br/>
-                    Email*: <input type="email" name="email" placeholder="Escriba su email" required/>
-                    <br/>
-                    <br/>
-                    <label for="tipo-running">Disciplina de running preferida: </label>
-                    <br />	
-                    <input type="checkbox" name="tipo-running" value="MT" checked/>Maratón<br />	
-                    <input type="checkbox" name="tipo-running" value="10K" checked/>10k<br />	
-                    <input type="checkbox" name="tipo-running" value="TR" />Trailrunning<br />	
-                    <input type="checkbox" name="tipo-running" value="TT" />Triatlón<br />
-                    <br/>
-                    Perteneces a la asociación: <input type="checkbox" name="asociacion" value="Y" />
-                    <br/>
-                    Subscribirte al newsletter: <input type="checkbox" name="newsletter" value="Y" /> 	
-                    <br/>
-                    <br/>
-                     
-
-                </div> 
-            </fieldset> 
-            <fieldset id="f-registro2">
-                <legend id="legend-registro"> Datos personales</legend>
-                <div>
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" name="nombre" autofocus/>
-                    <br/>
-                    <br/>
-                    <label for="apellidos">Apellidos: </label>
-                    <input type="text" name="apellidos"/>
-                    <br/>
-                    <br/>
-                    <label for="edadNumber">Edad*: </label>
-                     <input type="number" min="18" max="120" name="edadNumber" placeholder="Edad" required/>
-                    <br/>
-                    <br/>
-                    Teléfono: <input type="tel" name="telefono" placeholder="Escriba su número de telefono"/>
-                    <br/>
-                    <br/>
-                    <label for="estado_civil">Estado civil: </label>
-                    <br />	
-                    <input type="radio" name="estado_civil" value="S" />Soltero<br />
-                    <input type="radio" name="estado_civil" value="D" />Divorciado<br />	
-                    <input type="radio" name="estado_civil" value="C" />Casado<br />	
-                    <input type="radio" name="estado_civil" value="V" />Viudo<br />
-                    <br />
-                    <div id="registro-input">
-                        <span id="registro-input1">
-                            <input type="reset" value="Limpiar formulario" />
-                        </span>
-                        <span id="registro-input2">
-                            <input type="submit" value="Enviar datos" />
-                        </span>       
+                <fieldset id="f-registro">
+                    <legend id="legend-registro" >Datos de usuario</legend>
+                    <div>
+                        <label for="nombre">Nick*: </label>
+                        <input id="nombre" type="text" name="nombre" placeholder="Alberto" required/>
+                        <br/>
+                        <label for="pass">Password*: </label>
+                        <input id="pass" type="password" name="pass" placeholder="Contraseña" />
+                        <br/>
+                        Email*: <input type="email" name="email" placeholder="Escriba su email" required/>
+                        <br/>
+                        <br/>
+                        <label for="tipo-running">Disciplina de running preferida: </label>
+                        <br />	
+                        <input type="checkbox" name="tipo-running" value="MT" checked/>Maratón<br />	
+                        <input type="checkbox" name="tipo-running" value="10K" checked/>10k<br />	
+                        <input type="checkbox" name="tipo-running" value="TR" />Trailrunning<br />	
+                        <input type="checkbox" name="tipo-running" value="TT" />Triatlón<br />
+                        <br/>
+                        Perteneces a la asociación: <input type="checkbox" name="asociacion" value="Y" />
+                        <br/>
+                        Subscribirte al newsletter: <input type="checkbox" name="newsletter" value="Y" /> 	
+                        <br/>                   
+                    </div> 
+                </fieldset> 
+                <fieldset id="f-registro2">
+                    <legend id="legend-registro"> Datos personales</legend>
+                    <div>
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" name="nombre" autofocus/>
+                        <br/>
+                        <br/>
+                        <label for="apellidos">Apellidos: </label>
+                        <input type="text" name="apellidos"/>
+                        <br/>
+                        <br/>
+                        <label for="edadNumber">Edad*: </label>
+                        <input type="number" min="18" max="120" name="edadNumber" placeholder="Edad" required/>
+                        <br/>
+                        <br/>
+                        Teléfono: <input type="tel" name="telefono" placeholder="Escriba su número de telefono"/>
+                        <br/>
+                        <br/>
+                        <label for="estado_civil">Estado civil: </label>
+                        <br />	
+                        <input type="radio" name="estado_civil" value="S" />Soltero<br />
+                        <input type="radio" name="estado_civil" value="D" />Divorciado<br />	
+                        <input type="radio" name="estado_civil" value="C" />Casado<br />	
+                        <input type="radio" name="estado_civil" value="V" />Viudo<br />
+                        <br />
+                        <div id="registro-input">
+                            <span id="registro-input1">
+                                <input type="reset" value="Limpiar formulario" />
+                            </span>
+                            <span id="registro-input2">
+                                <input type="submit" value="Enviar datos" />
+                            </span>       
+                        </div>                   
                     </div>
-                    
-                </div>
-            </fieldset>
-        </form>
+                </fieldset>
+            </form>
             
         </div>
             

@@ -8,6 +8,7 @@ html{
     background-repeat: repeat-y;
     background-size: cover;
 }
+
 * {
     margin: 0%;
     padding: 0%;
@@ -23,23 +24,22 @@ a:link, a:visited, a:active {
     margin-top: 10vh;
     margin-right: 4vw;
     margin-bottom: 2vh;
-    width: 100%;
-    
+    width: 100%;   
 }
 
 body {
-    width: 100%;
-     
+    width: 100%;    
 }
+
 /* Estilos de la Cabecera de la pagina */
 body header {
     margin-top: 100px;
     width: 100%;
     height: 100px;
     background-color: #2b3e43a1;
-    margin-bottom: 10px;
-     
+    margin-bottom: 10px;    
 }
+
 body header a{
     font-size: 35px;
     color:#080808;   
@@ -74,8 +74,6 @@ nav {
     position: fixed ;
     top: 0;
     z-index: 5;
-
-
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -134,13 +132,12 @@ li a:hover{
 
 .checkbtn{
     width: 1em;
-    display: block;
-    
+    display: block;   
 }
+
  #check:checked ~ul{
     left:0;
  }
-
 
 /* ******************************************************************* */
 
@@ -154,8 +151,7 @@ aside {
     margin-top: -50px;
     margin-bottom: 20px;
     float: left;
-    object-fit: scale-down;
-      
+    object-fit: scale-down;     
 }
 
 .img-pub{
@@ -175,9 +171,9 @@ section {
     background-color: #999;
     background-color: #2b3e43a1;
     float: left;
-    padding-bottom: 10px;
-    
+    padding-bottom: 10px;   
 }
+
 section h3{
     font-size: 30px;
 }
@@ -225,8 +221,7 @@ section footer {
 .pie-seccion{
     margin-top: 10px;
     float: left;
-    margin-bottom: auto;
-    
+    margin-bottom: auto;    
 }
 
 .pie-seccion img {
@@ -235,6 +230,7 @@ section footer {
     height: 120px;
     margin: 5px;
 }
+
 /* Resaltar el icono al pasar sobre el y poner borde redondeado*/
 .pie-seccion img:hover{
     border: 4px solid red;
@@ -245,7 +241,6 @@ section footer {
     font-size: 28px;   
 }
 
-
 /*Estilos del Pie de la pagina */
 footer {
     width: 960px;
@@ -255,15 +250,12 @@ footer {
     clear: both;
 }
 
-
 /* Boton de nuevo usuario */
 #r-nuevo{
     background-color: #FFF;
     font-family: roboto-slab, serif;
-
 }
 
- 
 /* Estilos de la galeria de fotos de la pagina principal y hacerla modal
 https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
 */
@@ -273,25 +265,25 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     list-style: none;
     padding: 20px;
     box-sizing: border-box;
-
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
+
 .galeria-inicio li{
     margin: 5px;
 }
+
 /* Estilo para el tamaño de las fotos que se ven en pequeño en la pagina principal*/
 .galeria-inicio img{
     width: 180px;
     height: 200px;
 }
+
 /* Estilos del modal para galeria de fotos del inicio*/
 .galeria-modal{
     display: none;
 }
-
 
 /* Uso target para que cuando haga click en la foto abra la galeria modal*/
 .galeria-modal:target{
@@ -303,8 +295,7 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     width: 100%;
     height: 100%;
     /* para que esta capa quede por encima del menu de navegacion interactivo*/
-    z-index: 2;
-    
+    z-index: 2;   
 }
 
 .galeria-modal h3{
@@ -329,17 +320,20 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     margin-left: 5px;
     margin-right: 25px;
 }
+
 /* Elegimos solo la segunda etiqueta <a> que es la que contiene la imagen*/
 .imagen-modal a:nth-child(2){
     margin: 0;
     height: 100%;
 }
+
 .imagen-modal img{
     width: 50%;
     max-width: 80%;
     border: 7px solid #FFF;
     box-sizing: border-box;
 }
+
 .cerrar-galeria{
     display:block;
     background: #FFF;
@@ -355,10 +349,7 @@ https://www.youtube.com/watch?v=mWKmDV94uPI&t=363s
     border-radius: 50%;
     line-height: 25px;
     margin-bottom: 20px;
-    
-
 }
-
 
 /* Estilos seccion 2 carreras
 https://sensacionweb.com/como-crear-un-boton-con-html-y-css/
@@ -367,7 +358,6 @@ https://sensacionweb.com/como-crear-un-boton-con-html-y-css/
 .proxima-carrera{
     float: none;
     margin-bottom: 15px;
-
 }
 
 .proxima-carrera img {
@@ -381,9 +371,11 @@ https://sensacionweb.com/como-crear-un-boton-con-html-y-css/
     font-weight: 400;
     color:#000000;
 }
+
 .proxima-carrera-web a:hover{
     color:red;
 }
+
 .todas-carreras {
     text-decoration:none;
     font-weight:600;
@@ -394,9 +386,11 @@ https://sensacionweb.com/como-crear-un-boton-con-html-y-css/
     padding-right:40px;
     background-color:#2b3e43a1; 
 }
+
 .todas-carreras a{
     color:#000000;
 }
+
 .todas-carreras:hover{
     background-color:rgba(129, 169, 116, 0.9)
 }
@@ -404,9 +398,6 @@ https://sensacionweb.com/como-crear-un-boton-con-html-y-css/
 .todas-carreras:hover a{
     color:red;
 }
-
-
-
 
 /* Estilos Formularios de registro Alberto */
 
@@ -425,24 +416,25 @@ https://sensacionweb.com/como-crear-un-boton-con-html-y-css/
     justify-content: center; 
     align-items: center; 
 }
+
 #inicio-sesion h4{
     font-size: 30px;
     background-color: #f0f2f3cb;
     margin-bottom: 10%;
+}
 
-}
 #inicio-sesion input{
-    font-size: 25px;
-    
+    font-size: 25px;   
 }
+
 #nuevo-usr{
     margin-bottom: 15px;
 }
+
 #nuevo-usr a{
     background-color: rgba(15, 15, 15, 0.7);
     font-size: 30px;
-    color: white;
-    
+    color: white;    
 }
 
 /* Estilos Contraseña olvidada*/
@@ -459,17 +451,14 @@ https://sensacionweb.com/como-crear-un-boton-con-html-y-css/
     float:left;
     background-color: #f0f2f3cb;
     padding-bottom: 20px;
-
-    
 }
-#recuperar h4{
-    
+#recuperar h4{   
     font-size: 30px;
     background-color: #f0f2f3cb;
 }
+
 /* Formulario de registro en la web */
 #main-registro-web{
-
     width: 90%;
     height: auto;
     align-items: center;
@@ -480,51 +469,56 @@ https://sensacionweb.com/como-crear-un-boton-con-html-y-css/
     text-align: center;
     float:left;  
 }
+
 #main-registro-web h2{
     font-size: 25px;
     background-color: #f0f2f3cb;
 }
+
 #main-registro-web form{
     margin-top: 15px;
+    margin-bottom: 15px;
 }
-#f-registro {
-    
+
+#f-registro {   
     height: auto;
     background-color: rgba(204, 207, 205, 0.9);
     margin-bottom: 8px;
 }
+
 #f-registro2 {
     height: auto;
     background-color: rgba(127, 125, 125, 0.9);
     margin-bottom: 10px;
 }
+
 #legend-registro{
     background-color: #999;
 }
+
 #registro-input input{
     font-size: 20px;
 }
+
 #registro-input1:hover input{
     color:red;
 }
+
 #registro-input2:hover input{
     color:red;
 }
 
  /* Pie de pagina */
-
-
  .pie-pagina{
-    background-color: #BDD959;
+    background-color: #b2b67e;
     width: 100%;
     height: 150px;
-
 }
+
 .logo{
     display:flex;
     align-items: center;
-    gap:15px;
-    
+    gap:15px;   
 }
 
 span{
@@ -537,24 +531,28 @@ span{
     border-radius:40px;
     color:white;
 }
+
 .inst{
     background-color: rgb(255, 0, 179);
     padding:8px;
     border-radius: 40px;
     color:white;
 }
+
 .tw{
     background-color: rgb(0,140,255);
     padding:8px;
     border-radius: 40px;
     color:white;
 }
+
 .container1{
     display: flex;
     justify-content: space-between;
     padding: 10px;
     align-items: center;
 }
+
 .name{
     font-size: 20px;
 }
@@ -565,13 +563,10 @@ span{
     padding: 10px;
 }
     
-
 /* *************************************************************************************** */
 /* CSS RESPONSIVO */
 @media screen and (max-width: 980px) {
-    
-    
-    
+
     section {
         width: 95%;
     }
@@ -582,93 +577,91 @@ span{
         width: 100%;
         
     }
+
     aside {
         width: 99%;
     }
+
     footer {
         width: 99%;
     }
+
     .main-registro-web{
         width: 99%;
         height: auto;
         float:left
     }
+
     #f-registro {
         width: 96%;
     }
+
     header {     
         width: 100%;
     }
+
     /* cambiar el tamaño de la publicidad */
     .img-pub{
         width: 96%;
     }
+
     #inicio-sesion{
         width: 95%;
     }
+
     #recuperar{
         width: 95%;
     }
+
     #main-registro-web{
         width: 95%;
     }
+
     #f-registro {
         width: 100%;
     }
+
     #f-registro2 {
         width: 100%;
-    }
-   
-   
+    }  
 }
 
 @media screen and (max-width: 700px) {
-    /* 
-    Con width auto se tiene en cuenta el padding y el margen a la hora de calcular
-    el ancho que ocupara un elemento.
 
-    Con width 100% no se tendra en cuenta, por lo que primero ocupará todo el ancho 
-    de la página y luego le sumara el "padding" y el "margin", saliendose de los límites
-
-    https://blogs.ua.es/pi/2012/12/07/la-diferencia-entre-widthauto-y-width100/  
-    
-    barar de navegacion
-    https://www.youtube.com/watch?v=f7QujqArvIw
-    */
-    body header {
-         
-    }
     aside {
         width: 98%;
         
     }
+
     section {
         width: 95%;
         float: left;
         
     }
+
     .galeria-inicio{
         justify-content: center;
     }
-    
-    
+
     footer{
         width: 98%;
     }
+
     section header {
 
         width: 97%;
         height: 100px;
         height: auto;
     }
+
     body header a{
         font-size: 20px;
     }
-   
-  
+
     section article {
         width: 97%;
     }
+
     section footer {
         width: 97%;
         height: auto;
@@ -682,47 +675,42 @@ span{
     .img-pub{
         background-image:url("../img/publicidad6.png");
         width: 97%;
-
     }
+
     #main-registro-web{
         width: 95%;
     }
+
     #f-registro {
         width: 99%;
     }
+
     #f-registro2 {
         width: 99%;
     }
+
     #letra-pie-seccion{
         font-size: 20px;
     }
+
     #inicio-sesion input{
-        font-size: 20px;
-        
+        font-size: 20px;      
     }
-
-  
-    
-
 }
 
 @media screen and (max-width: 480px) {
     
-    body header {
-       
-        width: 100%;
-        
+    body header {   
+        width: 100%;      
     }
+
     body header a{
         font-size: 17px;
     }
-    aside {
-       
-         
-    }
+
     nav{
         top:0;
-        height: 80px;
+        height: 60px;
     }
 
     header {
@@ -732,10 +720,12 @@ span{
     h1 {
         font-size: 24px;
     }
+
     aside {
         width: 96%;
         display: left;
     }
+
     section {
         width: 94%;
     }
@@ -748,10 +738,12 @@ span{
     section article {
         width: 95%;
     }
+
     section footer{
         width: 95%;
         height: auto;
     }
+
     #letra-pie-seccion{
         font-size: 25px;
     }
@@ -765,49 +757,54 @@ span{
         background-image:url("../img/publicidad6.png");
         opacity: 0.9;
         width: 98%;
-
     }
+
     .galeria-inicio{
         justify-content: center;
     }
+
     .galeria-modal{
-        width: 95%;
-        
+        width: 95%;   
     }
+
     .imagen-modal img{
-        width: 80%; 
-        
+        width: 80%;     
     }
+
     .cerrar-galeria{
         margin-top: 50px;
     }
+
     #inicio-sesion{
         width: 94%;
     }
+
     #recuperar{
         width: 95%;
     }
+
     #main-registro-web{
         width: 95%;
     }
+
     #f-registro {
         width: 99%;
     }
     #f-registro2 {
         width: 99%;
     }
+
     .pie-pagina{
         height: 190px;
     }
+
     #letra-pie-seccion{
         font-size: 20px;
     }
-    #inicio-sesion input{
-        font-size: 19px;
-        
-    }
-    
 
+    #inicio-sesion input{
+        font-size: 19px;       
+    }
 }
 
 /* **************  FIN ESTILOS ALBERTO ******************************************/
