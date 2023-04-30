@@ -1,0 +1,688 @@
+html{
+    min-width: 360px;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(fondo3.svg);
+    background-repeat: repeat-y;
+    background-size: cover;
+
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/* Barra navegación */
+
+nav{
+    background-color: #06090acb;
+    width: 100%;
+    height: 50px;
+    position: fixed ;
+    top: 0;
+    z-index: 1;
+
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Menú desplegable navegación*/
+
+.checkbtn img {
+    margin-left: 2em;
+    width: 100%;
+    cursor: pointer;
+}
+
+nav ul{
+
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 15%;
+    margin-bottom: 10%;
+    left: -109%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 4;
+ 
+}
+nav ul li{
+    display: block;
+    margin: 10% 0;
+    line-height: 30px;
+}
+
+nav ul li a{
+    padding: 0.25em 1em;
+    font-size: 1em;
+    border-radius: 5px;
+    color: #666;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #242323;
+    color: #fefffe;
+ }
+
+ #check{
+    display:none;
+ }
+
+.checkbtn{
+    width: 1em;
+    display: block;
+    
+}
+ #check:checked ~ul{
+    left:0;
+ }
+
+
+/* Cabecera */
+
+body header {
+    background-color: #2b3e43a1;
+    margin-top: 60px;
+    margin-bottom: 2%;
+}
+
+
+header h1 {
+    padding: 2rem 1rem;
+    font-size: 4em;
+    color: #F2F2F2;
+    text-align: center;
+}
+
+
+.cuerpo {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2vh;
+}
+
+
+/* Parte de lectura */
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.resumen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.esquema {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.esquema a {
+    text-decoration: none;
+}
+
+.item {
+    width: 30%;
+    font-size: 0.5em;
+    background-color: #b2b67eb1;
+    border-radius: 7%;
+}
+
+#imagen_ultimas {
+    width: 85%;
+    height: 200px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    background-image: url(mapa.svg);
+    background-size: cover;
+    border-color: none;
+    border-radius: 7%;
+}
+
+#imagen_destacadas {
+    width: 85%;
+    height: 200px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    background-image: url(corredores.svg);
+    background-size: cover;
+    border-color: none;
+    border-radius: 7%;
+}
+
+#imagen_reviews {
+    width: 85%;
+    height: 200px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    background-image: url(zapasb.svg);
+    background-size: cover;
+    border-color: none;
+    border-radius: 7%;
+    z-index: 2;
+}
+
+
+/* Secciones */
+
+section { 
+    width: 65%;
+    background-color: #2b3e43a1;
+    margin-bottom: 2vh;
+    margin-right: 3%;
+    padding: 7%;
+    padding-top: 1em;
+    padding-bottom: 2em; 
+
+}
+
+section h2 {
+    padding: 0.75em;
+    text-align: center;
+    font-size: 2em;
+    color: #F2F2F2;
+}
+
+/* Post */
+
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-family: 'Poppins';
+    padding: 3vh;
+    padding-top: 3vh;
+    background-color:#F2F2F2 ;
+    overflow: hidden;
+}
+
+.post_noticias {
+    font-family: 'Poppins';
+    padding: 3vh;
+    background-color:#F2F2F2 ;
+    overflow: hidden;
+}
+
+.subtitulo {
+    margin: 0%;
+    margin-bottom: 5%;
+    height: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: #2b3e43a1;
+}
+
+.post_noticias .texto {
+    width: 100%;
+    text-align: justify;
+}
+
+.texto {
+    width: 55%;
+    padding-top: 5% ;
+    padding-bottom: 5%;
+}
+
+p {
+    text-align: justify;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+
+.imagen_unete {
+    background-image: url(grupo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    margin-top: 2%;
+    margin-left:1%;
+}
+
+.img_mapa {
+    background-image: url(mapa.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 300px;
+    float: left;
+    margin-left: 2%;
+    margin-right: 3%;
+    
+}
+
+.img_grupo {
+    background-image: url(grupo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 300px;
+    float: right;
+    margin-left: 3%;
+    margin-right: 2%;
+}   
+
+.img_zapas {
+    background-image: url(zapasb.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 300px;
+    float: left;
+    margin-left: 2%;
+    margin-right: 3%;
+}
+
+#ultimas {
+    float: right;
+    padding-top: 0%;
+}
+
+#destacadas {
+    float: left;
+    padding-top: 0%;
+}
+
+#reviews {
+    float: right;
+    padding-top: 0%;
+}
+
+.post h3 {
+    margin-top: 15vh;
+    margin-bottom: 1vh;
+    font-size: 2em;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+/* Formulario */
+
+#form_completo {
+    clear: both;
+}
+
+form {
+    overflow: hidden;
+    padding: 0.5vh;
+}
+
+
+form fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;  
+    padding: 2vh;  
+}
+
+#deportes {
+    padding-top: 1em;
+    padding-left: 2vh;
+    margin-bottom: 2vh; 
+}
+
+#deportes div {
+    padding-top: 1em;
+    padding-left: 3vh;
+    margin-bottom: 2vh; 
+}
+
+form div {
+    padding-top: 1em;
+    padding-left: 3vh;
+    margin-bottom: 2vh; 
+}
+
+
+button {
+    margin-top: 0.5em;
+    width: 200px;
+    height: 60px;
+    font-size: 2em;
+    color: #F2F2F2;
+    background-color: #2b3e43;
+    border-color: #06090a;
+    border-radius: 5px;
+    border: none;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+
+}
+
+button:hover {
+    box-shadow: inset 0 0 20px #6b6e6faa, 0 0 20px rgba(23, 45, 53, 0.6);
+    outline-color: rgba(49, 138, 172, 0);
+    outline-offset: 80px;
+}
+
+button:active {
+    color: #b2b67e;
+  }
+
+#boton {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Publicidad */
+
+.publicidad{
+    background-image: url(Publi\ Vertical.svg);
+    background-size: contain;
+    width: 18%;
+    min-width: 20px;
+    margin-bottom: 2vh;
+    overflow: hidden;
+}
+
+.publicidad_noticias {
+    background-image: url(Publi\ Vertical.svg);
+    background-size: contain;
+    width: 18%;
+    min-width: 20px;
+    margin-bottom: 2vh;
+    overflow: hidden;
+}
+
+
+
+ /* Pie de pagina */
+
+
+ .pie-pagina{
+    background-color: #b2b67e;
+
+}
+.logo{
+    display:flex;
+    align-items: center;
+    gap:15px;
+    
+}
+
+span{
+    font-size: 0.75em ;
+}
+
+.fb{
+    background-color: blue;
+    padding:8px;
+    border-radius:40px;
+    color:white;
+}
+.inst{
+    background-color: rgb(255, 0, 179);
+    padding:8px;
+    border-radius: 40px;
+    color:white;
+}
+.tw{
+    background-color: rgb(0,140,255);
+    padding:8px;
+    border-radius: 40px;
+    color:white;
+}
+.container1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.name{
+    font-size: 1em;
+}
+
+.derechos{
+    display:flex;
+    justify-content: space-between ;
+    padding: 10px;
+    font-size: 0.75em;
+}
+
+
+/* Enlaces */
+
+#enlaces {
+    padding: 1em 0.5em;
+}
+
+
+#inicio {
+    float: left;
+}
+#contacto {
+    float: right;
+}
+
+a:link {
+    color: #06090a;
+}
+
+a:visited {
+    color: #f2f2f2;
+}
+
+/* Licencia */ 
+
+
+#licencia {
+    text-align: center;
+}
+
+
+/* ----------------- Responsive. Media Query ----------------------*/
+
+@media (max-width:961px)  { /* tablet portrait */ 
+    
+    body header {
+        margin-top: 60px;
+    }
+    
+    main{
+        justify-content: center;
+    }
+    
+    /* Secciones */
+    
+    section { 
+        width: 90%;
+        margin-right: 0%;
+    }
+
+    /* Resumen */
+
+    .esquema {
+        justify-content: center;
+    }
+
+    .item {
+        width: 55%;
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+
+    
+    /* Publicidad */
+
+    .publicidad{
+        background-image: url(Publi\ Horizontal.svg);
+        height: 310px;
+        width: 100%;
+    }
+
+}
+
+@media (max-width:700px)  { /* portrait tablets */
+
+    body header {
+        margin-top: 60px;
+    }
+    
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    main{
+        justify-content: center;
+    }
+
+    /* Resumen */
+
+    .item {
+        width: 70%;
+        font-size: 1em;
+    }
+    
+    /* Secciones */
+    
+    section { 
+        width: 90%;
+        margin-right: 0%;
+    }
+    
+    section h2 {
+        padding: 0.5em;
+        font-size: 1.5em;
+    }
+    
+    /* Post noticias */
+
+    #ultimas {
+        clear: both;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #destacadas {
+        clear: both;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #reviews {
+        clear: both;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img_mapa {
+        width: 70%;
+        margin-bottom: 3%;
+    }
+    
+    .img_grupo {
+        width: 70%;
+        margin-bottom: 3%;
+    }   
+    
+    .img_zapas {
+        width: 70%;
+        margin-bottom: 3%;
+    }
+
+    /* Post */
+
+    .post {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+
+    .texto {
+        width: 95%;
+        font-size: 0.8em;     
+    }
+
+    .imagen_unete {
+        width: 50%;
+        height: 250px;
+    }
+
+    /* Publicidad */
+
+    .publicidad{
+        background-image: url(Publi\ Horizontal.svg);
+        height: 310px;
+        width: 100%;
+    }
+}
+
+
+@media (max-width:450px)  { /* smartphone portrait */
+    body header {
+        margin-top: 60px;
+    }
+    
+    .imagen_unete {
+        width: 50%;
+        height: 150px;
+    }
+
+    
+    /* Resumen */
+
+    .item {
+        width: 90%;
+        font-size: 1em;
+    }
+
+   /*  Imágenes noticias */
+
+   .img_mapa {
+    width: 90%;
+    height: 150px;
+}
+
+.img_grupo {
+    width: 90%;
+    height: 150px;
+}   
+
+.img_zapas {
+    width: 90%;
+    height: 150px;
+}
+
+}
+
+
+@media (max-width:350px)  { /* smartphone portrait */
+    body header {
+        margin-top: 60px;
+    }
+}
