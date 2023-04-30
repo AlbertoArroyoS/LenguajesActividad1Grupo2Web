@@ -429,7 +429,7 @@ span{
 
     /* Tablet en posición vertical */
 
-@media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+@media screen and (min-width: 700px) and (max-width: 1300px) and (orientation: portrait) {
     form {
         width: 75%;
     }
@@ -532,7 +532,7 @@ span{
 
     /* Teléfono en posición vertical */
 
- @media screen and (max-width: 767px) and (orientation: portrait) {
+ @media screen and (max-width: 700px) and (orientation: portrait) {
     .cards {
         width: 90%;
         height: 175px;
@@ -588,7 +588,7 @@ span{
 
      /* Teléfono en posición horizontal */
 
- @media screen and (min-width: 375px) and (max-width: 1023px) and (orientation: landscape) {
+ @media screen and (min-width: 350px) and (max-width: 1023px) and (orientation: landscape) {
     form {
         width: 90%;
         column-count: 2;
