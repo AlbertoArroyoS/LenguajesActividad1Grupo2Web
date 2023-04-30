@@ -42,7 +42,7 @@ body header {
 
 body header a{
     font-size: 35px;
-    color:#080808;   
+    color: #f2f2f2;  
 }
 
 #nombre-web{
@@ -58,7 +58,7 @@ body header a{
 /* Estilo primera letra del nombre de la web */
 
 #nombre-web:first-letter{
-    color: rgb(51, 51, 51)
+    color: rgb(51, 51, 51);
 }
 
 #cabeceralogo {
@@ -801,6 +801,30 @@ span{
 
     #inicio-sesion input{
         font-size: 19px;       
+    }
+    nav ul{
+        flex-direction: row;
+        height: auto;      
+    }
+    nav ul li{
+        display: block;
+        margin: 20px 0;
+        line-height: 35px;   
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-height: 400px){
+     
+    nav ul li{
+        margin: 4px 0;
+        line-height: 30px;   
+    }
+    nav ul li a{
+        font-size: 15px;
     }
 }
 
