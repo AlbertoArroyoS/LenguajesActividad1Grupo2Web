@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,400;1,200;1,400;1,600&family=Poppins:ital,wght@0,400;0,500;1,200&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/56557950c8.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="styles.css">
+	<title>Carreras</title>
+</head>
+
+<body class="bodycarreras">
+	<header class="headercarreras">
+		<h1 class="h1carreras">Carreras</h1> 
+    </header>
+	
+        <!-- Menú desplegable Alberto -->
+	
+    <nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn"> <img src="imagenes/menu.png" /> 
+        </label>
+		<ul>
+			<li><a href="#">Inicio</a></li>
+            <li><a href=" url">Noticias</a></li>
+            <li><a href=" url">Carreras</a></li>
+            <li><a href=" url">Sobre nosotros</a></li>
+            <li><a href=" url">Localización</a></li>
+            <li><a href=" url">Contacto</a></li>
+            <li><a href=" url">Inscribirte al club</a></li>
+            <li><a href=" url">Iniciar sesión</a></li> 
+		</ul>
+	</nav>
+	
+    <!-- Card 1 -->
+	
+    <div class="cards">
+		<div class="face front"> <img src="imagenes/obstaculos.jpeg" alt="Corredor de obstáculos"> </div>
+		    <div class="face back">
+                <h3>Carrera de obstáculos</h3>
+                <p>Supera desafíos y demuestra tu resistencia y valentía en nuestros 3000 metros con obstáculos. </p>
+			<div class="link"> <a href="#Inscripción">Inscríbete</a> </div>
+		</div>
+	</div>
+	
+    <!-- Card 2 -->
+	
+    <div class="cards">
+		<div class="face front"> <img src="imagenes/parejas.jpeg" alt="Pareja corriendo"> </div>
+		    <div class="face back">
+                <h3>Carrera por parejas</h3>
+                <p>Supera juntos los desafíos en la carrera por parejas. Coordina tu ritmo y comunicación para llegar a la meta como un equipo.</p>
+			<div class="link"> <a href="#Inscripción">Inscríbete</a> </div>
+		</div>
+	</div>
+	
+    <!-- Card 3 -->
+	
+    <div class="cards">
+		<div class="face front"> <img src="imagenes/maraton.jpeg" alt="Corredor maratón"> </div>
+		    <div class="face back">
+                <h3>Maratón</h3>
+                <p>La maratón es una de las pruebas más duras del atletismo, requiere de una gran preparación física y mental.</p>
+			<div class="link"> <a href="#Inscripción">Inscríbete</a> </div>
+		</div>
+	</div>
+	
+    <!-- Enlace a página inscripción en el club -->
+	
+    <hr> 
+    <a class="linksocio" href="#">¡HAZTE SOCIO DE NUESTRO CLUB PINCHANDO AQUI!</a>
+	<hr>
+	
+    <!-- Formulario de inscripción -->
+	
+    <form id="Inscripción" action="procesarPeticion.jsp" method="get">
+		<legend>FORMULARIO DE INSCRIPCIÓN</legend> <span class="obligatorio">* Campo obligatorio</span>
+		<br>
+		<br>
+		<label for="nombre"> Nombre*: </label>
+		<input type="text" id="nombre" name="nombre" placeholder="Alejandro" required>
+		<br>
+		<br>
+		<label for="apellidos"> Apellidos*: </label>
+		<input type="text" id="apellidos" name="apellidos" placeholder="Aguiar" required>
+		<br>
+		<br>
+		<label for="fecha_nacimiento"> Fecha de nacimiento*: </label>
+		<input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+		<br>
+		<br>
+		<label for="sexo"> Sexo: </label>
+		<br>
+		<label for="hombre" name="hombre"> Hombre </label>
+		<input type="radio" id="hombre" name="sexo" value="h">
+		<br>
+		<label for="mujer" name="mujer"> Mujer </label>
+		<input type="radio" id="mujer" name="sexo" value="m">
+		<br>
+		<label for="otro" name="otro"> Otro </label>
+		<input type="radio" id="otro" name="sexo" value="h">
+		<br>
+		<br>
+		<label for="movil"> Móvil*: </label>
+		<input type="tel" id="movil" name="movil" pattern="[0-9]+" placeholder="123456789" required>
+		<br>
+		<br>
+		<label for="opciones"> Selecciona una carrera*: </label>
+		<select id="opciones" name="opciones">
+			<option value="1"> Obstáculo </option>
+			<option value="2"> Carrera por Parejas </option>
+			<option value="3"> Maratón </option>
+		</select>
+		<br>
+		<br>
+		<label for="foto"> Foto: </label>
+		<input type="file" name="foto" />
+		<br>
+		<br>
+		<input type="reset">
+		<input type="submit" value="Enviar"> </form>
+	
+        <!-- Pie de página Carmen -->
+	
+    <footer class="pie-pagina">
+		<div class="container1">
+			<div class="logo"> <img src="imagenes/sprint.png">
+				<p class="name">
+					<b>Club Corredores</b>
+				</p>
+			</div>
+			<div class="redes"> 
+                <span class="fb"><i class="fa-brands fa-facebook"></i></span> 
+                <span class="inst"><i class="fa-brands fa-instagram"></i></span> 
+                <span class="tw"><i class="fa-brands fa-tiktok"></i></span> 
+            </div>
+		</div>
+		<hr>
+		<div class="derechos">
+			<p><b>Copyright@2023 Licencia y Copyright. Todos los derechos reservados</b></p>
+			<p><b>Politica de privacidad. Términos y condiciones</b></p>
+		</div>
+	</footer>
+</body>
+</html>
