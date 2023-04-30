@@ -1,14 +1,27 @@
 
-  /* *{ 
-    outline: 1px solid red;
-}   */
+ /* ESTILOS GENERICOS A APLICAR */
  *{
     box-sizing: border-box;
 }
-html{
-    min-width: 360px;
-       
+
+* {
+    margin: 0%;
+    padding: 0%;
 }
+
+/* ESTILO Y FONDO DE LA WEB */
+
+html{  
+    
+    background-image: url(/assets/imagenes/fondo3.svg);   
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-repeat: repeat-y;
+    background-size: cover;
+    
+    
+}
+
 
 /* MENU DE NAVEGACION
 
@@ -24,6 +37,7 @@ html{
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .checkbtn img {
@@ -82,134 +96,123 @@ li a:hover{
  }
  
 
-/* Quienes somos */
+/* QUIENES SOMOS */
 
-.cuerpo {
-    margin-top: 10vh; 
-    margin-right: 4vh; 
-    margin-bottom: 2vh;
-    margin-left:4 vw;
-}
-
-/* Cabecera */
-
-body header {
+header{
+    display: flex;      
+    justify-content: center;
     background-color: #2b3e43a1;
-    margin-bottom: 15px;
-}
-
-
-header h1 {
-    padding: 2rem 1rem;
-    font-size: 8vh;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    font-size: 3em;
     color: #F2F2F2;
-    text-align: center;
+    
 }
 
-/* Imagen equipo*/
+
+/* IMAGEN EQUIPO */
     
     .imgequipo {
                       
         display:block;                   
         margin-left: auto;
-        margin-right:auto; 
-        width: 100%;
-        max-width: 1800PX;
+        margin-right:auto;              
         object-fit: cover;
+        width: 100%;
+        
                        
-        }
-                 
+        }                
        
-/* "Nuestro club" */
+
+/* NUESTRO CLUB*/ 
 
         .contenedor1{
             display: flex;
+            justify-content:center; 
             flex-wrap: wrap;
             flex-direction: row;
             width: 100%;
-            
-        }        
 
-       .text1{
-            text-align: center;
-            
-            
-       }
-             
- 
-        .box1 {
-            
+           
+        }
+
+        .caja-texto-club{
             background-color:#F2F2F2;
-            width: 560px;
-            height: 290px; 
-            margin-top:30px ;            
-            margin-right:5%;
-            margin-left:20%;
-            margin-bottom: 20px;
-            text-align: left; 
-            font-size: 1.2em;  
-            padding:10px;
-            float:left;
-                       
-          
+            width: 540px;
+            min-width: 250px;            
+            padding: 35px 20px;
+            margin-top: 50px;
+            margin-right: 3%;
+            
+                                          
+            
         }
 
-        .img-equipo{      
-
-            float:center;
-            display: block;            
-            margin-top: 30px;
+        .titulo-texto{
+            font-size: 2rem;
             margin-bottom: 20px;
-            width: 560px;
-            height: 290px;
+            text-align: center;
+        }
+        .texto{
+            font-size: 1.1rem;
+        }
+
+        .img-equipo{
+            width: 540px;
+            height: 350px;
+            margin-top:50px;
             object-fit: cover;
-                        
+            float: right;
+                     
         }
+         
 
-/* Nuestros valores  */  
+/* NUESTROS VALORES */  
          
         .contenedor2{
             display: flex;
+            justify-content:center; 
             flex-wrap: wrap;
             flex-direction: row;
             width: 100%;
-        }        
-        .text2{
-        text-align: center;
+
         
         }
-       .box2 {
-            
+
+        .caja-texto-valores{
             background-color:#F2F2F2;
-            width: 560px;
-            height: 290px; 
-            margin-top:30px ;            
-            margin-right:5%;
-            margin-left:5%;
-            margin-bottom: 20px;
-            text-align: left; 
-            font-size: 1.2em;  
-            padding:10px;
-            float:right;
-        
-        
-      
-    }
-
-    .img-valores{      
-
-            margin-left:20%;       
-            margin-top: 30px;
-            margin-bottom: 20px;
-            width: 560px;
-            height: 290px;
-            object-fit: cover;
-                        
+            width:540px;            
+            min-width: 250px;  
+            padding: 35px 20px;
+            margin-top: 50px;
+            margin-left: 3%;
+            margin-right: 1%;
+                                        
+            
         }
 
+        .titulo-texto-valores{
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .texto{
+            font-size: 1.1rem;
+        }
+
+        .img-valores{
+            width: 540px;
+            height: 350px;
+            margin-top:50px;
+            object-fit: cover;
+            float: left;
+                                
+        }
+           
     
-    
-/* Equipo que trabaja en el club */
+/* EQUIPO DE PERSONAS QUE TRABAJAN EN EL CLUB */
 
     .contenedor3{
 
@@ -224,7 +227,7 @@ header h1 {
 
     .box3 {
                     
-        background-color:lightsteelblue;
+        background-color: hsla(194, 6%, 43%, 0.503);
         width: 250px;              
         margin-top:20px;
         margin-right:auto;
@@ -240,7 +243,7 @@ header h1 {
 
     .img-fundador{
 
-        background-color: cornflowerblue;
+        background-color:hsla(194, 6%, 43%, 0.503);
         float:center;
         display: block;            
         margin-top: 20px;
@@ -253,10 +256,9 @@ header h1 {
     }
     
 
-
     .box4 {
                 
-        background-color:lightsteelblue;
+        background-color:hsla(194, 6%, 43%, 0.503);
         width: 250px;              
         margin-top:20px;
         margin-right:auto;
@@ -274,7 +276,7 @@ header h1 {
 
     .img-asesor{
 
-        background-color: cornflowerblue;
+        background-color:hsla(194, 6%, 43%, 0.322);
         float:center;
         display: block;            
         margin-top: 20px;
@@ -289,7 +291,7 @@ header h1 {
     
     .box5 {
                 
-        background-color:lightsteelblue;
+        background-color:hsla(194, 6%, 43%, 0.322);
         width: 250px;              
         margin-top:20px;
         margin-right:auto;
@@ -307,7 +309,7 @@ header h1 {
 
     .img-nutricionista{
 
-        background-color: cornflowerblue;
+        background-color: hsla(194, 6%, 43%, 0.322);
         float:center;
         display: block;            
         margin-top: 20px;
@@ -318,12 +320,10 @@ header h1 {
         object-fit: cover;
             
     }
-
-    
-
+   
     .box6 {
                 
-        background-color:lightsteelblue;
+        background-color: hsla(194, 6%, 43%, 0.322);
         width: 250px;              
         margin-top:20px;
         margin-right:auto;
@@ -356,14 +356,14 @@ header h1 {
         object-fit: cover;
             
     }
-      
+    
     
 
-    /* Pie de pagina */
+/* PIE DE PÁGINA*/
 
 
     .pie-pagina{
-        background-color: #BDD959;
+        background-color: #B2b67E;
 
     }
     .logo{
@@ -411,3 +411,109 @@ header h1 {
         padding: 10px;
     }
 
+
+ 
+/* RESPONSIVE PARA  1300X */
+
+      @media (max-width:1300px){
+
+        section{
+            width:98%
+        }
+        header{
+            font-size: 2.3em;
+            width: 100%;
+            margin-top:8%
+        }        
+        footer{
+            width: 100%;
+        }
+    } 
+   
+/* RESPONSIVE PARA RESOLUCION DE  MIN-WIDTH:768PX */
+
+    @media (max-width:767px){
+
+    article{
+            width: 98%;
+        }
+
+    header{
+        font-size: 1.8em;
+        justify-content: center;
+        width: 100%;
+        margin-top:12%;
+    }
+    
+    .texto{
+        font-size: 1.1em;
+    }
+    .contenedor3{
+        width:97.7%;
+         
+    }
+    .box5  .box6{
+        background-color: hsla(195, 5%, 49%, 0.631);
+    }
+
+    footer{
+        width: 100%;
+        font-size:12px ;
+        
+   }
+} 
+
+    @media  (max-width:600px ){
+
+    header{
+        font-size:1.2em;
+        margin-top:5%;
+        width:100%;
+        
+    }
+
+    .contenedor1{
+        width: 90%;
+        justify-content: center;
+        
+    }
+    .contenedor2{
+        width: 90%;
+        justify-content: center;
+        
+
+    }
+    .texto{
+        font-size: 20px;
+    }
+    footer{
+        width: 100%;
+    }
+     
+      }
+
+   @media (min-width:360px){
+    header{     
+        width: 100%;
+    }
+    .contenedor1{
+        width: 90%;
+        justify-content: center;
+       
+    }
+    .contenedor2{
+        width: 90%;
+        justify-content: center;
+        
+
+    }
+    .texto{
+        font-size: 15px;
+    }
+    footer{
+        width: 100%;
+    }
+
+    
+   } 
+  
