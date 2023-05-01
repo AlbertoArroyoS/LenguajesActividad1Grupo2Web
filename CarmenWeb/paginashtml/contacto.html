@@ -23,8 +23,8 @@
 
 <nav>
     <input type="checkbox" id="check">
-        <label for="check" class="checkbtn" href="/assets/imagenes/icono_barra.png">
-            <img src="../assets/imagenes/icono_barra.png"/>    
+        <label for="check" class="checkbtn" href="../assets/imagenes/menu.png">
+            <img src="../assets/imagenes/menu.png"/>    
         </label>
         <ul>       
          
@@ -69,7 +69,7 @@
         </div>
 
             <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" placeholder="Carmen"/>
+            <input type="text" name="name" id="name" placeholder="Carmen" autofocus/>
         
         
             <label for="surname">Apellidos</label>
@@ -81,11 +81,9 @@
         
         
             <label for="texto">Mensaje</label>
-             <textarea name="texto" id="texto" cols="60" rows="8" placeholder="Mensaje" maxlength="100" required></textarea> 
-           
+             <textarea style="resize: none;"name="texto" id="texto" cols="60" rows="8" placeholder="Mensaje" maxlength="100" required></textarea>            
                
-            <input class="boton" type="submit" value="Enviar"/>
-            
+            <input class="boton" type="submit" value="Enviar"/>         
         
     </form>
 </main>
