@@ -145,6 +145,13 @@ main{
     border-radius: 7%;
 }
 
+.item:hover {
+    box-shadow: inset 0 0 20px #91a09188, 0 0 20px rgba(23, 45, 53, 0.6);
+    outline-color: rgba(49, 138, 172, 0);
+    outline-offset: 80px;
+    transform: translateY(-3%);
+}
+
 #imagen_ultimas {
     width: 85%;
     height: 200px;
